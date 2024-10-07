@@ -1,0 +1,48 @@
+.nav-bar {
+    display: flex;
+    width: 448px;
+    padding: 12px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+
+    border-radius: 24px;
+    background: rgba(18, 18, 18, 0.05);
+    backdrop-filter: blur(6px);
+}
+
+.nav-elements {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-element {
+    display: flex;
+    padding: 4px 8px 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #121212;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+.nav-link:hover {
+    font-family: 'PP Editorial New' !important;
+}
+
+.nav-link-active {
+    color: #121212;
+    font-family: "PP Editorial New" !important;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
