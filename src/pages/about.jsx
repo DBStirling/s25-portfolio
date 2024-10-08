@@ -4,7 +4,7 @@ import heroGradient from "../assets/Images/hero-gradient.png";
 import NavBar from "../components/NavBar/NavBar";
 import "../styles/style.css";
 
-export const FinishedAboutPage = () => {
+export default function about() {
   return (
     <div className="finished-about-page">
       <div className="overlap-group">
@@ -102,4 +102,4 @@ export const FinishedAboutPage = () => {
       </div>
     </div>
   );
-};
+}
