@@ -6,7 +6,8 @@ const NavBar = () => {
     const location = useLocation(); // Get the current path
 
     return (
-        <nav className="nav-bar">
+        <div className='nav-bar-container'>
+            <nav className="nav-bar">
             <ul className="nav-elements">
                 <li className="nav-element">
                     <Link
@@ -35,7 +36,8 @@ const NavBar = () => {
                 >Resume</a>
                 </li>
             </ul>
-        </nav>
+            </nav>
+        </div>
     );
 };
 
