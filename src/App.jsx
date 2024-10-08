@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Extras from './pages/extras.jsx'
-import MyFitnessPal from '/pages/myFitnessPal'
+import MyFitnessPal from './pages/myFitnessPal'
 import './styles/App.css'
 
 function App() {
