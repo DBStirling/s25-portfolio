@@ -19,9 +19,6 @@ const MyComponent = () => {
   };
 
   return (
-    <div className="finished-about-page">
-      <div className="overlap-group">
-        {/* <img className="hero-gradient" alt="Hero gradient" src={heroGradient} /> */}
         <div className="device-container">
           <NavBar/>
           <div className="main-content">
@@ -82,8 +79,6 @@ const MyComponent = () => {
           </div>
           <Footer/>
         </div>
-      </div>
-    </div>
   );
 };
 
