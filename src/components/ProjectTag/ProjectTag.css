@@ -12,6 +12,15 @@
     border-radius: 6px;
 }
 
+.tag {
+    color: #121212;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+}
+
 .circle .product {
     background-color: #05B28A;
 }

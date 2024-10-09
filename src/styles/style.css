@@ -1,3 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  overflow-x: hidden;
+}
+
 .device-container {
   width: 100vw;
   height: fit-content;
@@ -8,8 +15,19 @@
   width: 100%;
   /* padding-top: 200px; */
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 200px;
+}
+
+.intro-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Your desired background */
+  transition: width 0.5s ease, height 0.5s ease;  
 }
 
 .intro-content {
@@ -18,8 +36,8 @@
   justify-content: center;
   align-items: center;
   gap: 72px;
-  height: 100vh;
   max-width: 700px;
+  padding: 0 5vw;
 }
 
 .hero-content {
@@ -41,6 +59,20 @@ display: flex;
 align-items: flex-start;
 gap: -1px;
 align-self: stretch;
+}
+
+.my-work-container {
+  position: relative;
+  background: beige; /* Adjust as needed */
+  padding: 20px;
+  padding-top: 25vh;
+  width: 100vw;
+  min-height: 100vh;
+  transition: transform 0.5s ease;
+}
+
+.my-work-content {
+  width: 100%;
 }
 
 
