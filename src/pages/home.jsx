@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // import heroGradient from "../assets/Images/hero-gradient.png";
-import NavBar from "../components/NavBar/NavBar.jsx";
+import CtaButton from "../components/CtaButton/CtaButton.jsx";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
-import Footer from '../components/Footer/Footer.jsx'
 import "../styles/style.css";
 
 export default function Home() {
@@ -39,14 +38,14 @@ export default function Home() {
             </div>
           </div>
           <div className="button-container">
-            <button className="cta-button" 
-                    onClick={() => scrollToElement('work-section')}>
-              Check Out My Work
-            </button>
-            <button className="cta-button"
-                    onClick={navigateToAbout}>
-              Learn About Me
-            </button>
+            <CtaButton className="cta-button" 
+                onClick={() => scrollToElement('work-section')}
+                text='Check Out My Work'
+            />
+            <CtaButton
+                onClick={navigateToAbout}
+                text = 'Learn about Me'
+            />
           </div>
         </div>
         <div className="my-work-container" id="work-section">
