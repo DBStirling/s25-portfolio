@@ -16,7 +16,7 @@
 .nav-bar {
     display: flex;
     width: 448px;
-    max-height: 52px;
+    max-height: 40px;
     padding: 12px 12px;
     justify-content: center;
     align-items: center;
@@ -42,6 +42,7 @@
 .nav-element {
     display: flex;
     width: 48px;
+    max-height: 20px;
     padding: 0px 8px 0px 8px;
     justify-content: center;
     align-items: center;
@@ -54,17 +55,18 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 20.8px */
+    line-height: 20px;
+    max-height: 20px
 }
 
-.nav-element:hover{
-    /* font-family: 'PP Editorial New' !important; */
-    padding: 4px 8px 0px 8px;
-}
+/* .nav-element:hover{
+    font-family: 'PP Editorial New' !important;
+    padding: 0px 8px 0px 8px;
+} */
 
 .nav-link:hover {
     font-family: 'PP Editorial New' !important;
-    /* font-style: italic; */
+    max-height: 20px;
 }
 
 .nav-link-active {
