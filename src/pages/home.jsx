@@ -27,11 +27,21 @@ export default function Home() {
         const threshold = 20;
   
         if (window.scrollY > threshold) {
-          hero.style.width = '40vw';
-          hero.style.height = 'auto';
-          hero.style.position = 'fixed';
-          hero.style.top = '0';
-          mainContent.style.transform = 'translateX(40vw)';
+          const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
+          const scrollBottom = window.scrollY + window.innerHeight;
+    
+          if (scrollBottom >= myWorkContainerBottom) {
+            // Reset hero position when reaching the bottom of the main content
+            hero.style.position = 'absolute'; // or 'relative' based on your layout
+            hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
+          } else {
+
+            hero.style.width = '40vw';
+            hero.style.height = '100vh';
+            hero.style.position = 'fixed';
+            hero.style.top = '0';
+            mainContent.style.transform = 'translateX(40vw)';
+          }
         } else {
           hero.style.width = '100vw';
           hero.style.height = '100vh';
