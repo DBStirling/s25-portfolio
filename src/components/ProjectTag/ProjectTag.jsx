@@ -10,7 +10,7 @@ export default function ProjectTag(props) {
     else if (tag == 'Case Study') tagClass='case-study'
 
   return (
-    <div className='container'>
+    <div className='tag-container'>
         <div className={`cicle ${tagClass}`}/>
         <div className='tag'>{tag}</div>
     </div>

@@ -26,7 +26,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0; /* Your desired background */
+  background: white; /* Your desired background */
   transition: width 0.5s ease, height 0.5s ease;  
 }
 
@@ -65,12 +65,12 @@ align-self: stretch;
 
 .my-work-container {
   position: relative;
-  background: beige; /* Adjust as needed */
+  background: white; /* Adjust as needed */
   padding: 20px;
   padding: 25vh 0;
   width: 100%;
   min-height: 100vh;
-  transition: transform 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease;  
 }
 
 .my-work-content {

@@ -8,10 +8,10 @@ export default function ProjectCard(props) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className='container'
+    <div className='card-container'
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
-      <div className='header'>
+      <div className='card-header'>
         <div className='title'>
           {title}
         </div>
