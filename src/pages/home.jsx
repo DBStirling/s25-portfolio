@@ -30,9 +30,12 @@ export default function Home() {
               Hey, <em>I'm David</em>
             </h1>
             <div className="hero-body">
-              <strong>I thrive on turning bold ideas into effective solutions.</strong>
-              <br />
-              As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. My expertise in product design, management, and development equips me to shape products at every stage of building.
+              <p>
+                <strong>I thrive on turning bold ideas into effective solutions.</strong>
+              </p>
+              <p>
+                As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. My expertise in product design, management, and development equips me to shape products at every stage of building.
+              </p>
             </div>
           </div>
           <div className="button-container">
