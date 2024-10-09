@@ -1,34 +1,34 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import heroGradient from "../assets/Images/hero-gradient.png";
-import NavBar from "../components/NavBar/NavBar";
+// import heroGradient from "../assets/Images/hero-gradient.png";
+import NavBar from "../components/NavBar/NavBar.jsx";
+import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
+import Footer from '../components/Footer/Footer.jsx'
 import "../styles/style.css";
 
 export default function Home() {
+  const navigate = useNavigate();
 
-  const MyComponent = () => {
-    const navigate = useNavigate();
-  
-    const navigateToAbout = () => {
-      navigate('/about');
-    };
-  
-    const scrollToElement = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
+  const navigateToAbout = () => {
+    navigate('/about');
+  };
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="device-container">
-      <NavBar/>
+      {/* <NavBar/> */}
       <div className="main-content">
         <div className="intro-content">
           <div className="hero-content">
-            <div className="hero-header">
-              Hey, I'm David
-            </div>
+            <h1 className="hero-header">
+              Hey, <em>I'm David</em>
+            </h1>
             <div className="hero-body">
               <strong>I thrive on turning bold ideas into effective solutions.</strong>
               <br />
@@ -46,7 +46,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="my-work-container">
+        <div className="my-work-container" id="work-section">
           <div className="my-work-header">
             <strong>My Work</strong> (hover for a preview)
           </div>
@@ -81,11 +81,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
-};
-
 };
 
 //   return (

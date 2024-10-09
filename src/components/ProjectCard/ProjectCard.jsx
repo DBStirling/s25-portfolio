@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import ProjectTag from './ProjectTag'
+import ProjectTag from '../ProjectTag/ProjectTag.jsx'
 import './ProjectCard.css'
 
 export default function ProjectCard(props) {
-  const props = ({title, description, tag, destination})
+  const { title, description, tag, destination } = props;
 
-  const [ishovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   return (
     <div className='container'

@@ -1,7 +1,7 @@
 .img-container {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     width: -webkit-fill-available;
     padding-top: 20%;
     background-image: url(../../assets/Images/footer-gradient.png);
@@ -11,12 +11,13 @@
 }
 
 .container {
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     height: auto;
-    padding: 16px 10vw 16px 10vw;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 100px;
+    padding: 16px 10vw 16px 10vw !important;
+    justify-content: space-between !important;
+    align-items: center;
+    gap: 0 !important;
     /* background-image: url(../../assets/Images/footer-gradient.png);
     background-size: cover;
     background-position: bottom;
@@ -24,6 +25,7 @@
 }
 
 .header {
+    display: flex;
     color: #FFFFFF;
     font-family: "PP Editorial New";
     font-size: 5vw;

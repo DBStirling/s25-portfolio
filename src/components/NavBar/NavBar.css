@@ -23,8 +23,8 @@
     /* gap: 115px; */
 
     border-radius: 50px;
-    background: rgba(18, 18, 18, 0.05);
-    backdrop-filter: blur(6px);
+    background: rgba(247, 246, 246, 0.5);
+    backdrop-filter: blur(10px);
 
     /* position: sticky;
     top: 0;
@@ -56,7 +56,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    max-height: 20px
+    max-height: 20px;
+    text-shadow: none !important;
 }
 
 /* .nav-element:hover{
@@ -76,4 +77,11 @@
     /* font-style: italic; */
     font-weight: 400;
     line-height: 130%; /* 20.8px */
+    text-shadow: none !important;
+}
+
+.nav-link, .nav-link-active, .nav-element {
+    text-shadow: none !important;
+    box-shadow: none !important;
+
 }

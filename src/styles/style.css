@@ -1,4 +1,48 @@
-.finished-about-page {
+.device-container {
+  width: 100vw;
+  height: fit-content;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  padding-top: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.hero-body {
+  align-self: stretch;
+  color: #121212;
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0.24px;
+}
+
+
+/* .finished-about-page {
     background-color: #ffffff;
     height: 2969px;
     width: 1440px;
@@ -393,4 +437,4 @@
     line-height: 18.2px;
     position: relative;
   }
-  
+   */
