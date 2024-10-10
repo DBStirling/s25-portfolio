@@ -1,16 +1,18 @@
 .tag-container {
     display: inline-flex;
-    padding: 8px 16px;
+    padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 12px;
     width: fit-content;
+    background: rgba(247, 246, 246, 0.5);
+    border-radius: 32px;
 }
 
 .circle {
     width: 12px;
     height: 12px;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 
 .tag {
@@ -22,14 +24,14 @@
     line-height: 130%; /* 20.8px */
 }
 
-.circle .product {
+.circle.product {
     background-color: #05B28A;
 }
 
-.circle .exploration {
+.circle.exploration {
     background-color: #36C8FF;
 }
 
-.circle .case-study {
+.circle.case-study {
     background-color: #FF47ED;
 }

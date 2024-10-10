@@ -105,7 +105,7 @@ export default function Home() {
               </h1>
               <div className="hero-body">
                 <p>
-                  <strong>I like to build, ship & learn.</strong>
+                  <strong>I like to design, ship & learn.</strong>
                 </p>
                 {/* <p>
                   As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. I shape products at every stage of their development with my experience in product design, management, and code.

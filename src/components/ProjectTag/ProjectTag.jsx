@@ -11,7 +11,9 @@ export default function ProjectTag(props) {
 
   return (
     <div className='tag-container'>
-        <div className={`cicle ${tagClass}`}/>
+        <div className={`circle ${tagClass}`}/>
+        {/* <div className="circle product"/> */}
+
         <div className='tag'>{tag}</div>
     </div>
   )
