@@ -14,7 +14,6 @@ export default function ProjectCard(props) {
     <div className='card-container'
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
-      <img src={imgSrc} alt={`${title} Thumbnail`}/>
       <div className='card-contents'>
       <div className='card-header'>
         <div className='title'>
@@ -28,6 +27,7 @@ export default function ProjectCard(props) {
         {description}
       </div>
       </div>
+      <img src={imgSrc} alt={`${title} Thumbnail`}/>
     </div>
   )
 }

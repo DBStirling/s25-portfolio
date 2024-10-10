@@ -99,15 +99,23 @@ export default function Home() {
           <div className="intro-content">
             <div className="hero-content">
               <h1 className="hero-header">
-                Hey, <em>I'm David</em>
+                {/* Hey, <em>I'm David</em> */}
+                Hey, I'm David
               </h1>
               <div className="hero-body">
                 <p>
-                  <strong>I thrive on taking ideas from 0 to 100.</strong>
+                  <strong>I like to build, ship & learn.</strong>
                 </p>
-                <p>
+                {/* <p>
                   As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. I shape products at every stage of their development with my experience in product design, management, and code.
+                </p> */}
+                <p>
+                  Take a look around to get to know me a bit better or scroll to see my featured work.
                 </p>
+                {/* <p>
+                  If you're here for business, scroll to check out my featured work. But if you're looking to get to know me a bit better, take a look around!
+                </p> */}
+                <p>I'm looking for summer 2025 opportunities to get hands on with things that make life a little easier. </p>
               </div>
             </div>
           </div>
@@ -150,19 +158,19 @@ export default function Home() {
                 tag="Exploration"
                 imgSrc={DMthumbnail}
               />
+                        <div className="button-container">
+              <CtaButton className="cta-button" 
+                  onClick={() => scrollToElement('work-section')}
+                  text='Check Out My Work'
+              />
+              <CtaButton
+                  onClick={navigateToAbout}
+                  text = 'Learn about Me'
+              />
+          </div>
             </div>
           </div>
         </div>
-        <div className="button-container">
-            <CtaButton className="cta-button" 
-                onClick={() => scrollToElement('work-section')}
-                text='Check Out My Work'
-            />
-            <CtaButton
-                onClick={navigateToAbout}
-                text = 'Learn about Me'
-            />
-          </div>
       </div>
       {/* <Footer/> */}
     </div>
