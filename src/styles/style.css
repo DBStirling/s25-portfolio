@@ -57,9 +57,10 @@ body, html {
 }
 
 .button-container {
+padding: 0 10vw;
 display: flex;
 align-items: flex-start;
-gap: -1px;
+gap: 5vw;
 align-self: stretch;
 }
 

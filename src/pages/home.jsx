@@ -97,23 +97,13 @@ export default function Home() {
               </h1>
               <div className="hero-body">
                 <p>
-                  <strong>I thrive on turning bold ideas into effective solutions.</strong>
+                  <strong>I thrive on taking ideas from 0 to 100.</strong>
                 </p>
                 <p>
-                  As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. My expertise in product design, management, and development equips me to shape products at every stage of building.
+                  As a System Design Engineering student @UWaterloo, I blend pragmatic engineering with creative, empathetic design. I shape products at every stage of their development with my experience in product design, management, and code.
                 </p>
               </div>
             </div>
-          <div className="button-container">
-            <CtaButton className="cta-button" 
-                onClick={() => scrollToElement('work-section')}
-                text='Check Out My Work'
-            />
-            <CtaButton
-                onClick={navigateToAbout}
-                text = 'Learn about Me'
-            />
-          </div>
           </div>
         </div>
         <div className="my-work-container" id="work-section">
@@ -152,6 +142,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="button-container">
+            <CtaButton className="cta-button" 
+                onClick={() => scrollToElement('work-section')}
+                text='Check Out My Work'
+            />
+            <CtaButton
+                onClick={navigateToAbout}
+                text = 'Learn about Me'
+            />
+          </div>
       </div>
       {/* <Footer/> */}
     </div>
