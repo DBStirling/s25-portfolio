@@ -44,12 +44,15 @@ export default function Home() {
             hero.style.position = 'fixed';
             hero.style.top = '0';
             mainContent.style.transform = 'translateX(40vw)';
+            mainContent.classList.add('visible'); // Add visible class to fade in
           }
         } else {
           hero.style.width = '100vw';
           hero.style.height = '100vh';
           hero.style.position = 'relative';
           mainContent.style.transform = 'translateX(0)';
+          mainContent.classList.remove('visible'); // Add visible class to fade in
+
         }
       };
   
@@ -112,7 +115,7 @@ export default function Home() {
         <div className="my-work-container" id="work-section">
           <div className="my-work-content">
             <div className="my-work-header">
-              <strong>My Work</strong> (hover for a preview)
+              My Work
             </div>
             <div className="project-card-container">
               <ProjectCard

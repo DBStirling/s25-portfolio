@@ -8,6 +8,10 @@ body, html {
 .device-container {
   width: 100vw;
   height: fit-content;
+  background-image: url(../assets/Images/hero-gradient.png);
+  background-size: 100% auto;
+  background-position: top left; /* Ensures that the bottom of the image is anchored */
+  background-repeat: no-repeat;
 }
 
 .main-content {
@@ -26,7 +30,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white; /* Your desired background */
+  /* background: white; Your desired background */
   transition: width 0.5s ease, height 0.5s ease;  
 }
 
@@ -66,16 +70,35 @@ align-self: stretch;
 
 .my-work-container {
   position: relative;
-  background: white; /* Adjust as needed */
+  opacity: 0;
   padding: 20px;
   padding: 25vh 0;
   width: 100%;
   min-height: 100vh;
-  transition: width 0.5s ease, height 0.5s ease;  
+  transition: width 1s ease, height 1s ease opacity 1s ease-in;  
+}
+
+.my-work-container.visible {
+  opacity: 1;
+  transition: opacity 2s ease;
 }
 
 .my-work-content {
   width: 100%;
+}
+
+.my-work-header {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-end;
+  color: #121212;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
 }
 
 
