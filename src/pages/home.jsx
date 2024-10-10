@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"; // Add useEffect
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
+
 // import heroGradient from "../assets/Images/hero-gradient.png";
 import CtaButton from "../components/CtaButton/CtaButton.jsx";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
@@ -123,7 +124,7 @@ export default function Home() {
         <div className="my-work-container" id="work-section">
           <div className="my-work-content">
             <div className="my-work-header">
-              My Work
+              {/* My Work */}
             </div>
             <div className="project-card-container">
               <ProjectCard
@@ -158,7 +159,10 @@ export default function Home() {
                 tag="Exploration"
                 imgSrc={DMthumbnail}
               />
-                        <div className="button-container">
+              <div className="end-work-prompt">
+                That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
+              </div>
+              {/* <div className="button-container">
               <CtaButton className="cta-button" 
                   onClick={() => scrollToElement('work-section')}
                   text='Check Out My Work'
@@ -167,7 +171,7 @@ export default function Home() {
                   onClick={navigateToAbout}
                   text = 'Learn about Me'
               />
-          </div>
+              </div> */}
             </div>
           </div>
         </div>

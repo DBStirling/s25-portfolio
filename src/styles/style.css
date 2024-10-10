@@ -69,11 +69,37 @@ gap: -1px;
 align-self: stretch;
 }
 
+.end-work-prompt {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 55vw;
+  color: #121212;
+  font-family: 'PP Editorial New';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 31.2px */
+}
+
+.end-work-link {
+  font-style: italic;
+  color: #121212;
+}
+
+.end-work-link:hover {
+  font-style: italic;
+  background: linear-gradient(90deg, #7AAAE8 0%, #8150DD 100%);
+  -webkit-background-clip: text; /* Clips the background to the text */
+  color: transparent; /* Makes the text color transparent */
+}
+
+
 .my-work-container {
   position: relative;
   opacity: 0;
   padding: 20px;
-  padding: 25vh 0;
+  padding-top: 25vh;
   width: 100%;
   min-height: 100vh;
   transition: width 1s ease, height 1s ease opacity 1s ease-in;  
