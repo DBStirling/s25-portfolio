@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import CtaButton from "../components/CtaButton/CtaButton.jsx";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
 import "../styles/style.css";
+import DEthumbnail from '../assets/Images/DEthumbnail1.png';
+import DMthumbnail from '../assets/Images/diet-me-thumbnail.png';
+import MFPthumbnail from '../assets/Images/thumbnail2.png'
 
 export default function Home() {
 
@@ -117,27 +120,32 @@ export default function Home() {
                 description="Designed a donation ecosystem for an effective altruism NPO, helping donors visualize their impact and donate with more diligence."
                 tag="Product"
                 destination="/donEfficace"
-                // preview=
+                // imgSrc='../assets/images/DEthumbnail1.png'
+                imgSrc={DEthumbnail}
               />
               <ProjectCard
                 title="Flow Financial"
                 description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
                 tag="Case Study"
+                imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="Stamped"
                 description="Ideated a social experiences app to help small business owners cultivate a  following and create genuine connections with customers."
                 tag="Exploration"
+                imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="MyFitnessPal"
                 description="Redesigned the industry-leading calorie counting app to better align with user needs."
                 tag="Case Study"
+                imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="DietMe"
                 description="Ideated a mobile app to help people with dietary restrictions and visual impairments confidently shop for groceries."
                 tag="Exploration"
+                imgSrc={DMthumbnail}
               />
             </div>
           </div>
