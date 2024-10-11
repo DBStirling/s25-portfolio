@@ -130,7 +130,7 @@ align-self: stretch;
 
 /* ABOUT & EXTRAS page styles */
 
-.about-content {
+.page-content {
   display: flex;
   width: 800px;
   padding-top: 200px;
@@ -168,11 +168,16 @@ body {
   letter-spacing: 0.2px;
 }
 
-.collage {
+.collage-container {
   height: 1000px;
   align-self: stretch;
 
   border-radius: 16px;
   background: url('../assets/Images/personalCollageV3\(large\).png') lightgray 50% / cover no-repeat;
   box-shadow: 0px 8px 40px 8px rgba(0, 0, 0, 0.50);
+}
+
+.graphic {
+  width: 375px;
+  
 }

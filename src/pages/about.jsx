@@ -6,7 +6,7 @@ import "../styles/style.css";
 export default function about() {
   return (
     <div className="device-container">
-      <div className="about-content">
+      <div className="page-content">
         <div className="collage-section">
           <div className="ht-section">
             <h3>More than just a guy in tech</h3>
@@ -15,10 +15,10 @@ export default function about() {
               I think it’s a fitting way to introduce myself. 
               <em> Hover over the segments to get a little more 
               insight into the picture and myself.</em>
-              </b>
+            </b>
           </div>
           <div className="collage-container">
-            <img className="collage"  />
+            {/* <img className="collage"  /> */}
           </div>
         </div>
         <div className="ht-section">
@@ -44,6 +44,7 @@ export default function about() {
           countless wireframes (no, seriously) and collaborating 
           cross-functionally in the hopes of <em>building products that give 
           more than they take. </em>
+          </b>
         </div>
         <ThanksSection/>
       </div>
