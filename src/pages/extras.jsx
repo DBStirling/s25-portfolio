@@ -1,5 +1,6 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
+import ThanksSection from "../components/ThanksSection.jsx"
 import rodmanCollage from "../assets/Images/extras/rodman-collage.png"
 import lebronFourthChip from "../assets/Images/extras/lebron-fourth-chip.png"
 import wilguensGp from "../assets/Images/extras/wilguens-gp.png"
@@ -135,6 +136,7 @@ export default function extras() {
             </div>
           </div>
         </div>
+        <ThanksSection/>
       </div>
     </div>
   )
