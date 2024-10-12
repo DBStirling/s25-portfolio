@@ -1,8 +1,8 @@
 import React from 'react'
 import rodmanCollage from "../assets/Images/extras/rodman-collage.png"
 import lebronFourthChip from "../assets/Images/extras/lebron-fourth-chip.png"
-import wilguensGp from "../assets/Images/extras/wilguens-gp.PNG"
-import jordanCollage from "../assets/Images/extras/mj-collage.png"
+import wilguensGp from "../assets/Images/extras/wilguens-gp.png"
+import jordanCollage from "../assets/Images/extras/mj-collage.jpg"
 import lillardNeon from "../assets/Images/extras/lillard-neon.png"
 import russOkc from "../assets/Images/extras/russ-okc.png"
 
