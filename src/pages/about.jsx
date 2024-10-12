@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ModalImage from "react-modal-image";
 import ThanksSection from '../components/ThanksSection.jsx';
 import collage from '../assets/Images/collage.png'
 import "../styles/style.css";
