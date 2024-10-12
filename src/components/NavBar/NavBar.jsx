@@ -24,7 +24,7 @@ const NavBar = () => {
                     <li className="nav-element">
                         <Link
                             to="/extras"
-                            className={`nav-link ${location.pathname === '/projects' ? 'nav-link-active' : ''}`}
+                            className={`nav-link ${location.pathname === '/extras' ? 'nav-link-active' : ''}`}
                         >Extras</Link>
                     </li>
                     <li className="nav-element">

@@ -194,7 +194,20 @@ h3 {
   width: auto;
 }
 
+.graphics-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+}
+
 .graphic {
   width: 375px;
-  
+  height: auto;
+}
+
+.graphics-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
