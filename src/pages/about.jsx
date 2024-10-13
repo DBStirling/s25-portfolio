@@ -1,10 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ThanksSection from '../components/ThanksSection.jsx';
 import collage from '../assets/Images/collage.png'
 import "../styles/style.css";
 
 export default function about() {
+
+  const [msg, setMsg] = useState('')
+  const [showMsg, setShowMsg] = useState(false)
+
+  const handleMouseMove = (event) => {
+    const div = event.target.getBoundingClientRect();
+    const x = ((event.clientX - div.left) / div.width) * 100; // x in %
+    const y = ((event.clientY - div.top) / div.height) * 100; // y in %
+
+    // Defining hover regions
+    if (x < 16 && y < 20 || (x >= 16 && x < 30 && y < 22)) {
+      setMsg('A poster I made of one of my all-time favourite players. Dennis Rodman was known for his  rebounding and ability to do all of the little things needed for the team to win.')
+      console.log(msg)
+    }
+  }
+
+
   return (
     <div className="device-container">
       <div className="page-content">
@@ -18,8 +35,11 @@ export default function about() {
               insight into the picture and myself.</b>
             </p>
           </div>
-          <div className="collage-container">
-          <img className="collage"  src={collage} alt="collage"/>
+          <div className="collage-container"
+            onMouseMove={handleMouseMove}
+            // onMouseLeave={handleMouseLeave}
+          >
+            <img className="collage"  src={collage} alt="collage"/>
           </div>
         </div>
         <div className="ht-section">
