@@ -13,12 +13,50 @@ export default function about() {
     const div = event.target.getBoundingClientRect();
     const x = ((event.clientX - div.left) / div.width) * 100; // x in %
     const y = ((event.clientY - div.top) / div.height) * 100; // y in %
-
+// || (x < 34 && y >= 36 && y < 47)
     // Defining hover regions
-    if (x < 16 && y < 20 || (x >= 16 && x < 30 && y < 22)) {
+    if (x < 16 && y < 20 || (x >= 16 && x < 30 && y < 24)) {
       setMsg('A poster I made of one of my all-time favourite players. Dennis Rodman was known for his  rebounding and ability to do all of the little things needed for the team to win.')
-      console.log(msg)
     }
+    else if (x >= 30 && x < 43 && y < 24 || (x >= 43 && x < 54 && y < 13)) {
+      setMsg('A warm welcome billboard. How many other designers have one of those?')
+    }
+    else if (x >= 43 && x < 50 && y >= 13 && y < 24 || (x >= 34 && x < 60 && y >= 24 && y < 42) || (x >= 60 && x < 71 && y >= 32 && y < 47) || (x >= 71 && x < 79 && y >= 32 && y < 40)) {
+      setMsg('Some shots from my time in Edinburgh... If you can’t tell by now, I’m half Scott & half Venezuelan!')
+    }
+    else if (x < 16 && y >= 20 && y < 24) {
+      setMsg('Life is simple. Death, taxes and me getting pho.')
+    }
+    else if (x < 34 && y >= 24 && y < 47) {
+      setMsg('Lianne La Havas’ self-titled is my go-to comfort album. It recently beat out Care For Me and Ugh, Those Feels Again for my favourite album.')
+    }
+    else if (x < 23 && y >= 47 && y < 72) {
+      setMsg('A pic from when I went to see JID & Smino live @ History. Great energy. Two of my fav artists. ')
+    }
+    else if (x < 30 && y >= 72) {
+      setMsg('Me and my first Blueprint design team. Shoutouts to Shaahana, Jackie, Sunny & Hilary!')
+    }
+    else if (x >= 30 && y >= 72) {
+      setMsg('UW Blueprint is a collective of students @UW building tech for social good! We work with NPO’s and enable them with custom tech.')
+    }
+    else if (x >= 23 && x < 62 && y >= 62 && y < 72 || (x >= 23 && x < 42 && y >= 47 && y < 62)) {
+      setMsg('I love to read on my commute. A few of my favourites are The Psychology of Money, Shoe Dog & Poverty, by America. Check ‘em out or reach out with some of your favs!')
+    }
+    else if (x >= 34 && x < 60 && y >= 42 && y < 47 || (x >= 42 && x < 67 && y >= 47 && y < 62)) {
+      setMsg('I’ve been a Raptors fan since 2016 but I really love any team or player with grit and hustle.')
+    }
+    else if (x >= 62 && y >= 62 && y < 72 || (x >= 67 && y >= 47 && y < 62) || (x >= 71 && y >= 40 && y < 47)) {
+      setMsg('Soldering a few resistors to a board. I’m a soon-to-be engineer after all!')
+    }
+    else if (x >= 79 && y >= 24 && y < 40) {
+      setMsg('My Mom’s catering company, Latin Basket has a cult following among Venezuelan Mississaugans and I’ve been selling/doing cash for her at Latin events since I was 10!')
+    }
+    else if (x >= 60 && x < 79 && y >= 24 && y < 32 || (x >= 50 && y >= 13 && y < 24)) {
+      setMsg('@MississaugaLatinFest with the crew! You could find me at the front of the booth, selling empanadas and tequenos, with recreational Spanish, at best. I’ve learned to adapt and communicate in a fast-paced environments.')
+    }
+    else if (x >= 54 & y < 13)
+      setMsg('Just a nice street view from our family trip to Scotland. Taken in Milngavie.')
+
   }
 
 
