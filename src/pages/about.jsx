@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ThanksSection from '../components/ThanksSection.jsx';
 import collage from '../assets/Images/collage.png'
+import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import "../styles/style.css";
 
 export default function about() {
@@ -13,7 +14,7 @@ export default function about() {
     const div = event.target.getBoundingClientRect();
     const x = ((event.clientX - div.left) / div.width) * 100; // x in %
     const y = ((event.clientY - div.top) / div.height) * 100; // y in %
-// || (x < 34 && y >= 36 && y < 47)
+
     // Defining hover regions
     if (x < 16 && y < 20 || (x >= 16 && x < 30 && y < 24)) {
       setMsg('A poster I made of one of my all-time favourite players. Dennis Rodman was known for his  rebounding and ability to do all of the little things needed for the team to win.')
@@ -54,10 +55,27 @@ export default function about() {
     else if (x >= 60 && x < 79 && y >= 24 && y < 32 || (x >= 50 && y >= 13 && y < 24)) {
       setMsg('@MississaugaLatinFest with the crew! You could find me at the front of the booth, selling empanadas and tequenos, with recreational Spanish, at best. I’ve learned to adapt and communicate in a fast-paced environments.')
     }
-    else if (x >= 54 & y < 13)
+    else if (x >= 54 & y < 13) {
       setMsg('Just a nice street view from our family trip to Scotland. Taken in Milngavie.')
+    }
+    else setMsg('')
 
+    setShowMsg(msg !== '');
   }
+
+  const handleMouseLeave = () => {
+    setShowMsg(false);
+  };
+
+  
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const handleCursorPosition = (event) => {
+    setCursorPosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
 
 
   return (
@@ -67,18 +85,32 @@ export default function about() {
           <div className="ht-section">
             <h3>More than just a guy in tech</h3>
             <p>Given that my design career started 
-              with making collages during the pandemic 
+              with making collages during the pandemic, 
               I think it’s a fitting way to introduce myself. 
-              <b> Hover over the segments to get a little more 
+              <b> Hover over the cut-outs to get a little more 
               insight into the picture and myself.</b>
             </p>
           </div>
           <div className="collage-container"
-            onMouseMove={handleMouseMove}
-            // onMouseLeave={handleMouseLeave}
+            onMouseMove={(event) => {
+              handleMouseMove(event);
+              handleCursorPosition(event);
+            }}
+            onMouseLeave={handleMouseLeave}
           >
             <img className="collage"  src={collage} alt="collage"/>
           </div>
+          {showMsg && (
+            <HoverPopUp
+              x={cursorPosition.x}
+              y={cursorPosition.y}
+              msg={msg}
+          />)}
+          {/* <HoverPopUp
+          x={cursorPosition.x}
+          y={cursorPosition.y}
+          msg={msg}
+          /> */}
         </div>
         <div className="ht-section">
           <h3>My tl;dr</h3>

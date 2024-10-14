@@ -1,0 +1,17 @@
+.pop-up-container {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.66);
+    backdrop-filter: blur(4px);
+    
+    pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+    z-index: 1000; /* Ensures the tooltip is above other elements */
+    transition: opacity 0.2s ease-in-out; /* Smooth transition for showing/hiding */
+}
