@@ -15,3 +15,7 @@
     z-index: 1000; /* Ensures the tooltip is above other elements */
     transition: opacity 0.2s ease-in-out; /* Smooth transition for showing/hiding */
 }
+
+p {
+    margin-bottom: 0 !important;
+}

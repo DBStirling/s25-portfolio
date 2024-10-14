@@ -72,8 +72,8 @@ export default function about() {
 
   const handleCursorPosition = (event) => {
     setCursorPosition({
-      x: event.clientX,
-      y: event.clientY,
+      x: event.pageX,
+      y: event.pageY,
     });
   };
 
