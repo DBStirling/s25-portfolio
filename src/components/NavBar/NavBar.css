@@ -17,7 +17,7 @@
     display: flex;
     width: 448px;
     max-height: 40px;
-    padding: 12px 12px;
+    padding: 12px 12px 8px 12px;
     justify-content: center;
     align-items: center;
     /* gap: 115px; */
@@ -88,4 +88,15 @@
     text-shadow: none !important;
     box-shadow: none !important;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        width: 80vw !important;
+    }
+    .nav-elements {
+        justify-content: space-between;
+        gap: 0px !important;
+        width: 70vw;
+    }
 }

@@ -16,6 +16,6 @@
     transition: opacity 0.2s ease-in-out; /* Smooth transition for showing/hiding */
 }
 
-p {
-    margin-bottom: 0 !important;
+p .pop-up-text {
+    margin-bottom: 0 !important; 
 }

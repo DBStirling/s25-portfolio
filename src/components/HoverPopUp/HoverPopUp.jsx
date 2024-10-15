@@ -16,7 +16,7 @@ export default function HoverPopUp(props) {
             top: y + 1, // Add an offset to avoid overlapping the cursor
             left: popUpLeftPosition,
           }}>
-      <p>{msg}</p>
+      <p className='pop-up-text'>{msg}</p>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 .cta-container {
     display: flex;
-    width: 100%;
-    padding: 24px 64px 20px 64px;
+    /* width: 100%; */
+    padding: 16px 48px 12px 48px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -9,6 +9,8 @@
 
     border: 1px solid #121212;
     background: white;
+    cursor: pointer; /* Add this for pointer cursor */
+
 }
 
 .cta-container:hover {
@@ -34,4 +36,10 @@
     color: white;
     font-style: italic;
     letter-spacing: 0.8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cta-text {
+        font-size: 20px;
+    }
 }

@@ -22,6 +22,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 20.8px */
+    text-wrap: nowrap;
 }
 
 .circle.product {

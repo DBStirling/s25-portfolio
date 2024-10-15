@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import ProjectTag from '../ProjectTag/ProjectTag.jsx'
 import './ProjectCard.css'
 
@@ -17,7 +18,10 @@ export default function ProjectCard(props) {
       <div className='card-contents'>
       <div className='card-header'>
         <div className='title'>
-          {title}
+          <Link
+            className='card-header'
+            to='/myFitnessPal'
+          >{title}</Link>
         </div>
         <ProjectTag 
           tag={tag}

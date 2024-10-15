@@ -21,7 +21,7 @@ export default function Footer() {
     <div className='img-container'>
         <div className='container'>
             <div className='header'>
-                Hey! Let's Work.
+                David Stirling
             </div>
             <div className='content'>
                 <div className='body'>
