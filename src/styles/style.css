@@ -137,6 +137,25 @@ align-self: stretch;
 
 /* ABOUT & EXTRAS page styles */
 
+@media only screen and (max-width: 1025px) {
+  .page-content {
+    width: 80vw !important;
+    gap: 36px !important;
+  }
+
+  .graphic {
+    width: 40vw !important;
+  }
+
+  .graphics-section {
+    gap: 5vw !important;
+  }
+
+  .graphics-column {
+    gap: 5vw !important;
+  }
+}
+
 .page-content {
   display: flex;
   width: 800px;
@@ -145,6 +164,8 @@ align-self: stretch;
   align-items: center;
   gap: 72px;
 }
+
+
 
 .ht-section {
   display: flex;
