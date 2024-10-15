@@ -26,6 +26,31 @@
     font-style: italic;
     font-weight: 400;
     line-height: 100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card-header {
+        font-size: 36px;
+        text-wrap: nowrap;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .card-container {
+        height: fit-content;
+        gap: 1vh;
+    }
+    .project-tag {
+        display: none;
+    }
+
+    .card-contents {
+        gap: 1vh !important;
+    }
+
+    .end-work-prompt {
+        font-size: 24px !important;
+    }
 }
 
 .card-contents {
@@ -36,7 +61,7 @@
     flex-wrap: wrap;
 }
 
-.body {
+.description {
     width: 100%;
     color: #121212;
     text-align: left;
@@ -53,4 +78,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 31.2px */
+    padding-top: 10vh;
+    text-align: left;
   }

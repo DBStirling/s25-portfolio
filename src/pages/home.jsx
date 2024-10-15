@@ -14,10 +14,28 @@ export default function Home() {
     const navigate = useNavigate();
 
     useEffect(() => {
+
       const handleScroll = () => {
+
         const hero = document.getElementById('hero');
         const mainContent = document.querySelector('.my-work-container');
+        const myWorkHeader = document.querySelector('.my-work-header');
+        const projectCardContainer = document.querySelector('.project-card-container')
+        const cardContainers = document.querySelectorAll('.card-container')
+
         const threshold = 20;
+
+        if (window.innerWidth <= 1025) {
+          mainContent.classList.add('visible')
+          mainContent.style.padding = '0px'
+          myWorkHeader.style.display = 'none'
+          projectCardContainer.style.alignItems = 'center'
+          cardContainers.forEach(container => {
+            container.style.width = '80vw'
+        }
+      );
+          return; // Skip the rest of the logic if screen size is greater than or equal to 1000px
+      }
   
         if (window.scrollY > threshold) {
           const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;

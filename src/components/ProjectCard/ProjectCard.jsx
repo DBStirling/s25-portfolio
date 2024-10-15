@@ -12,29 +12,34 @@ export default function ProjectCard(props) {
 
 
   return (
-    <div className='card-container'
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}>
-      <div className='card-contents'>
-      <div className='card-header'>
-        <div className='title'>
-          <Link
-            className='card-header'
-            to='/myFitnessPal'
-          >{title}</Link>
+    <div className='see-more-container'>
+      <div className='card-container'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}>
+        <div className='card-contents'>
+        <div className='card-header'>
+          <div className='title'>
+            <Link
+              className='card-header'
+              to='/myFitnessPal'
+            >{title}</Link>
+          </div>
+          <div className='project-tag'>
+          <ProjectTag 
+            tag={tag}
+          />
+          </div>
         </div>
-        <ProjectTag 
-          tag={tag}
-        />
+        <p className='description'>
+          {description}
+        </p>
+        </div>
+        <img src={imgSrc} alt={`${title} Thumbnail`}/>
+        {last 
+        && <div className="end-work-prompt">
+              That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
+            </div>}
       </div>
-      <div className='body'>
-        {description}
-      </div>
-      </div>
-      <img src={imgSrc} alt={`${title} Thumbnail`}/>
-      {last && <div className="end-work-prompt">
-                That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
-              </div>}
     </div>
   )
 }

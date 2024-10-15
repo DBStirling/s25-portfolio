@@ -20,8 +20,20 @@ body, html {
 .project-card-container {
   display: flex;
   flex-direction: column;
-  gap: 20vh;
+  gap: 30vh;
 }
+
+@media only screen and (max-width: 1025px) {
+  .project-card-container {
+    gap: 15vh;
+  }
+
+  .main-content {
+    gap: 0px !important;
+  }
+}
+
+
 
 .main-content {
   display: flex;
@@ -97,7 +109,7 @@ align-self: stretch;
   padding-top: 25vh;
   width: 100%;
   min-height: 100vh;
-  transition: width 1s ease, height 1s ease opacity 1s ease-in;  
+  transition: width 0.5s ease, height 0.5s ease opacity 0.2s ease-in;  
 }
 
 .my-work-container.visible {
