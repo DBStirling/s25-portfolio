@@ -4,7 +4,7 @@ import ProjectTag from '../ProjectTag/ProjectTag.jsx'
 import './ProjectCard.css'
 
 export default function ProjectCard(props) {
-  const { title, description, tag, destination, imgSrc } = props;
+  const { title, description, tag, destination, imgSrc, last } = props;
 
   const [isHovered, setIsHovered] = useState(false)
 
@@ -32,6 +32,9 @@ export default function ProjectCard(props) {
       </div>
       </div>
       <img src={imgSrc} alt={`${title} Thumbnail`}/>
+      {last && <div className="end-work-prompt">
+                That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
+              </div>}
     </div>
   )
 }

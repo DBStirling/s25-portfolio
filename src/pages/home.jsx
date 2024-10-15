@@ -13,17 +13,6 @@ export default function Home() {
 
     const navigate = useNavigate();
 
-    const navigateToAbout = () => {
-      navigate('/about');
-    };
-  
-    const scrollToElement = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
-  
     useEffect(() => {
       const handleScroll = () => {
         const hero = document.getElementById('hero');
@@ -40,11 +29,11 @@ export default function Home() {
             hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
           } else {
 
-            hero.style.width = '40vw';
+            hero.style.width = '30vw';
             hero.style.height = '100vh';
             hero.style.position = 'fixed';
             hero.style.top = '0';
-            mainContent.style.transform = 'translateX(40vw)';
+            mainContent.style.transform = 'translateX(30vw)';
             mainContent.classList.add('visible'); // Add visible class to fade in
           }
         } else {
@@ -56,6 +45,7 @@ export default function Home() {
 
         }
       };
+
   
       window.addEventListener('scroll', handleScroll);
       
@@ -66,35 +56,8 @@ export default function Home() {
     }, []); // Run once on mount
 
 
-  // window.addEventListener('scroll', () => {
-  //   const hero = document.getElementById('hero'); // Intro-content section
-  //   const mainContent = document.querySelector('.my-work-container'); // Main content section
-    
-  //   // Adjust the threshold based on when you want the transition to happen
-  //   const threshold = 20;
-  
-  //   if (window.scrollY > threshold) {
-  //     // Shrink the intro-content section when scrolled past the threshold
-  //     hero.style.width = '40vw';
-  //     hero.style.height = 'auto';
-  //     hero.style.position = 'fixed';
-  //     hero.style.top = '0';
-      
-  //     // Shift the main content up beside the intro-content
-  //     mainContent.style.transform = 'translateX(40vw)';
-  //   } else {
-  //     // Reset to the original state when scrolled back up
-  //     hero.style.width = '100vw';
-  //     hero.style.height = '100vh';
-  //     hero.style.position = 'relative';
-  //     mainContent.style.transform = 'translateX(0)';
-  //   }
-  // });
-
-
   return (
     <div className="device-container">
-      {/* <NavBar/> */}
       <div className="main-content">
         <div className="intro-container" id="hero">
           <div className="intro-content">
@@ -158,10 +121,11 @@ export default function Home() {
                 description="Ideated a mobile app to help people with dietary restrictions and visual impairments confidently shop for groceries."
                 tag="Exploration"
                 imgSrc={DMthumbnail}
+                last='true'
               />
-              <div className="end-work-prompt">
+              {/* <div className="end-work-prompt">
                 That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
-              </div>
+              </div> */}
               {/* <div className="button-container">
               <CtaButton className="cta-button" 
                   onClick={() => scrollToElement('work-section')}
@@ -176,7 +140,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
     </div>
   );
 };
