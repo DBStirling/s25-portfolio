@@ -333,10 +333,12 @@ button:hover {
   /* The problem section styles */
 
 .the-problem-body {
+  display: flex;
   max-width: 800px;
 }
 
 .the-problem-body-dm {
+  display: flex;
   max-width: 1000px;
   gap: 64px;
   flex-direction: column;

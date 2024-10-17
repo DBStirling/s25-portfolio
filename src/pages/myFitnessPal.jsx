@@ -30,6 +30,7 @@ import chatPage from '../assets/Images/mfp/alex-chat-page.png'
 import wrenchIcon from '../assets/Images/mfp/wrench-icon.png'
 import targetIcon from '../assets/Images/mfp/target-icon.png'
 import groupIcon from '../assets/Images/mfp/group-icon.png'
+
 import "../styles/caseStudy.css"
 
 export default function myFitnessPal() {
