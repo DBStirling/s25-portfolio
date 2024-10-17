@@ -8,6 +8,7 @@ import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Extras from './pages/extras.jsx'
 import MyFitnessPal from './pages/myFitnessPal'
+import DietMe from './pages/dietMe.jsx'
 import './styles/App.css'
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/extras" element={<Extras />} />
             <Route path="/myFitnessPal" element={<MyFitnessPal />} />
+            <Route path="/dietMe" element={<DietMe />} />
+            
+
           </Routes>
         </div>
         <Footer />

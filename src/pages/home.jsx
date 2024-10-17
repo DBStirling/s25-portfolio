@@ -15,28 +15,35 @@ export default function Home() {
 
     useEffect(() => {
 
-      const handleScroll = () => {
+      const hero = document.getElementById('hero');
+      const mainContent = document.querySelector('.my-work-container');
+      const myWorkHeader = document.querySelector('.my-work-header');
+      const projectCardContainer = document.querySelector('.project-card-container')
+      const cardContainers = document.querySelectorAll('.card-container')
+      const threshold = 20;
 
-        const hero = document.getElementById('hero');
-        const mainContent = document.querySelector('.my-work-container');
-        const myWorkHeader = document.querySelector('.my-work-header');
-        const projectCardContainer = document.querySelector('.project-card-container')
-        const cardContainers = document.querySelectorAll('.card-container')
-
-        const threshold = 20;
-
-        if (window.innerWidth <= 1025) {
+      const handleResize = () => {
+        if (window.innerWidth <= 1024) {
           mainContent.classList.add('visible')
           mainContent.style.padding = '0px'
           myWorkHeader.style.display = 'none'
           projectCardContainer.style.alignItems = 'center'
           cardContainers.forEach(container => {
             container.style.width = '80vw'
-        }
-      );
-          return; // Skip the rest of the logic if screen size is greater than or equal to 1000px
+        });
+      } else {
+        mainContent.classList.remove('visible');
+        mainContent.style.padding = '';
+        myWorkHeader.style.display = '';
+        projectCardContainer.style.alignItems = 'baseline';
+        projectCardContainer.style.width = '40vw'
+        cardContainers.forEach(container => {
+          container.style.width = '';
+        });
       }
-  
+      }
+
+      const handleScroll = () => {
         if (window.scrollY > threshold) {
           const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
           const scrollBottom = window.scrollY + window.innerHeight;
@@ -66,10 +73,12 @@ export default function Home() {
 
   
       window.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleResize)
       
       // Cleanup function to remove the event listener
       return () => {
         window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleResize)
       };
     }, []); // Run once on mount
 
@@ -120,24 +129,28 @@ export default function Home() {
                 title="Flow Financial"
                 description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
                 tag="Case Study"
+                destination ='/flowFinancial'
                 imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="Stamped"
                 description="Ideated a social experiences app to help small business owners cultivate a  following and create genuine connections with customers."
                 tag="Exploration"
+                destination ='/stamped'
                 imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="MyFitnessPal"
                 description="Redesigned the industry-leading calorie counting app to better align with user needs."
                 tag="Case Study"
+                destination ='/myFitnessPal'
                 imgSrc={MFPthumbnail}
               />
               <ProjectCard
                 title="DietMe"
                 description="Ideated a mobile app to help people with dietary restrictions and visual impairments confidently shop for groceries."
                 tag="Exploration"
+                destination ='/dietMe'
                 imgSrc={DMthumbnail}
                 last='true'
               />

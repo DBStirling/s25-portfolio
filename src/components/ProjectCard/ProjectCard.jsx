@@ -21,7 +21,7 @@ export default function ProjectCard(props) {
           <div className='title'>
             <Link
               className='card-header'
-              to='/myFitnessPal'
+              to={destination}
             >{title}</Link>
           </div>
           <div className='project-tag'>
