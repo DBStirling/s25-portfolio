@@ -22,6 +22,13 @@ export default function Home({scrollableRef} ) {
       const cardContainers = document.querySelectorAll('.card-container')
       const threshold = 20;
 
+      const resetHeroStyles = () => {
+        hero.style.width = '100vw'; // Reset width
+        hero.style.height = '100vh'; // Reset height
+        hero.style.position = 'relative'; // Reset position
+        mainContent.style.transform = 'translateX(0)'; // Reset translation
+      }; 
+
       // const handleResize = () => {
       //   if (window.innerWidth <= 1024) {
       //     mainContent.classList.add('visible')
@@ -82,7 +89,7 @@ export default function Home({scrollableRef} ) {
           }
         } else {
           mainContent.classList.add('visible'); // Add visible class to fade in
-          
+          resetHeroStyles(); // Ensure styles are reset for smaller screens
         }
       };
 
@@ -90,12 +97,15 @@ export default function Home({scrollableRef} ) {
       if (scrollableElement) {
         scrollableElement.addEventListener('scroll', handleScroll);
       }
+      window.addEventListener('resize', handleScroll);
+
   
       // Cleanup function to remove the event listener
       return () => {
         if (scrollableElement) {
           scrollableElement.removeEventListener('scroll', handleScroll);
         }
+        window.removeEventListener('resize', handleScroll);
       };
     }, [scrollableRef]);
 

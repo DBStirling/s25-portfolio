@@ -105,7 +105,7 @@ align-self: stretch;
 .my-work-container {
   position: relative;
   opacity: 0;
-  padding: 4vw;
+  padding-right: 4vw;
   padding-top: 25vh;
   width: fit-content;
   min-height: 100vh;
@@ -157,6 +157,10 @@ align-self: stretch;
 
   .main-content {
     align-items: center !important;
+  }
+
+  .my-work-container {
+    padding: 4vw;
   }
 }
 
