@@ -20,7 +20,7 @@ export default function Home({scrollableRef} ) {
       const myWorkHeader = document.querySelector('.my-work-header');
       const projectCardContainer = document.querySelector('.project-card-container')
       const cardContainers = document.querySelectorAll('.card-container')
-      const threshold = 20;
+      const threshold = 50;
 
       const resetHeroStyles = () => {
         hero.style.width = '100vw'; // Reset width

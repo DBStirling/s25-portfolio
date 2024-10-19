@@ -57,6 +57,16 @@ body, html {
   }
 }
 
+@keyframes riseIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .device-container {
   display: flex;
   width: 100vw;
@@ -94,6 +104,7 @@ body, html {
   flex-direction: column;
   /* align-items: center; */
   gap: 200px;
+  animation: riseIn 1.5s ease-out forwards; 
 }
 
 .intro-container {
@@ -164,6 +175,13 @@ align-self: stretch;
   transition: width 0.5s ease, height 0.5s ease opacity 0.2s ease-in;  
 }
 
+.my-work-container {
+  will-change: transform;
+}
+#hero {
+  will-change: transform, width, height;
+}
+
 .my-work-container.visible {
   opacity: 1;
   transition: opacity 2s ease;
@@ -223,6 +241,7 @@ align-self: stretch;
   flex-direction: column;
   align-items: center;
   gap: 72px;
+  animation: riseIn 1.5s ease-out forwards; 
 }
 
 

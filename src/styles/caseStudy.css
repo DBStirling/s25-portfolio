@@ -90,6 +90,7 @@ button:hover {
     flex-direction: column;
     gap: 128px;
     padding-top: 200px;
+    animation: riseIn 1.5s ease-out forwards; 
     }  
 
   .header-mfp {
