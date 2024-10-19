@@ -9,11 +9,11 @@ import DEthumbnail from '../assets/Images/DEthumbnail1.png';
 import DMthumbnail from '../assets/Images/diet-me-thumbnail.png';
 import MFPthumbnail from '../assets/Images/thumbnail2.png'
 
-export default function Home() {
-
-    const navigate = useNavigate();
+export default function Home({scrollableRef} ) {
 
     useEffect(() => {
+
+      console.log('use effect running')
 
       const hero = document.getElementById('hero');
       const mainContent = document.querySelector('.my-work-container');
@@ -22,36 +22,41 @@ export default function Home() {
       const cardContainers = document.querySelectorAll('.card-container')
       const threshold = 20;
 
-      const handleResize = () => {
-        if (window.innerWidth <= 1024) {
-          mainContent.classList.add('visible')
-          mainContent.style.padding = '0px'
-          myWorkHeader.style.display = 'none'
-          projectCardContainer.style.alignItems = 'center'
-          cardContainers.forEach(container => {
-            container.style.width = '80vw'
-        });
-      } else {
-        mainContent.classList.remove('visible');
-        mainContent.style.padding = '';
-        myWorkHeader.style.display = '';
-        projectCardContainer.style.alignItems = 'baseline';
-        projectCardContainer.style.width = '40vw'
-        cardContainers.forEach(container => {
-          container.style.width = '';
-        });
-      }
-      }
+      // const handleResize = () => {
+      //   if (window.innerWidth <= 1024) {
+      //     mainContent.classList.add('visible')
+      //     mainContent.style.padding = '0px'
+      //     myWorkHeader.style.display = 'none'
+      //     projectCardContainer.style.alignItems = 'center'
+      //     cardContainers.forEach(container => {
+      //       container.style.width = '80vw'
+      //   });
+      // } else {
+      //   mainContent.classList.remove('visible');
+      //   mainContent.style.padding = '';
+      //   myWorkHeader.style.display = '';
+      //   projectCardContainer.style.alignItems = 'baseline';
+      //   projectCardContainer.style.width = '40vw'
+      //   cardContainers.forEach(container => {
+      //     container.style.width = '';
+      //   });
+      // }
+      // }
 
       const handleScroll = () => {
-        if (window.scrollY > threshold) {
+        console.log('scroll triggered')
+        if (scrollableRef.current && scrollableRef.current.scrollTop > threshold) {
+
           const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
-          const scrollBottom = window.scrollY + window.innerHeight;
+          const scrollBottom = scrollableRef.current.scrollTop + scrollableRef.current.clientHeight;
+
+          console.log('hit threshold')
     
           if (scrollBottom >= myWorkContainerBottom) {
-            // Reset hero position when reaching the bottom of the main content
             hero.style.position = 'absolute'; // or 'relative' based on your layout
             hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
+            console.log('hit bottom')
+
           } else {
 
             hero.style.width = '30vw';
@@ -60,27 +65,43 @@ export default function Home() {
             hero.style.top = '0';
             mainContent.style.transform = 'translateX(30vw)';
             mainContent.classList.add('visible'); // Add visible class to fade in
-          }
-        } else {
-          hero.style.width = '100vw';
-          hero.style.height = '100vh';
-          hero.style.position = 'relative';
-          mainContent.style.transform = 'translateX(0)';
-          mainContent.classList.remove('visible'); // Add visible class to fade in
+            console.log('hero should shrink')
 
+          }
+        // } else {
+        //   console.log('hero back to normal')
+
+        //   hero.style.width = '100vw';
+        //   hero.style.height = '100vh';
+        //   hero.style.position = 'relative';
+        //   mainContent.style.transform = 'translateX(0)';
+        //   mainContent.classList.remove('visible'); // Add visible class to fade in
         }
       };
 
+      const scrollableElement = scrollableRef.current;
+      if (scrollableElement) {
+        scrollableElement.addEventListener('scroll', handleScroll);
+      }
   
-      window.addEventListener('scroll', handleScroll);
-      window.addEventListener('resize', handleResize)
-      
       // Cleanup function to remove the event listener
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-        window.removeEventListener('resize', handleResize)
+        if (scrollableElement) {
+          scrollableElement.removeEventListener('scroll', handleScroll);
+        }
       };
-    }, []); // Run once on mount
+    }, [scrollableRef]);
+
+  
+    //   window.addEventListener('scroll', handleScroll);
+    //   // window.addEventListener('resize', handleResize)
+      
+    //   // Cleanup function to remove the event listener
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //     // window.removeEventListener('resize', handleResize)
+    //   };
+    // }, []); // Run once on mount
 
 
   return (

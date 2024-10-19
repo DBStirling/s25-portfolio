@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
@@ -12,16 +13,17 @@ import DietMe from './pages/dietMe.jsx'
 import './styles/App.css'
 
 function App() {
+  const scrollableRef = useRef(null);
 
   return (
     <>
-      <div className='bg-container'>
+      <div className='bg-container' ref={scrollableRef}>
         <div className='nav-bar-container'>
           <NavBar />
         </div>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
             <Route path="/about" element={<About />} />
             <Route path="/extras" element={<Extras />} />
             <Route path="/myFitnessPal" element={<MyFitnessPal />} />
