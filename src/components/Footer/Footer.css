@@ -8,6 +8,7 @@
     background-size: 100% auto;
     background-position: bottom left; /* Ensures that the bottom of the image is anchored */
     background-repeat: no-repeat;
+    mix-blend-mode: multiply;
 }
 
 .container {
