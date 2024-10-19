@@ -22,52 +22,51 @@ const DietMe = lazy(() => import('./pages/dietMe.jsx'));
 
 
 function App() {
-  const scrollableRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const location = useLocation(); // Tracks location changes
+    const scrollableRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const location = useLocation(); // Tracks location changes
 
-  useEffect(() => {
-      // Start loading when location changes
-      setIsLoading(true);
-  }, [location]);
+    useEffect(() => {
+        // Start loading when location changes
+        setIsLoading(true);
+    }, [location]);
 
-  // Function to handle loading completion
-  const handleLoadingComplete = () => {
-      // Wait for a minimum loading time of 2000ms before hiding the loading page
-      const minLoadingTime = 0;
-      const timer = setTimeout(() => {
-          setIsLoading(false);
-      }, minLoadingTime);
+    // Function to handle loading completion
+    const handleLoadingComplete = () => {
+        // Wait for a minimum loading time of 2000ms before hiding the loading page
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        });
 
-      return () => clearTimeout(timer);
-  };
+        return () => clearTimeout(timer);
+    };
 
-  return (
-      <>
-          {isLoading ? (
-              // Pass handleLoadingComplete to LoadingPage
-              <LoadingPage onLoadingComplete={handleLoadingComplete} />
-          ) : (
-              <div className='bg-container' ref={scrollableRef}>
-                  <div className='nav-bar-container'>
-                      <NavBar />
-                  </div>
-                  <div>
-                      <Suspense fallback={<LoadingPage />}>
-                          <Routes>
-                              <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
-                              <Route path="/about" element={<About />} />
-                              <Route path="/extras" element={<Extras />} />
-                              <Route path="/myFitnessPal" element={<MyFitnessPal />} />
-                              <Route path="/dietMe" element={<DietMe />} />
-                          </Routes>
-                      </Suspense>
-                  </div>
-                  <Footer />
-              </div>
-          )}
-      </>
-  );
+    return (
+        <>
+            {isLoading ? (
+                // Pass handleLoadingComplete to LoadingPage
+                <LoadingPage onLoadingComplete={handleLoadingComplete} />
+            ) : (
+                <div className='bg-container' ref={scrollableRef}>
+                    <div className='nav-bar-container'>
+                        <NavBar />
+                    </div>
+                    <div>
+                        <Suspense fallback={<LoadingPage />}>
+                            <Routes>
+                                <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
+                                <Route path="/about" element={<About />} />
+                                <Route path="/extras" element={<Extras />} />
+                                <Route path="/myFitnessPal" element={<MyFitnessPal />} />
+                                <Route path="/dietMe" element={<DietMe />} />
+                            </Routes>
+                        </Suspense>
+                    </div>
+                    <Footer />
+                </div>
+            )}
+        </>
+    );
 };
 
 export default App;
