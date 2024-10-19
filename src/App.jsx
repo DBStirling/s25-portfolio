@@ -42,10 +42,12 @@ function App() {
     };
 
     return (
-        <>
+        <div className="app-container">
+            <div className="background-image"></div>
             {isLoading ? (
-                // Pass handleLoadingComplete to LoadingPage
-                <LoadingPage onLoadingComplete={handleLoadingComplete} />
+                <div className='bg-container' ref={scrollableRef}> 
+                    <LoadingPage onLoadingComplete={handleLoadingComplete} />
+                </div>
             ) : (
                 <div className='bg-container' ref={scrollableRef}>
                     <div className='nav-bar-container'>
@@ -65,8 +67,8 @@ function App() {
                     <Footer />
                 </div>
             )}
-        </>
+        </div>
     );
-};
+}
 
 export default App;
