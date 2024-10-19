@@ -26,48 +26,48 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation(); // Tracks location changes
 
-
   useEffect(() => {
-    // Set loading to true when location changes (route is changing)
-    setIsLoading(true);
-
-    // Set loading to false after a delay, simulating component load time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 500); // Adjust the timeout based on desired loading effect duration
-
-    return () => clearTimeout(timer);
+      // Start loading when location changes
+      setIsLoading(true);
   }, [location]);
 
-  // const handleLoadingStart = () => setIsLoading(true);
-  // const handleLoadingEnd = () => setIsLoading(false);
+  // Function to handle loading completion
+  const handleLoadingComplete = () => {
+      // Wait for a minimum loading time of 2000ms before hiding the loading page
+      const minLoadingTime = 0;
+      const timer = setTimeout(() => {
+          setIsLoading(false);
+      }, minLoadingTime);
+
+      return () => clearTimeout(timer);
+  };
 
   return (
-    <>
-      <div className='bg-container' ref={scrollableRef}>
-        {!isLoading && (
-          <div className='nav-bar-container'>
-            <NavBar />
-          </div>
-        )
-        }
-        <div>
-        <Suspense 
-          fallback={<LoadingPage />}
-        >
-            <Routes>
-              <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/extras" element={<Extras />} />
-              <Route path="/myFitnessPal" element={<MyFitnessPal />} />
-              <Route path="/dietMe" element={<DietMe />} />
-            </Routes>
-          </Suspense>
-        </div>
-        {!isLoading && <Footer />}
-      </div>
-    </>
+      <>
+          {isLoading ? (
+              // Pass handleLoadingComplete to LoadingPage
+              <LoadingPage onLoadingComplete={handleLoadingComplete} />
+          ) : (
+              <div className='bg-container' ref={scrollableRef}>
+                  <div className='nav-bar-container'>
+                      <NavBar />
+                  </div>
+                  <div>
+                      <Suspense fallback={<LoadingPage />}>
+                          <Routes>
+                              <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
+                              <Route path="/about" element={<About />} />
+                              <Route path="/extras" element={<Extras />} />
+                              <Route path="/myFitnessPal" element={<MyFitnessPal />} />
+                              <Route path="/dietMe" element={<DietMe />} />
+                          </Routes>
+                      </Suspense>
+                  </div>
+                  <Footer />
+              </div>
+          )}
+      </>
   );
 };
 
-export default App
+export default App;
