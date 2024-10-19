@@ -59,23 +59,24 @@ export default function Home({scrollableRef} ) {
 
           } else {
 
-            hero.style.width = '30vw';
+            hero.style.width = '40vw';
             hero.style.height = '100vh';
             hero.style.position = 'fixed';
             hero.style.top = '0';
-            mainContent.style.transform = 'translateX(30vw)';
+            mainContent.style.transform = 'translateX(40vw)';
             mainContent.classList.add('visible'); // Add visible class to fade in
             console.log('hero should shrink')
 
           }
-        // } else {
-        //   console.log('hero back to normal')
+        } else {
+          console.log('hero back to normal')
 
-        //   hero.style.width = '100vw';
-        //   hero.style.height = '100vh';
-        //   hero.style.position = 'relative';
-        //   mainContent.style.transform = 'translateX(0)';
-        //   mainContent.classList.remove('visible'); // Add visible class to fade in
+          hero.style.width = '100vw';
+          hero.style.height = '100vh';
+          hero.style.position = 'relative';
+          
+          mainContent.style.transform = 'translateX(0)';
+          mainContent.classList.remove('visible'); // Add visible class to fade in
         }
       };
 
