@@ -9,10 +9,10 @@ body, html {
   display: flex;
   width: 100vw;
   height: fit-content;
-  background-image: url(/src/assets/Images/hero-gradient.png);
+  /* background-image: url(/src/assets/Images/hero-gradient.png);
   background-size: 100% auto;
   background-position: top left;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   align-items: center;
   justify-content: center
 }

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='bg-container'>
         <div className='nav-bar-container'>
           <NavBar />
         </div>
@@ -26,8 +26,6 @@ function App() {
             <Route path="/extras" element={<Extras />} />
             <Route path="/myFitnessPal" element={<MyFitnessPal />} />
             <Route path="/dietMe" element={<DietMe />} />
-            
-
           </Routes>
         </div>
         <Footer />
