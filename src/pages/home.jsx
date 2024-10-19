@@ -17,9 +17,6 @@ export default function Home({scrollableRef} ) {
 
       const hero = document.getElementById('hero');
       const mainContent = document.querySelector('.my-work-container');
-      const myWorkHeader = document.querySelector('.my-work-header');
-      const projectCardContainer = document.querySelector('.project-card-container')
-      const cardContainers = document.querySelectorAll('.card-container')
       const threshold = 50;
 
       const resetHeroStyles = () => {
@@ -29,26 +26,31 @@ export default function Home({scrollableRef} ) {
         mainContent.style.transform = 'translateX(0)'; // Reset translation
       }; 
 
-      // const handleResize = () => {
-      //   if (window.innerWidth <= 1024) {
-      //     mainContent.classList.add('visible')
-      //     mainContent.style.padding = '0px'
-      //     myWorkHeader.style.display = 'none'
-      //     projectCardContainer.style.alignItems = 'center'
-      //     cardContainers.forEach(container => {
-      //       container.style.width = '80vw'
-      //   });
-      // } else {
-      //   mainContent.classList.remove('visible');
-      //   mainContent.style.padding = '';
-      //   myWorkHeader.style.display = '';
-      //   projectCardContainer.style.alignItems = 'baseline';
-      //   projectCardContainer.style.width = '40vw'
-      //   cardContainers.forEach(container => {
-      //     container.style.width = '';
-      //   });
+      // const adjustBottom = () => {
+      //   hero.style.position = 'absolute'; // or 'relative' based on your layout
+      //   hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
+      //   console.log('hit bottom')
       // }
-      // }
+
+      const shrinkHero = () => {
+        hero.style.width = '40vw';
+        hero.style.height = '100vh';
+        hero.style.position = 'fixed';
+        hero.style.top = '0';
+        mainContent.style.transform = 'translateX(40vw)';
+        mainContent.classList.add('visible'); // Add visible class to fade in
+        console.log('hero should shrink')
+      }
+
+      const resetHero = () => {
+        hero.style.width = '100vw';
+        hero.style.height = '100vh';
+        hero.style.position = 'relative';
+        
+        mainContent.style.transform = 'translateX(0)';
+        mainContent.classList.remove('visible'); // Add visible class to fade in
+      }
+      
 
       const handleScroll = () => {
 
@@ -58,34 +60,16 @@ export default function Home({scrollableRef} ) {
 
             const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
             const scrollBottom = scrollableRef.current.scrollTop + scrollableRef.current.clientHeight;
-
-            console.log('hit threshold')
       
             if (scrollBottom >= myWorkContainerBottom) {
               hero.style.position = 'absolute'; // or 'relative' based on your layout
               hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
               console.log('hit bottom')
-
             } else {
-
-              hero.style.width = '40vw';
-              hero.style.height = '100vh';
-              hero.style.position = 'fixed';
-              hero.style.top = '0';
-              mainContent.style.transform = 'translateX(40vw)';
-              mainContent.classList.add('visible'); // Add visible class to fade in
-              console.log('hero should shrink')
-
+              shrinkHero();
             }
           } else {
-            console.log('hero back to normal')
-
-            hero.style.width = '100vw';
-            hero.style.height = '100vh';
-            hero.style.position = 'relative';
-            
-            mainContent.style.transform = 'translateX(0)';
-            mainContent.classList.remove('visible'); // Add visible class to fade in
+            resetHero();
           }
         } else {
           mainContent.classList.add('visible'); // Add visible class to fade in

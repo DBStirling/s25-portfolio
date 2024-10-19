@@ -33,7 +33,7 @@ export default function LoadingPage({ onLoadingComplete }) {
                     return 100; // Ensure it returns 100
                 }
             });
-        }, 40); // Adjust interval for speed of counting
+        }, 50); // Adjust interval for speed of counting
 
         return () => clearInterval(interval);
     }, [onLoadingComplete]);
