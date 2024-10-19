@@ -44,39 +44,45 @@ export default function Home({scrollableRef} ) {
       // }
 
       const handleScroll = () => {
-        console.log('scroll triggered')
-        if (scrollableRef.current && scrollableRef.current.scrollTop > threshold) {
 
-          const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
-          const scrollBottom = scrollableRef.current.scrollTop + scrollableRef.current.clientHeight;
+        if (window.innerWidth > 1024) {
+        
+          if (scrollableRef.current && scrollableRef.current.scrollTop > threshold) {
 
-          console.log('hit threshold')
-    
-          if (scrollBottom >= myWorkContainerBottom) {
-            hero.style.position = 'absolute'; // or 'relative' based on your layout
-            hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
-            console.log('hit bottom')
+            const myWorkContainerBottom = mainContent.offsetTop + mainContent.offsetHeight;
+            const scrollBottom = scrollableRef.current.scrollTop + scrollableRef.current.clientHeight;
 
+            console.log('hit threshold')
+      
+            if (scrollBottom >= myWorkContainerBottom) {
+              hero.style.position = 'absolute'; // or 'relative' based on your layout
+              hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
+              console.log('hit bottom')
+
+            } else {
+
+              hero.style.width = '40vw';
+              hero.style.height = '100vh';
+              hero.style.position = 'fixed';
+              hero.style.top = '0';
+              mainContent.style.transform = 'translateX(40vw)';
+              mainContent.classList.add('visible'); // Add visible class to fade in
+              console.log('hero should shrink')
+
+            }
           } else {
+            console.log('hero back to normal')
 
-            hero.style.width = '40vw';
+            hero.style.width = '100vw';
             hero.style.height = '100vh';
-            hero.style.position = 'fixed';
-            hero.style.top = '0';
-            mainContent.style.transform = 'translateX(40vw)';
-            mainContent.classList.add('visible'); // Add visible class to fade in
-            console.log('hero should shrink')
-
+            hero.style.position = 'relative';
+            
+            mainContent.style.transform = 'translateX(0)';
+            mainContent.classList.remove('visible'); // Add visible class to fade in
           }
         } else {
-          console.log('hero back to normal')
-
-          hero.style.width = '100vw';
-          hero.style.height = '100vh';
-          hero.style.position = 'relative';
+          mainContent.classList.add('visible'); // Add visible class to fade in
           
-          mainContent.style.transform = 'translateX(0)';
-          mainContent.classList.remove('visible'); // Add visible class to fade in
         }
       };
 
