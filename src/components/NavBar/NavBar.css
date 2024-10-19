@@ -87,16 +87,42 @@
 .nav-link, .nav-link-active, .nav-element {
     text-shadow: none !important;
     box-shadow: none !important;
+}
 
+.menu-button {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    .nav-bar {
-        width: 80vw !important;
+    .nav-bar-container {
+        position: fixed;
+        width: 100%;
+        top: 40px;
+        right: 100px;
+        flex-direction: row;
+        align-items: baseline;
     }
+    
+    .nav-bar {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        flex-direction: column;
+        width: 100px;
+        height: fit-content;
+        max-height: none;
+        padding: 20px 12px;
+        gap: 40px;
+        border-radius: 24px;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
     .nav-elements {
-        justify-content: space-between;
-        gap: 0px !important;
-        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 }

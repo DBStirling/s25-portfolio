@@ -1,13 +1,41 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css'
+import closeIcon from '../../assets/close-icon.svg'
+import hamburgerIcon from '../../assets/hamburger-icon.svg'
 
 const NavBar = () => {
     const location = useLocation(); // Get the current path
 
+    const [menuState, setMenuState] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+   // const navElements = 
+
+   const navElements = document.querySelector('.nav-elements');
+
+    const handleMenu = () => {
+        setMenuState(!menuState); 
+        if (window.innerWidth < 600)
+        {
+            if (menuState === true) {
+                navElements.style.display = 'none'; // Reset width
+            } 
+            else { navElements.style.display = 'flex' };
+        }
+    }
+
     return (
         <div className='nav-bar-container'>
             <nav className="nav-bar">
+                <div className='menu-button'
+                    onClick={handleMenu}>
+                    <img 
+                    src={menuState ? closeIcon : hamburgerIcon} 
+                    alt={menuState ? "Close menu" : "Open menu"}
+                    />
+                </div>
                 <ul className="nav-elements">
                     <li className="nav-element">
                         <Link
