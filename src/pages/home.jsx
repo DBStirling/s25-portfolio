@@ -7,8 +7,9 @@ import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
 import Divider from '../components/Divider/Divider.jsx'
 import "../styles/style.css";
 import DEthumbnail from '../assets/Images/DEthumbnail1.png';
-import DMthumbnail from '../assets/Images/diet-me-thumbnail.png';
-import MFPthumbnail from '../assets/Images/thumbnail2.png'
+import DMthumbnail from '../assets/Images/dm-thumb.png';
+import MFPthumbnail from '../assets/Images/mfp-thumb.png'
+import FFthumbnail from '../assets/Images/flow-thumb.png'
 
 export default function Home({scrollableRef} ) {
 
@@ -141,7 +142,7 @@ export default function Home({scrollableRef} ) {
                 description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
                 tag="Case Study"
                 destination ='/flowFinancial'
-                imgSrc={MFPthumbnail}
+                imgSrc={FFthumbnail}
               />
               <ProjectCard
                 title="Stamped"
