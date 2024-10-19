@@ -27,46 +27,42 @@ function App() {
     const location = useLocation(); // Tracks location changes
 
     useEffect(() => {
-        // Start loading when location changes
         setIsLoading(true);
     }, [location]);
 
-    // Function to handle loading completion
     const handleLoadingComplete = () => {
-        // Wait for a minimum loading time of 2000ms before hiding the loading page
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        });
-
-        return () => clearTimeout(timer);
+        setIsLoading(false);
+        // return () => clearTimeout(timer);
     };
 
     return (
         <div className="app-container">
-            <div className="background-image"></div>
-            {isLoading ? (
-                <div className='bg-container' ref={scrollableRef}> 
-                    <LoadingPage onLoadingComplete={handleLoadingComplete} />
+            <div className="background-image">
+                <div className='bg-container' ref={scrollableRef}>                
+                    {isLoading ? (
+                        <LoadingPage onLoadingComplete={handleLoadingComplete} />
+                    ) : (
+                        <div>
+                            <Suspense>
+                                <div className='nav-bar-container'>
+                                    <NavBar />
+                                </div>
+                                <div>
+                                    <Routes>
+                                        <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
+                                        <Route path="/about" element={<About />} />
+                                        <Route path="/extras" element={<Extras />} />
+                                        <Route path="/myFitnessPal" element={<MyFitnessPal />} />
+                                        <Route path="/dietMe" element={<DietMe />} />
+                                    </Routes>
+                                </div>
+                                <Footer />
+                            </Suspense>
+
+                        </div>
+                    )}
                 </div>
-            ) : (
-                <div className='bg-container' ref={scrollableRef}>
-                    <div className='nav-bar-container'>
-                        <NavBar />
-                    </div>
-                    <div>
-                        <Suspense fallback={<LoadingPage />}>
-                            <Routes>
-                                <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
-                                <Route path="/about" element={<About />} />
-                                <Route path="/extras" element={<Extras />} />
-                                <Route path="/myFitnessPal" element={<MyFitnessPal />} />
-                                <Route path="/dietMe" element={<DietMe />} />
-                            </Routes>
-                        </Suspense>
-                    </div>
-                    <Footer />
-                </div>
-            )}
+            </div>
         </div>
     );
 }

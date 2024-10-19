@@ -24,13 +24,19 @@ export default function LoadingPage({ onLoadingComplete }) {
             setPercentage((prev) => {
                 if (prev < 100) {
                     const increment = Math.floor(Math.random() * 6) + 1; // Random increment of 1 to 3
-                    setTimeout(() => {}, Math.floor(Math.random() * 3)); // Delay before loading complete
+                    // setTimeout(() => {}, Math.floor(Math.random() * 3)); // Delay before loading complete
                     const newPercentage = Math.min(prev + increment, 100); // Ensure it does not exceed 100
-                    return newPercentage == 1 ? 100 : newPercentage;
+                    return newPercentage;
+                
+                    // if (newPercentage === 100) {
+                    //     clearInterval(interval); // Stop the interval once we reach 100
+                    //     onLoadingComplete(); // Trigger loading complete
+                    //     return 100;
+                    // }
+                    
                 } else {
-                    clearInterval(interval); // Stop the interval once we reach 100
-                    onLoadingComplete(); // Trigger loading complete
-                    return 100; // Ensure it returns 100
+                    onLoadingComplete()
+                    return 100;
                 }
             });
         }, 50); // Adjust interval for speed of counting
