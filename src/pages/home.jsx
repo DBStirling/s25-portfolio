@@ -4,6 +4,7 @@ import { useNavigate, Link, useLocation } from "react-router-dom";
 // import heroGradient from "../assets/Images/hero-gradient.png";
 import CtaButton from "../components/CtaButton/CtaButton.jsx";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
+import Divider from '../components/Divider/Divider.jsx'
 import "../styles/style.css";
 import DEthumbnail from '../assets/Images/DEthumbnail1.png';
 import DMthumbnail from '../assets/Images/diet-me-thumbnail.png';
@@ -93,18 +94,6 @@ export default function Home({scrollableRef} ) {
       };
     }, [scrollableRef]);
 
-  
-    //   window.addEventListener('scroll', handleScroll);
-    //   // window.addEventListener('resize', handleResize)
-      
-    //   // Cleanup function to remove the event listener
-    //   return () => {
-    //     window.removeEventListener('scroll', handleScroll);
-    //     // window.removeEventListener('resize', handleResize)
-    //   };
-    // }, []); // Run once on mount
-
-
   return (
     <div className="device-container">
       <div className="main-content">
@@ -136,7 +125,8 @@ export default function Home({scrollableRef} ) {
         <div className="my-work-container" id="work-section">
           <div className="my-work-content">
             <div className="my-work-header">
-              {/* My Work */}
+              <Divider
+              title={'Projects & Case Studies'}/>
             </div>
             <div className="project-card-container">
               <ProjectCard
@@ -144,7 +134,6 @@ export default function Home({scrollableRef} ) {
                 description="Designed a donation ecosystem for an effective altruism NPO, helping donors visualize their impact and donate with more diligence."
                 tag="Product"
                 destination="/donEfficace"
-                // imgSrc='../assets/images/DEthumbnail1.png'
                 imgSrc={DEthumbnail}
               />
               <ProjectCard
@@ -174,7 +163,7 @@ export default function Home({scrollableRef} ) {
                 tag="Exploration"
                 destination ='/dietMe'
                 imgSrc={DMthumbnail}
-                last='true'
+                // last='true'
               />
               {/* <div className="end-work-prompt">
                 That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
@@ -190,6 +179,10 @@ export default function Home({scrollableRef} ) {
               />
               </div> */}
             </div>
+            {/* <div className="experience-header">
+              <Divider
+              title={'my experience'}/>
+            </div> */}
           </div>
         </div>
       </div>

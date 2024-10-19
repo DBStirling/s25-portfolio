@@ -11,7 +11,17 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    animation: dropIn 1.5s ease-out forwards; 
 }
+
+    @keyframes dropIn {
+        0% {
+            transform: translateY(-100px); /* Start 200px higher */
+        }
+        100% {
+            transform: translateY(0); /* Move to original position */
+        }
+    }
 
 .nav-bar {
     display: flex;
