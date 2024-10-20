@@ -1,6 +1,17 @@
 html {
   overflow: hidden;
 }
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.collage-container:hover {
+  transform: scale(1.2) rotate(-2deg);
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
