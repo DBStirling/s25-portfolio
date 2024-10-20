@@ -43,6 +43,28 @@ h1 {
   text-align: left;
 }
 
+h4 {
+  color: #121212;
+  font-family: "PP Editorial New";
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%; /* 54px */
+  text-align: left;
+  text-wrap: wrap;
+}
+
+h5 {
+  color: #121212;
+  font-family: "PP Editorial New";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 41.6px */
+  text-align: left;
+  text-wrap: wrap;
+}
+
 p {
   align-self: stretch;
   color: #121212;

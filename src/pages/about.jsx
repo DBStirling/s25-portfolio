@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import ThanksSection from '../components/ThanksSection.jsx';
+import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
 import collage from '../assets/Images/collage.png'
 import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import "../styles/style.css";

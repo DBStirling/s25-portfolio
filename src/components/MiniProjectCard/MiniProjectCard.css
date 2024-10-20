@@ -1,0 +1,19 @@
+.mini-project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.thumbnail {
+    width: 350px;
+    height: 400px;
+}
+
+.mini-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
