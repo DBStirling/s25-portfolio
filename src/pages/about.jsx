@@ -139,7 +139,14 @@ export default function about() {
             </p>
           </div>
         </div>
-        <ThanksSection/>
+        <ThanksSection
+          title1={'Don Efficace'}
+          tag1={'Product'}
+          // miniThumb1={}
+          title2={'MyFitnessPal'}
+          tag2={'Case Study'}
+          showWork={true}
+        />
       </div>
     </div>
   );

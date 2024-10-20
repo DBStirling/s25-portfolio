@@ -52,6 +52,7 @@ h4 {
   line-height: 150%; /* 54px */
   text-align: left;
   text-wrap: wrap;
+  margin: 0;
 }
 
 h5 {
@@ -63,6 +64,7 @@ h5 {
   line-height: 130%; /* 41.6px */
   text-align: left;
   text-wrap: wrap;
+  margin: 0;
 }
 
 p {

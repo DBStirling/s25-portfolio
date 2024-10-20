@@ -23,9 +23,9 @@ const {title1, tag1, miniThumb1, title2, tag2, miniThumb2, showWork} = props
       <h3>Thanks for stopping by!</h3>
       {showWork && (
         <div className='conditional-container'>
-          <div className='line'></div>
+          {/* <div className='line'></div> */}
           <div className='ht-section'>
-            <h4>Check out some of my other work.</h4>
+            <p>While you're here, take a look at some of my other work.</p>
             <div className='mini-projects'>
               <MiniProjectCard
                 title={title1}
@@ -39,11 +39,11 @@ const {title1, tag1, miniThumb1, title2, tag2, miniThumb2, showWork} = props
               />
             </div>
           </div>
-          <div className='line'></div>
+          {/* <div className='line'></div> */}
         </div>
       )}
       <div className='ht-section'>
-        <h4>Reach out.</h4>
+        {/* <h4>Reach out.</h4> */}
           <div className='ht-body'>
           <p>
             You’ve made it pretty far—you must want to chat! Shoot me an 

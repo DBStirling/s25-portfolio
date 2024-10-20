@@ -2,9 +2,9 @@ import React from 'react'
 import './MiniProjectCard.css'
 import ProjectTag from '../ProjectTag/ProjectTag'
 
-export default function MiniProjectCard() {
+export default function MiniProjectCard(props) {
 
-const [title, tag, thumb] = props
+const {title, tag, thumb} = props
 
     return (
         <div className='mini-project-container'>
