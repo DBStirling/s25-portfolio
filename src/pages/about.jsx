@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
-import collage from '../assets/Images/collage.png'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import collage from '../assets/Images/collage.png'
 import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import "../styles/style.css";
 

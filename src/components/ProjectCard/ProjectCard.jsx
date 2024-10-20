@@ -18,7 +18,7 @@ export default function ProjectCard(props) {
       >
         <div className='card-contents'>
           <div className='card-header'>
-            <div className='title'>{title}</div>
+            <div>{title}</div>
             <div className='project-tag'>
               <ProjectTag tag={tag} />
             </div>

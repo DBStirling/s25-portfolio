@@ -7,9 +7,10 @@
     background: rgba(247, 246, 246, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 16px;
+    width: fit-content;
 }
 
-.thumbnail {
+.mini-thumbnail {
     width: 300px;
     height: 250px;
     object-fit: cover;

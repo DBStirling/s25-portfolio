@@ -12,13 +12,12 @@ const [isHovered, setIsHovered] = useState(false);
     return (
         <Link
         to={link}
-        className='card-container'
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         style={{ textDecoration: 'none', color: 'inherit' }} // Keeps text styles consistent
         >
         <div className='mini-project-container'>
-            <img className='thumbnail' src={miniThumb}/>
+            <img className='mini-thumbnail' src={miniThumb}/>
             <div className='mini-content'>
                 <h5>{title}</h5>
                 <ProjectTag tag={tag}/>
