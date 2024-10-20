@@ -57,9 +57,11 @@ export default function Footer() {
                     >Extras</Link>
                 </div>
                 <div className='reset-scroll-container'>
+                    <div className='reset-scroll-content'>
                     <div className='reset-scroll-body'>Back To Top</div>
                     <IoIosArrowUp color='#121212' width='16px' height='16px'
                                 onClick={scrollToTop}/>
+                    </div>
                 </div>
             </div>
         </div>

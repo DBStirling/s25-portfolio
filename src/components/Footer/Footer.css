@@ -97,14 +97,28 @@
         border-radius: 24px;
         background: rgba(18, 18, 18, 0.05);
         backdrop-filter: blur(6px);
+        transition: transform 0.3s ease;
+
     }
 
-    .reset-scroll-container:focus {
-        background: rgba(18, 18, 18, 0.25);
+    .reset-scroll-container:hover {
+        /* background: rgba(18, 18, 18, 0.25); */
+        transform: scale(1.05);
     }
 
     .reset-scroll-body {
         color: #121212;
         padding: 0 8px;
+        transition: transform 0.3s ease;
+    }
+    .reset-scroll-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .reset-scroll-container:hover .reset-scroll-content {
+        transform: scale(1.15);
     }
 }
