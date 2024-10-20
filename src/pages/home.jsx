@@ -9,7 +9,8 @@ import "../styles/style.css";
 import DEthumbnail from '../assets/Images/de-thumb.png';
 import DMthumbnail from '../assets/Images/dm-thumb.png';
 import MFPthumbnail from '../assets/Images/mfp-thumb.png'
-import FFthumbnail from '../assets/Images/flow-thumb.png'
+import FFthumbnail from '../assets/Images/flow-thumb-cs.png'
+import STthumbnail from '../assets/Images/stamped-thumb-cs.png'
 
 export default function Home({scrollableRef} ) {
 
@@ -156,13 +157,13 @@ export default function Home({scrollableRef} ) {
                 destination ='/flowFinancial'
                 imgSrc={FFthumbnail}
               />
-              <ProjectCard
+              {/* <ProjectCard
                 title="Stamped"
                 description="Ideated a social experiences app to help small business owners cultivate a  following and create genuine connections with customers."
                 tag="Exploration"
                 destination ='/stamped'
-                imgSrc={MFPthumbnail}
-              />
+                imgSrc={STthumbnail}
+              /> */}
               <ProjectCard
                 title="MyFitnessPal"
                 description="Redesigned the industry-leading calorie counting app to better align with user needs."
