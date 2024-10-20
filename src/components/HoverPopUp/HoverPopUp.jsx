@@ -11,11 +11,16 @@ export default function HoverPopUp(props) {
   const popUpLeftPosition = isNearRight ? x - 440 : x + 1;
 
   return (
-    <div className='pop-up-container'
-          style={{
-            top: y + 1, // Add an offset to avoid overlapping the cursor
-            left: popUpLeftPosition,
-          }}>
+    <div
+      className='pop-up-container'
+      style={
+        window.innerWidth > 600
+          ? {
+              top: y + 1, // Add an offset to avoid overlapping the cursor
+              left: popUpLeftPosition,
+            }
+          : {}
+      }>
       <p className='pop-up-text'>{msg}</p>
     </div>
   )

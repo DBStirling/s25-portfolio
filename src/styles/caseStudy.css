@@ -28,6 +28,14 @@ button:hover {
   cursor: pointer;
 }
 
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
 .list-item-cs {
   text-align: left !important;
   margin-bottom: 12px;
