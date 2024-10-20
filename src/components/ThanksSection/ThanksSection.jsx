@@ -16,7 +16,7 @@ import './ThanksSection.css'
 
 export default function ThanksSection(props) {
 
-const {title1, tag1, miniThumb1, title2, tag2, miniThumb2, showWork} = props
+const {title1, tag1, miniThumb1, link1, title2, tag2, miniThumb2, link2, showWork} = props
 
   return (
     <div className='thanks-section-container'>
@@ -31,11 +31,13 @@ const {title1, tag1, miniThumb1, title2, tag2, miniThumb2, showWork} = props
                 title={title1}
                 tag={tag1}
                 miniThumb={miniThumb1}
+                link={link1}
               />
               <MiniProjectCard
                 title={title2}
                 tag={tag2}
                 miniThumb={miniThumb2}
+                link={link2}
               />
             </div>
           </div>

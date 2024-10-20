@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
 import collage from '../assets/Images/collage.png'
+import miniDE from '../assets/Images/mini-de-thumb-simple.png'
+import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import "../styles/style.css";
 
@@ -142,9 +144,12 @@ export default function about() {
         <ThanksSection
           title1={'Don Efficace'}
           tag1={'Product'}
-          // miniThumb1={}
+          miniThumb1={miniDE}
+          link1={'/donEfficace'}
           title2={'MyFitnessPal'}
           tag2={'Case Study'}
+          link2={'/myFitnessPal'}
+          miniThumb2={miniMFP}
           showWork={true}
         />
       </div>

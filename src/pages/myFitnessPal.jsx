@@ -1,7 +1,9 @@
 import React from 'react'
 import CtaButton from '../components/CtaButton/CtaButton';
 import Divider from '../components/Divider/Divider';
-import ThanksSection from '../components/ThanksSection.jsx'
+import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
+import miniDE from '../assets/Images/mini-de-thumb-simple.png'
+import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
 import oldNewSolution from '../assets/Images/mfp/old-new-solution.png'
 import chatSolution from '../assets/Images/mfp/chat-solution.png'
 import noomLogo from '../assets/Images/mfp/noom-icon.png'
@@ -744,8 +746,18 @@ export default function myFitnessPal() {
               you’re going in the right direction.
               </p>
             </div>
-            <ThanksSection/>
-          </div>
+            <ThanksSection
+            title1={'Don Efficace'}
+            tag1={'Product'}
+            miniThumb1={miniDE}
+            link1={'/donEfficace'}
+            title2={'Diet Me'}
+            tag2={'Exploration'}
+            link2={'/dietMe'}
+            miniThumb2={miniDM}
+            showWork={true}
+            />
+        </div>
         </div>
       </div>
     </div>

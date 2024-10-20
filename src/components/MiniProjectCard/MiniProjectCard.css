@@ -3,11 +3,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    padding: 20px;
+    background: rgba(247, 246, 246, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
 }
 
 .thumbnail {
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .mini-content {

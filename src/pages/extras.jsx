@@ -1,6 +1,8 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
-import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
+import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
+import miniDE from '../assets/Images/mini-de-thumb-simple.png'
+import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import rodmanCollage from "../assets/Images/extras/rodman-collage.png"
 import lebronFourthChip from "../assets/Images/extras/lebron-fourth-chip.png"
 import wilguensGp from "../assets/Images/extras/wilguens-gp.png"
@@ -139,9 +141,12 @@ export default function extras() {
         <ThanksSection
           title1={'Don Efficace'}
           tag1={'Product'}
-          // miniThumb1={}
+          miniThumb1={miniDE}
+          link1={'/donEfficace'}
           title2={'MyFitnessPal'}
           tag2={'Case Study'}
+          link2={'/myFitnessPal'}
+          miniThumb2={miniMFP}
           showWork={true}
         />
       </div>
