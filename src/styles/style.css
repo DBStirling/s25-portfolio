@@ -210,6 +210,12 @@ align-self: stretch;
 
 /* ABOUT & EXTRAS page styles */
 
+@media only screen and (max-width: 600px) {
+  .page-content {
+  padding-top: 100px !important;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   .page-content {
     width: 80vw !important;

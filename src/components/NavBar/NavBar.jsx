@@ -11,18 +11,19 @@ const NavBar = () => {
     const [menuState, setMenuState] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
-   // const navElements = 
-
-   const navElements = document.querySelector('.nav-elements');
-
     const handleMenu = () => {
+        const navElements = document.querySelector('.nav-elements');
         setMenuState(!menuState); 
         if (window.innerWidth < 600)
         {
             if (menuState === true) {
                 navElements.style.display = 'none'; // Reset width
+                console.log('none set manually')
             } 
-            else { navElements.style.display = 'flex' };
+            else { 
+                navElements.style.display = 'flex' 
+            };
+            console.log('flex set manually')
         }
     }
 

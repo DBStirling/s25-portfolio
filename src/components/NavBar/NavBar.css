@@ -111,6 +111,7 @@
         right: 100px;
         flex-direction: row;
         align-items: baseline;
+        animation: 1.5s ease-out forwards; 
     }
     
     .nav-bar {
@@ -131,7 +132,7 @@
     }
 
     .nav-elements {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin: 0;
     }

@@ -53,6 +53,12 @@ p {
   margin-bottom: 1em; /* 12px gap for line breaks */
 }
 
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 16px !important;
+  }
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
