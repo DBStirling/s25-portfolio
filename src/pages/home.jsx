@@ -6,7 +6,7 @@ import CtaButton from "../components/CtaButton/CtaButton.jsx";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
 import Divider from '../components/Divider/Divider.jsx'
 import "../styles/style.css";
-import DEthumbnail from '../assets/Images/DEthumbnail1.png';
+import DEthumbnail from '../assets/Images/de-thumb.png';
 import DMthumbnail from '../assets/Images/dm-thumb.png';
 import MFPthumbnail from '../assets/Images/mfp-thumb.png'
 import FFthumbnail from '../assets/Images/flow-thumb.png'
@@ -19,7 +19,15 @@ export default function Home({scrollableRef} ) {
 
       const hero = document.getElementById('hero');
       const mainContent = document.querySelector('.my-work-container');
-      const threshold = 50;
+      const threshold = 10;
+
+      // const preloadStyles = () => {
+      //   if (hero && mainContent) {
+      //     hero.style.transition = 'width 0.5s ease, height 0.5s ease, top 0.5s ease';
+      //     mainContent.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+      //     // mainContent.style.opacity = '0'; // Start hidden until animation triggers
+      //   }
+      // };
 
       const resetHeroStyles = () => {
         hero.style.width = '100vw'; // Reset width
@@ -27,12 +35,6 @@ export default function Home({scrollableRef} ) {
         hero.style.position = 'relative'; // Reset position
         mainContent.style.transform = 'translateX(0)'; // Reset translation
       }; 
-
-      // const adjustBottom = () => {
-      //   hero.style.position = 'absolute'; // or 'relative' based on your layout
-      //   hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
-      //   console.log('hit bottom')
-      // }
 
       const shrinkHero = () => {
         hero.style.width = '40vw';
@@ -78,6 +80,16 @@ export default function Home({scrollableRef} ) {
           resetHeroStyles(); // Ensure styles are reset for smaller screens
         }
       };
+
+      // const autoScrollToWork = () => {
+      //   setTimeout(() => {
+      //     mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      //   }, 2000); // 2000ms = 2 seconds delay
+      // };
+
+      // preloadStyles()
+    
+      // autoScrollToWork(); // Call the function to trigger auto-scroll
 
       const scrollableElement = scrollableRef.current;
       if (scrollableElement) {
