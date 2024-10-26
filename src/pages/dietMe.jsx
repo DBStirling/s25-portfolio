@@ -1,4 +1,5 @@
 import React from 'react'
+import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
@@ -126,19 +127,27 @@ export default function dietMe() {
             </div>
             <div className="ht-pair">
               <div className="heading">Ideation Sprint 1</div>
-              <img
-                className="ideation"
-                src={ideationFirst}
-                alt="Ideation 1"
-              />
+              <div className='ideation'>
+                <ModalImage
+                  small={ideationFirst}
+                  large={ideationFirst}
+                  alt="first ideation stretch"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
             </div>
             <div className="ht-pair">
               <div className="heading">Ideation Sprint 2</div>
-              <img
-                className="ideation"
-                src={ideationSecond}
-                alt="Ideation 2"
-              />
+              <div className='ideation'>
+                <ModalImage
+                  small={ideationSecond}
+                  large={ideationSecond}
+                  alt="second ideation stretch"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -211,8 +220,7 @@ export default function dietMe() {
               <iframe
                 className="actual-prototype"
                 style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                max-width="1400px"
-                min-width="400px"
+                width="1000px"
                 height="800px"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHcYRAzFB9KG4WuGyloUj3A%2FDietMe-Design-File%3Fpage-id%3D0%253A1%26node-id%3D5-4%26viewport%3D1046%252C-483%252C0.79%26t%3DAC0s2Z2wqwRjpRji-1%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A4"
                 allowFullScreen=""

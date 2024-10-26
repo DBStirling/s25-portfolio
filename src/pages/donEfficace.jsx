@@ -4,7 +4,7 @@ import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
-import miniMFP from '../assets/Images/mini-de-thumb-simple.png'
+import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
 import formPair from '../assets/Images/de/form-pair.png'
 import taxDetail from '../assets/Images/de/tax-potential-detail.png'
@@ -52,6 +52,15 @@ export default function donEfficace() {
         }
     };
 
+    const cutToSolution = () => {
+        const section = document.getElementById('solution');
+            console.log('yuhhh')
+            if (section) {
+                console.log('yuh')
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+    }
+
 
 return (
     <div className='device-container'>
@@ -81,7 +90,7 @@ return (
             </div>
             <CtaButton
                 text='Cut To The Chase'
-                // clickFunction={scrollToPrototype}
+                clickFunctio={cutToSolution}
             />
             </div>
             <div className="sub-section the-problem">
@@ -142,7 +151,8 @@ return (
                 </div>
                 </div>
             </div>
-            <div className='sub-section key-pain-points'>
+            <div className='sub-section key-pain-points'
+                id='solution'>
                 <Divider
                     title={'the solution'}
                 />
@@ -164,6 +174,7 @@ return (
                                 large={formPair}
                                 alt="Donation Form"
                                 hideDownload={true}
+                                imageBackgroundColor={"white"}
                             />
                         </div>
                         {showItemOne && (
@@ -174,7 +185,7 @@ return (
                                         <body>One of the key pain points relayed to us by Don Efficace was that donor’s didn’t know how to take advantage of tax breaks when donating. As a result, we baked the functionality of France’s tax break system into our donation form. By opting to using tax potential, users set the amount that they want to donate and they are recommended a donation value that maximizes their impact and costs them the same amount after taxes are returned.</body>
                                     </div>
                                     <img
-                                        className='full-width-detail'
+                                        className='full-width-detail nh'
                                         src={taxDetail}
                                     />
                                 </div>
@@ -184,7 +195,7 @@ return (
                                         <body>One of the leading reasons for the decline in donations is the public’s declining faith in NPOs and their inability to assess how much good their donation can do. To combat this, we designed additional transparency and constant feedback in our form, showing impact estimations for every donation. By showing users exactly where their money is going, we believe that we can remind them of why they’re donating and give them an extra push through finalizing their donation.</body>
                                     </div>
                                     <img
-                                        className='in-line-detail'
+                                        className='in-line-detail nh'
                                         src={impactCard}
                                     />
                                 </div>
@@ -209,11 +220,12 @@ return (
                                 </button>
                             </div> 
                             <ModalImage
-                                className='summary-img'
+                                className='summary-img nh'
                                 small={donorPair}
                                 large={donorPair}
                                 alt="Donation Form"
                                 hideDownload={true}
+                                imageBackgroundColor={"white"}
                             />
                         </div>
                         {showItemTwo && (
@@ -224,7 +236,7 @@ return (
                                         <body>One of my first tasks on the project was to create the donation history page, allowing users to download tax receipts for each of their donations and manage their reoccurring payments. We identified 3 core filtering criteria through conversations with the client and put together a donation details table for users. One of the best decisions we made throughout the whole design process, was investing time into building the table modularly as we reused the style across many donor and admin-facing pages, saving us plenty of headaches.</body>
                                     </div>
                                     <img
-                                        className='full-width-detail'
+                                        className='full-width-detail nh'
                                         src={donorDetail}
                                     />
                                 </div>
@@ -240,7 +252,7 @@ return (
                                         </div>
                                     </div>
                                     <img
-                                        className='in-line-detail'
+                                        className='in-line-detail nh'
                                         src={summaryDetail}
                                     />
                                 </div>
@@ -264,6 +276,7 @@ return (
                                 large={adminPair}
                                 alt="Donation Form"
                                 hideDownload={true}
+                                imageBackgroundColor={"white"}
                             />
                         </div>
                         {showItemThree && (
@@ -275,7 +288,7 @@ return (
                                         <body>The donor profile was my favourite feature to design as I expect it to be the most enabling for administrators who are in a crunch for time.</body>
                                     </div>
                                     <img
-                                        className='in-line-detail'
+                                        className='in-line-detail nh'
                                         src={donorProfile}
                                     />
                                 </div>
@@ -285,7 +298,7 @@ return (
                                         <body>The product-defining impact estimation feature in the donation form and dashboard is all made possible by the ‘Causes’ tab in our admin portal. This is our secret stuff. We group NPOs into respective causes and store their impact-cost ratios, which allow us to dynamically estimate donation impacts. I worked closely with our product manager to refine the logic and algorithm behind impact estimation and worked with another designer to iron out the task flow of an admin inputting this data.</body>
                                     </div>
                                     <img
-                                        className='in-line-detail'
+                                        className='in-line-detail nh'
                                         src={causesDetail}
                                     />
                                 </div>
@@ -296,7 +309,7 @@ return (
                                         <body>We provided actionable insights to admins by identifying inactive vs active donors and recently cancelled reoccurring donations. These leads can be used to reduce donor turnover.</body>
                                     </div>
                                     <img
-                                        className='full-width-detail'
+                                        className='full-width-detail nh'
                                         src={insightsDetail}
                                     />
                                 </div>
@@ -305,17 +318,17 @@ return (
                     </div>
                 </div>
             </div>
-            {/* <ThanksSection
-                title1={'Don Efficace'}
-                tag1={'Product'}
-                miniThumb1={miniDE}
-                link1={'/donEfficace'}
+            <ThanksSection
+                title1={'MyFitnessPal'}
+                tag1={'Case Study'}
+                miniThumb1={miniMFP}
+                link1={'/myFitnessPal'}
                 title2={'Diet Me'}
                 tag2={'Exploration'}
                 link2={'/dietMe'}
                 miniThumb2={miniDM}
                 showWork={true}
-            /> */}
+            />
         </div>
     </div>
 )

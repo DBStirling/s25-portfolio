@@ -1,4 +1,5 @@
 import React from 'react'
+import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
@@ -158,18 +159,24 @@ export default function myFitnessPal() {
                 </ul>
               </div>
               <div className="solution-image-container">
-                <img
-                  src={oldNewSolution}
+                <ModalImage
+                  small={oldNewSolution}
+                  large={oldNewSolution}
                   alt="solution images with brief description"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
                 />
               </div>
             </div>
             <div className="solution-column">
               <div className="solution-image-container">
-                <img
-                  src={chatSolution}
+                <ModalImage
+                  small={chatSolution}
+                  large={chatSolution}
                   alt="solution images with brief description"
-                />
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                /> 
               </div>
               <div className="solution-item ht-pair">
                 <div className="heading" style={{ gap: 8 }}>
@@ -322,7 +329,7 @@ export default function myFitnessPal() {
             <div className="competitor-icon-container">
               <div className="competitor-identifier">
                 <img
-                  className="competitor-icon"
+                  className="competitor-icon nh"
                   src={noomLogo}
                   alt="Noom logo"
                 />
@@ -330,7 +337,7 @@ export default function myFitnessPal() {
               </div>
               <div className="competitor-identifier">
                 <img
-                  className="competitor-icon"
+                  className="competitor-icon nh"
                   src={fitBitLogo}
                   alt="Fitbit logo"
                 />
@@ -338,7 +345,7 @@ export default function myFitnessPal() {
               </div>
               <div className="competitor-identifier">
                 <img
-                  className="competitor-icon"
+                  className="competitor-icon nh"
                   src={LoseItLogo}
                   alt="Lose It! logo"
                 />
@@ -346,7 +353,7 @@ export default function myFitnessPal() {
               </div>
               <div className="competitor-identifier">
                 <img
-                  className="competitor-icon"
+                  className="competitor-icon nh"
                   src={LifesumLogo}
                   alt="LifeSum logo"
                 />
@@ -431,10 +438,10 @@ export default function myFitnessPal() {
                   How might we make the fitness world less intimidating for users?
                 </div>
                 <div className="hmw-container ">
-                  <img className="hmw" src={hmw11} />
-                  <img className="hmw" src={hmw12} />
-                  <img className="hmw" src={hmw13} />
-                  <img className="hmw" src={hmw14} />
+                  <img className="hmw nh" src={hmw11} />
+                  <img className="hmw nh" src={hmw12} />
+                  <img className="hmw nh" src={hmw13} />
+                  <img className="hmw nh" src={hmw14} />
                 </div>
               </div>
               <div className="hmw-indiv-section">
@@ -443,9 +450,9 @@ export default function myFitnessPal() {
                   motivation and success rates?
                 </div>
                 <div className="hmw-container">
-                  <img className="hmw funky-sizing" src={hmw21} />
-                  <img className="hmw funky-sizing" src={hmw22} />
-                  <img className="hmw funky-sizing" src={hmw23} />
+                  <img className="hmw nh funky-sizing" src={hmw21} />
+                  <img className="hmw nh funky-sizing" src={hmw22} />
+                  <img className="hmw nh funky-sizing" src={hmw23} />
                 </div>
               </div>
               <div className="hmw-indiv-section">
@@ -453,12 +460,12 @@ export default function myFitnessPal() {
                   How might we make it easier for users to navigate MyFitnessPal?
                 </div>
                 <div className="hmw-container">
-                  <img className="hmw" src={hmw31} />
-                  <img className="hmw" src={hmw32} />
-                  <img className="hmw" src={hmw33} />
-                  <img className="hmw" src={hmw34} />
-                  <img className="hmw" src={hmw35} />
-                  <img className="hmw" src={hmw36} />
+                  <img className="hmw nh" src={hmw31} />
+                  <img className="hmw nh" src={hmw32} />
+                  <img className="hmw nh" src={hmw33} />
+                  <img className="hmw nh" src={hmw34} />
+                  <img className="hmw nh" src={hmw35} />
+                  <img className="hmw nh" src={hmw36} />
                 </div>
               </div>
             </div>
@@ -492,11 +499,15 @@ export default function myFitnessPal() {
                   </li>
                 </ul>
               </div>
-              <img
-                className="nav-issue-img"
-                src={diaryChanges}
-                alt="diary page flow chart"
-              />
+              <div className='nav-issue-img'>
+                <ModalImage
+                  small={diaryChanges}
+                  large={diaryChanges}
+                  alt="diary page information architecture"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
             </div>
             <div className="nav-issue discover-page-changes">
               <div className="nav-issue-text ht-pair">
@@ -522,11 +533,15 @@ export default function myFitnessPal() {
                   </li>
                 </ul>
               </div>
-              <img
-                className="nav-issue-img"
-                src={discoverChanges}
-                alt="discover page flow chart"
-              />
+              <div className='nav-issue-img'>
+                <ModalImage
+                  small={discoverChanges}
+                  large={discoverChanges}
+                  alt="discover page information architecture"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
             </div>
             <div className="nav-issue-visual ht-pair">
               <div className="heading centered-text">Navigation Bar Changes</div>
@@ -547,16 +562,26 @@ export default function myFitnessPal() {
                       </li>
                     </ul>
                   </div>
-                  <img
-                    className="iteration-img"
-                    src={oldImage}
-                  />
+                  <div className='iteration-img'>
+                    <ModalImage
+                      small={oldImage}
+                      large={oldImage}
+                      alt="first design iteration"
+                      hideDownload={true}
+                      imageBackgroundColor={"white"}
+                    />
+                  </div>
                 </div>
                 <div className="iteration">
-                  <img
-                    className="iteration-img"
-                    src={newImage}
-                  />
+                <div className='iteration-img'>
+                    <ModalImage
+                      small={newImage}
+                      large={newImage}
+                      alt="polished design"
+                      hideDownload={true}
+                      imageBackgroundColor={"white"}
+                    />
+                  </div>
                   <div className="iteration-2-text ht-pair">
                     <div className="heading">Iteration 2</div>
                     <p>
@@ -669,16 +694,24 @@ export default function myFitnessPal() {
               </div>
             </div>
             <div className="cc-img-container">
-              <img
-                className="cc-img"
-                src={discoverPage}
-                alt="discover page UI"
-              />
-              <img
-                className="cc-img"
-                src={chatPage}
-                alt="Alex chat UI"
-              />
+              <div className='cc-img'>
+                <ModalImage
+                  small={discoverPage}
+                  large={discoverPage}
+                  alt="discover page UI"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
+              <div className='cc-img'>
+                <ModalImage
+                  small={chatPage}
+                  large={chatPage}
+                  alt="Alex chat UI"
+                  hideDownload={true}
+                  imageBackgroundColor={"white"}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -690,8 +723,7 @@ export default function myFitnessPal() {
               <iframe
                 className="actual-prototype"
                 style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                max-width="1400px"
-                min-width="400px"
+                width="1000px"
                 height="800px"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcoyErte94NOlLnoIuSMiXO%2FMyFitnessPal-UX-Redesign-by-David-Stirling%3Fpage-id%3D279%253A59%26type%3Ddesign%26node-id%3D327-3306%26viewport%3D806%252C-855%252C0.14%26t%3D5UOPms8pw6VT00yj-1%26scaling%3Dscale-down%26starting-point-node-id%3D327%253A3306%26mode%3Ddesign"
                 allowFullScreen=""
@@ -706,7 +738,7 @@ export default function myFitnessPal() {
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <img
-                  className="reflection-icon"
+                  className="reflection-icon nh"
                   src={wrenchIcon}
                   alt="wrench icon"
                 />
@@ -720,7 +752,7 @@ export default function myFitnessPal() {
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <img
-                  className="reflection-icon"
+                  className="reflection-icon nh"
                   src={targetIcon}
                   alt="target icon"
                 />
@@ -733,7 +765,7 @@ export default function myFitnessPal() {
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <img
-                  className="reflection-icon"
+                  className="reflection-icon nh"
                   src={groupIcon}
                   alt="group icon"
                 />
