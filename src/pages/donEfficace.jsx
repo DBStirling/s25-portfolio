@@ -161,7 +161,7 @@ return (
                         <div className='de-summary-description'>
                             <div className='de-summary-contents'>
                                 <div className='heading'>Donation Form</div>
-                                <body>We designed a donation form that estimates a donation’s impact, using empathy and recognition to build confidence in donations. We also leveraged French tax breaks in our designs to compel users to donate more.</body>
+                                <p>We designed a donation form that <b>estimates a donation’s impact</b>, using empathy and recognition to build confidence in donations. We also leveraged French tax breaks in our designs to compel users to donate more.</p>
                                 <button className='learn-more-button'
                                     onClick={() => toggleItem('one')} // Wrap it in an arrow function
                                     >
@@ -181,8 +181,8 @@ return (
                             <div className='item-description-container'>
                                 <div className='description-item'>
                                     <div className='ht-pair'>
-                                        <body><b>1. Leveraging Tax Breaks</b></body>
-                                        <body>One of the key pain points relayed to us by Don Efficace was that donor’s didn’t know how to take advantage of tax breaks when donating. As a result, we baked the functionality of France’s tax break system into our donation form. By opting to using tax potential, users set the amount that they want to donate and they are recommended a donation value that maximizes their impact and costs them the same amount after taxes are returned.</body>
+                                        <p><b>1. Leveraging Tax Breaks</b></p>
+                                        <p>One of the key pain points relayed to us by Don Efficace was that donor’s didn’t know how to take advantage of tax breaks when donating. As a result, we baked the functionality of France’s tax break system into our donation form. By opting to using tax potential, <b>users set the amount that they want to donate and they are recommended a donation value that maximizes their impact and costs them the same amount after taxes are returned.</b></p>
                                     </div>
                                     <img
                                         className='full-width-detail nh'
@@ -191,8 +191,15 @@ return (
                                 </div>
                                 <div className='description-item-row'>
                                     <div className='ht-pair'>
-                                        <body><b>2. Bridging the Empathy Gap</b></body>
-                                        <body>One of the leading reasons for the decline in donations is the public’s declining faith in NPOs and their inability to assess how much good their donation can do. To combat this, we designed additional transparency and constant feedback in our form, showing impact estimations for every donation. By showing users exactly where their money is going, we believe that we can remind them of why they’re donating and give them an extra push through finalizing their donation.</body>
+                                        <p><b>2. Bridging the Empathy Gap</b></p>
+                                        <p>
+                                        <span 
+                                            onClick={() => window.open('https://www.vox.com/future-perfect/359526/charitable-giving-generosity-crisis-report-americans-young', '_blank')} 
+                                            style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
+                                            >
+                                            {' '}One of the leading reasons for the decline in donations is the public’s declining faith in NPOs {' '}
+                                        </span>
+                                            and their inability to assess how much good their donation can do. <b>To combat this, we designed additional transparency and constant feedback in our form, showing impact estimations for every donation.</b> By showing users exactly where their money is going, we believe that we can remind them of why they’re donating and give them an extra push through finalizing their donation.</p>
                                     </div>
                                     <img
                                         className='in-line-detail nh'
@@ -201,8 +208,8 @@ return (
                                 </div>
                                 <div className='description-item'>
                                     <div className='ht-pair'>
-                                        <body><b>3. Valuing the user</b></body>
-                                        <body>We made sure that the donation experience was not only cohesive but extremely transparent. Especially with the integration of a new feature like tax potential, we ensured that the form was straightforward to avoid startling or catching the user off guard.</body>
+                                        <p><b>3. Valuing the user</b></p>
+                                        <p>We made sure that the donation experience was not only cohesive but extremely transparent. Especially with the integration of a new feature like tax potential, <b>we ensured that the form was straightforward to avoid startling or catching the user off guard.</b></p>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +219,7 @@ return (
                         <div className='de-summary-description'>
                             <div className='de-summary-contents'>
                                 <div className='heading'>Donor Portal</div>
-                                <body>We built a donor portal that allows users to manage reoccurring donations, access their donation history and all of their necessary tax documentation. We also consolidated their information into a donor dashboard for at-a-glance stats and metrics.</body>
+                                <p>We built a donor portal that allows users to <b>manage reoccurring donations, access their donation history and all of their necessary tax documentation</b>. We also consolidated their information into a donor dashboard for at-a-glance stats and metrics.</p>
                                 <button className='learn-more-button'
                                     onClick={() => toggleItem('two')} // Wrap it in an arrow function
                                     >
@@ -232,8 +239,8 @@ return (
                             <div className='item-description-container'>
                                 <div className='description-item'>
                                     <div className='ht-pair'>
-                                        <body><b>1. Making Donation Details Accessible</b></body>
-                                        <body>One of my first tasks on the project was to create the donation history page, allowing users to download tax receipts for each of their donations and manage their reoccurring payments. We identified 3 core filtering criteria through conversations with the client and put together a donation details table for users. One of the best decisions we made throughout the whole design process, was investing time into building the table modularly as we reused the style across many donor and admin-facing pages, saving us plenty of headaches.</body>
+                                        <p><b>1. Making Donation Details Accessible</b></p>
+                                        <p>One of my first tasks on the project was to create the donation history page, allowing users to download tax receipts for each of their donations and manage their reoccurring payments. We identified 3 core filtering criteria through conversations with the client and put together a donation details table for users. <b>One of the best decisions we made</b> throughout the whole design process, <b>was investing time into building the table modularly</b> as we reused the style across many donor and admin-facing pages, saving us plenty of headaches.</p>
                                     </div>
                                     <img
                                         className='full-width-detail nh'
@@ -243,12 +250,19 @@ return (
                                 <div className='description-item-row'>
                                     <div className='description-item'>
                                         <div className='ht-pair'>
-                                            <body><b>2. Reminding them Why They Donate</b></body>
-                                            <body>As donors continue to contribute, it was essential to remind them of their real-world impact as donation fatigue is a very real threat. We implemented an all-time impact module on their donation dashboard to show donors their growing impact and encourage them to continue donating.</body>
+                                            <p><b>2. Reminding them Why They Donate</b></p>
+                                            <p>As donors continue to contribute, it was essential to remind them of their real-world impact as 
+                                            <span 
+                                                onClick={() => window.open('https://blog.philanthropy.indianapolis.iu.edu/2021/02/26/donor-fatigue-is-it-real/', '_blank')} 
+                                                style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
+                                                >
+                                                {' '}donation fatigue {' '}
+                                            </span>
+                                                is something we wanted to hedge as much as possible. <b>We implemented an all-time impact module on their donation dashboard to show donors their growing impact</b> and encourage them to continue donating.</p>
                                         </div>
                                         <div className='ht-pair'>
-                                            <body><b>3. Account Management</b></body>
-                                            <body>Finally, we built an account management page that allows the user to update their tax-registered address, email address and other personal details, extending the long-term usability of our platform. Furthermore, we also implemented a secure flow for updating a user’s password, integrating existing frameworks to lighten the development workload.</body>
+                                            <p><b>3. Account Management</b></p>
+                                            <p>Finally, we built an account management page that allows the user to update their tax-registered address, email address and other personal details, extending the long-term usability of our platform. Furthermore, we also implemented a secure flow for updating a user’s password, integrating existing frameworks to lighten the development workload.</p>
                                         </div>
                                     </div>
                                     <img
@@ -263,7 +277,7 @@ return (
                         <div className='de-summary-description'>
                             <div className='de-summary-contents'>
                                 <div className='heading'>Admin Portal</div>
-                                <body>We created a robust portal for administrators view all necessary donation documentation, gain insight through donor profiles and manage the growing list of NPOs that are supported through Don Efficace. </body>
+                                <p>We created a robust portal for administrators view all necessary donation documentation, <b>gain insight through donor profiles and manage the growing list of NPOs</b> that are supported through Don Efficace. </p>
                                 <button className='learn-more-button'
                                     onClick={() => toggleItem('three')} // Wrap it in an arrow function
                                     >
@@ -283,9 +297,9 @@ return (
                             <div className='item-description-container'>
                                 <div className='description-item-row'>
                                     <div className='ht-pair'>
-                                        <body><b>1. Consolidating donation information</b></body>
-                                        <body>We divided donation record-keeping into two core tenants: a comprehensive list of recent donations across all donors and a complete list of donors with their own unique profile. The former allows administrators to quickly troubleshoot recent donations and verify transactions. The latter enables Don Efficace to get to know their donors a little better, export their annual tax receipt and helps them quickly troubleshoot donor-specifc problems. </body>
-                                        <body>The donor profile was my favourite feature to design as I expect it to be the most enabling for administrators who are in a crunch for time.</body>
+                                        <p><b>1. Consolidating donation information</b></p>
+                                        <p><b>We divided donation record-keeping into two core tenants:</b> a comprehensive list of recent donations across all donors and a complete list of donors with their own unique profile. The former allows administrators to quickly troubleshoot recent donations and verify transactions. <b>The latter enables Don Efficace to get to know their donors a little better, export their annual tax receipt and helps them quickly troubleshoot donor-specifc problems.</b></p>
+                                        <p>The donor profile was my favourite feature to design as I expect it to be the most enabling for administrators who are in a crunch for time.</p>
                                     </div>
                                     <img
                                         className='in-line-detail nh'
@@ -294,8 +308,15 @@ return (
                                 </div>
                                 <div className='description-item-row'>
                                     <div className='ht-pair'>
-                                        <body><b>2. Managing associated NPOs and their impact metrics </b></body>
-                                        <body>The product-defining impact estimation feature in the donation form and dashboard is all made possible by the ‘Causes’ tab in our admin portal. This is our secret stuff. We group NPOs into respective causes and store their impact-cost ratios, which allow us to dynamically estimate donation impacts. I worked closely with our product manager to refine the logic and algorithm behind impact estimation and worked with another designer to iron out the task flow of an admin inputting this data.</body>
+                                        <p><b>2. Managing associated NPOs and their impact metrics </b></p>
+                                        <p>The product-defining impact estimation feature in the donation form and dashboard is all made possible by the ‘Causes’ tab in our admin portal. 
+                                        <span 
+                                            onClick={() => window.open('https://blog.philanthropy.indianapolis.iu.edu/2021/02/26/donor-fatigue-is-it-real/', '_blank')} 
+                                            style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
+                                            >
+                                            {' '}This is our secret stuff.{' '}
+                                        </span>
+                                        <b>We group NPOs into respective causes and store their impact-cost ratios, which allow us to dynamically estimate donation impacts.</b> I worked closely with our product manager to refine the logic and algorithm behind impact estimation and worked with another designer to iron out the task flow of an admin inputting this data.</p>
                                     </div>
                                     <img
                                         className='in-line-detail nh'
@@ -304,9 +325,9 @@ return (
                                 </div>
                                 <div className='description-item'>
                                     <div className='ht-pair'>
-                                        <body><b>3. Equipping administrators with key donation insights </b></body>
-                                        <body>Due to the robust functionality of the admin portal, it was important for us to consolidate key information into a single dashboard view. Through client discussions, we identified recent donations, top donors and incoming donation revenue as the most important information for administrators and prioritized them through an admin dashboard.</body>
-                                        <body>We provided actionable insights to admins by identifying inactive vs active donors and recently cancelled reoccurring donations. These leads can be used to reduce donor turnover.</body>
+                                        <p><b>3. Equipping administrators with key donation insights </b></p>
+                                        <p>Due to the robust functionality of the admin portal, it was important for us to consolidate key information into a single dashboard view. <b>Through client discussions, we identified recent donations, top donors and incoming donation revenue as the most important information for administrators and prioritized them through an admin dashboard.</b></p>
+                                        <p>We provided actionable insights to admins by identifying inactive vs active donors and recently cancelled reoccurring donations. These leads can be used to reduce donor turnover.</p>
                                     </div>
                                     <img
                                         className='full-width-detail nh'

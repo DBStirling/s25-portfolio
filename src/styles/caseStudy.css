@@ -12,7 +12,7 @@ p {
     font-family: Satoshi;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%; /* 24px */
     letter-spacing: 0.16px;
     text-align: left;
@@ -709,6 +709,13 @@ img:hover {
   object-fit: scale-down;
 }
 
+@media only screen and (max-width: 768px) {
+  .reflection-body {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
   /* Footer styles */
   @media only screen and (max-width: 600px) {
     .reflection-body {
@@ -837,6 +844,14 @@ img:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .context-left {
+    width: 100%;
+    max-width: none;
+  }
+  .context-right {
+    width: 100%;
+    max-width: none;
+  }
   .de-summary-description {
     flex-direction: column-reverse;
   }
