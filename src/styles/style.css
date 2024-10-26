@@ -124,7 +124,7 @@ body, html {
   align-items: center;
   gap: 72px;
   max-width: 700px;
-  padding: 0 4vw;
+  padding: 0 5vw;
   height: 100vw;
   transition: width 0.5s ease, height 0.5s ease, top 0.5s ease; /* Add transition for top */
 }
@@ -135,6 +135,10 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   gap: 2vh;
+  padding: 20px;
+  background: rgba(247, 246, 246, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
 }
 
 .hero-body {

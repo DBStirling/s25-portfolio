@@ -41,6 +41,7 @@ export default function Home({scrollableRef} ) {
 
       const shrinkHero = () => {
         hero.style.width = '40vw';
+        // hero.style.maxWidth = '480px'
         hero.style.height = '100vh';
         hero.style.position = 'fixed';
         hero.style.top = '0';
@@ -69,8 +70,8 @@ export default function Home({scrollableRef} ) {
             const scrollBottom = scrollableRef.current.scrollTop + scrollableRef.current.clientHeight;
       
             if (scrollBottom >= myWorkContainerBottom) {
-              hero.style.position = 'absolute'; // or 'relative' based on your layout
-              hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`;
+              // hero.style.position = 'absolute'; // or 'relative' based on your layout
+              // hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`;
               console.log('hit bottom')
             } else {
               shrinkHero();
