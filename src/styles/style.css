@@ -152,9 +152,26 @@ gap: -1px;
 align-self: stretch;
 }
 
+.end-work-prompt {
+  display: inline-block;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 55vw !important;
+  color: #121212;
+  font-family: 'PP Editorial New';
+  font-size: 36px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 0 !important;
+  text-align: left;
+  text-wrap: wrap !important;
+}
+
 .end-work-link {
   font-style: italic;
   color: #121212;
+  display: inline;
 }
 
 .end-work-link:hover {

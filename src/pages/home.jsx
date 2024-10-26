@@ -14,6 +14,8 @@ import STthumbnail from '../assets/Images/stamped-thumb-cs.png'
 
 export default function Home({scrollableRef} ) {
 
+  const navigate = useNavigate();
+
     useEffect(() => {
 
       console.log('use effect running')
@@ -182,19 +184,22 @@ export default function Home({scrollableRef} ) {
                 imgSrc={DMthumbnail}
                 // last='true'
               />
-              {/* <div className="end-work-prompt">
-                That's all! See more in&nbsp;<Link to="/about" className="end-work-link">About</Link>&nbsp;or&nbsp;<Link to='/extras' className="end-work-link">Extras</Link>.
-              </div> */}
-              {/* <div className="button-container">
-              <CtaButton className="cta-button" 
-                  onClick={() => scrollToElement('work-section')}
-                  text='Check Out My Work'
-              />
-              <CtaButton
-                  onClick={navigateToAbout}
-                  text = 'Learn about Me'
-              />
-              </div> */}
+          <p className="end-work-prompt">
+            See some non-work stuff in{" "}
+            <span 
+              className="end-work-link" 
+              onClick={() => navigate("/about")}
+              style={{ cursor: "pointer", padding: "0 1vw"}}>
+              {" About "}
+            </span>
+            or{" "}
+            <span 
+              className="end-work-link" 
+              onClick={() => navigate("/extras")}
+              style={{ cursor: "pointer", padding: "0 0 0 1vw"}}>
+              Extras
+            </span>.
+          </p>
             </div>
             {/* <div className="experience-header">
               <Divider

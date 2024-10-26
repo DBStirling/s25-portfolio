@@ -118,10 +118,30 @@ export default function about() {
           <h3>My tl;dr</h3>
           <div className="ht-body">
             <p>
-            I’m an engineering student @UWaterloo who 
-            <b> loves turning big ideas into things people can actually 
-            use.</b> I’m currently designing tenant experiences @Unify and pitching 
-            in on all fronts @UW Blueprint, working as a product manager 
+            I’m an engineering student @
+            <span 
+              onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              UWaterloo
+            </span> 
+            {' '}who<b> loves turning big ideas into things people can actually 
+            use.</b> I’m currently designing tenant experiences @
+            <span 
+              onClick={() => window.open('https://livwith.com/', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              Unify
+            </span> 
+            {' '}and pitching 
+            in on all fronts @
+            <span 
+              onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              UW Blueprint
+            </span>
+            , working as a product manager 
             and software developer. 
             </p>
             <p>
