@@ -46,7 +46,7 @@ export default function about() {
       setMsg('I love to read on my commute. I mainly dive into non-fiction business, philosophy & memoirs. My top picks: The Psychology of Money, Shoe Dog & Poverty, by America.')
     }
     else if (x >= 34 && x < 60 && y >= 42 && y < 47 || (x >= 42 && x < 67 && y >= 47 && y < 62)) {
-      setMsg('I’ve been a Raptors fan since 2016 but I really love any team or player with grit and hustle.')
+      setMsg('I’ve been a Raptors fan since 2016 but I really love any team-player with grit and hustle.')
     }
     else if (x >= 62 && y >= 62 && y < 72 || (x >= 67 && y >= 47 && y < 62) || (x >= 71 && y >= 40 && y < 47)) {
       setMsg('Soldering a few resistors. I’m a soon-to-be engineer after all!')
@@ -118,7 +118,7 @@ export default function about() {
           <h3>My tl;dr</h3>
           <div className="ht-body">
             <p>
-            I’m a Systems Design Engineering student @UWaterloo who 
+            I’m an engineering student @UWaterloo who 
             <b> loves turning big ideas into things people can actually 
             use.</b> I’m currently designing tenant experiences @Unify and pitching 
             in on all fronts @UW Blueprint, working as a product manager 
@@ -131,9 +131,9 @@ export default function about() {
             getting hands-on in engineering & shipping along the way.
             </p>
             <p>
-            I blend pragmatic engineering with creative, empathetic design 
-            to <b>give users and developers the best bang for their buck. </b>
-            I make this possible through developing strong client 
+            With my hollistic experience in product design, management and development, 
+            <b> I aim to give users and developers the best bang for their 
+            buck. </b> I make this possible through developing strong client 
             relationships, conducting extensive research, iterating through 
             countless wireframes (no, seriously) and collaborating 
             cross-functionally in the hopes of <b>building products that give 

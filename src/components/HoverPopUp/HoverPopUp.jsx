@@ -7,8 +7,16 @@ export default function HoverPopUp(props) {
   const viewportWidth = window.innerWidth;
   const offset = 20; // Padding distance from the cursor
 
-  const isNearRight = x + 400 > viewportWidth;
-  const popUpLeftPosition = isNearRight ? x - 440 : x + 1;
+  let popUpLeftPosition
+  let isNearRight
+
+  if (viewportWidth >= 1000) {
+    isNearRight = x + 400 > viewportWidth;
+    popUpLeftPosition = isNearRight ? x - 440 : x + 1;
+  } else {
+    isNearRight = x + 200 > viewportWidth;
+    popUpLeftPosition = isNearRight ? x - 240 : x + 1;
+  }
 
   return (
     <div

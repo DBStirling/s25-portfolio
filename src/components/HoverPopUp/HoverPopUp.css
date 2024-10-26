@@ -32,6 +32,13 @@
     margin-bottom: 0 !important; 
 }
 
+@media only screen and (max-width: 1000px) {
+    .pop-up-container {
+        position: absolute;
+        width: 200px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .pop-up-container {
         position: fixed;
