@@ -318,6 +318,23 @@ return (
                     </div>
                 </div>
             </div>
+            <div className="sub-section refelecton">
+          <Divider
+          title={'to be continued!'}/>
+          <div className="reflection-body">
+            <div className="reflection-item ht-pair">
+                <div className="heading">This case study isn’t quite there yet.</div>
+                <p>
+                    I’m still putting the fine details together and ensure that it will be out shortly. In the meantime, please feel free to             
+                    <span 
+                        onClick={() => window.open('mailto:dstirlin@uwaterloo.ca')} 
+                        style={{ cursor: 'pointer', fontWeight: 'normal', fontFamily: 'PP Editorial New' }}
+                    >
+                    {' '}reach out{' '}
+                    </span> 
+                    to learn more about my work experience or Don Efficace!
+                </p>
+            </div>
             <ThanksSection
                 title1={'MyFitnessPal'}
                 tag1={'Case Study'}
@@ -329,6 +346,8 @@ return (
                 miniThumb2={miniDM}
                 showWork={true}
             />
+            </div>
+        </div>
         </div>
     </div>
 )

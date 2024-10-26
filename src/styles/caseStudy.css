@@ -836,6 +836,22 @@ img:hover {
   gap: 24px;
 }
 
+@media only screen and (max-width: 768px) {
+  .de-summary-description {
+    flex-direction: column-reverse;
+  }
+  .de-summary-contents {
+    width: 90vw;
+  }
+  .summary-img {
+    width: 90vw !important;
+  }
+  .description-item-row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
 .de-summary-contents {
   display: flex;
   flex-direction: column;

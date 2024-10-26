@@ -300,9 +300,12 @@ h3 {
   .ht-section {
     gap: 12px !important;
   }
-  /* .hero-content {
-    width: 75vw !important;
-  } */
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 32px !important;
+  }
 }
 
 .italic-body {

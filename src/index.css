@@ -106,3 +106,7 @@ button {
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
+
+span:hover {
+  color: #743EDB;
+}
