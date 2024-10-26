@@ -153,7 +153,7 @@ align-self: stretch;
 }
 
 .end-work-prompt {
-  display: inline-block;
+  display: inline-block !important;
   align-items: flex-start;
   flex-wrap: wrap;
   width: 55vw !important;

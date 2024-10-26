@@ -70,7 +70,7 @@ export default function Home({scrollableRef} ) {
       
             if (scrollBottom >= myWorkContainerBottom) {
               hero.style.position = 'absolute'; // or 'relative' based on your layout
-              hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`; // Position it above the footer or bottom
+              hero.style.top = `${myWorkContainerBottom - hero.offsetHeight}px`;
               console.log('hit bottom')
             } else {
               shrinkHero();
@@ -127,7 +127,7 @@ export default function Home({scrollableRef} ) {
                 <p>As a System Design Engineering student @
                   <span 
                     onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
-                    style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
+                    style={{ cursor: 'pointer', textDecoration: 'underline' }}
                     >
                     UWaterloo
                   </span>
@@ -155,13 +155,6 @@ export default function Home({scrollableRef} ) {
                 destination="/donEfficace"
                 imgSrc={DEthumbnail}
               />
-              <ProjectCard
-                title="Flow Financial"
-                description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
-                tag="Case Study"
-                destination ='/flowFinancial'
-                imgSrc={FFthumbnail}
-              />
               {/* <ProjectCard
                 title="Stamped"
                 description="Ideated a social experiences app to help small business owners cultivate a  following and create genuine connections with customers."
@@ -184,22 +177,27 @@ export default function Home({scrollableRef} ) {
                 imgSrc={DMthumbnail}
                 // last='true'
               />
-          <p className="end-work-prompt">
-            See some non-work stuff in{" "}
-            <span 
-              className="end-work-link" 
-              onClick={() => navigate("/about")}
-              style={{ cursor: "pointer", padding: "0 1vw"}}>
-              {" About "}
-            </span>
-            or{" "}
-            <span 
-              className="end-work-link" 
-              onClick={() => navigate("/extras")}
-              style={{ cursor: "pointer", padding: "0 0 0 1vw"}}>
-              Extras
-            </span>.
-          </p>
+              <ProjectCard
+                title="Flow Financial"
+                description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
+                tag="Case Study"
+                destination ='/flowFinancial'
+                imgSrc={FFthumbnail}
+              />
+          <div className="end-work-prompt">
+            See some non-work stuff in&nbsp;
+            <Link 
+              className="end-work-link"
+              to={'/about'}
+            >{' '}about{' '}
+            </Link>
+            &nbsp;or&nbsp;
+            <Link 
+              className="end-work-link"
+              to={'/extras'}
+            >{' '}extras.{' '}
+            </Link>
+          </div>
             </div>
             {/* <div className="experience-header">
               <Divider
