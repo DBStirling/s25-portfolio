@@ -10,8 +10,12 @@ import formPair from '../assets/Images/de/form-pair.png'
 import taxDetail from '../assets/Images/de/tax-potential-detail.png'
 import impactCard from '../assets/Images/de/impact-card.png'
 import donorPair from '../assets/Images/de/donor-pair.png'
+import adminPair from '../assets/Images/de/admin-pair.png'
 import donorDetail from '../assets/Images/de/donor-detail.png'
 import summaryDetail from '../assets/Images/de/summary-card.png'
+import donorProfile from '../assets/Images/de/donor-profile.png'
+import causesDetail from '../assets/Images/de/causes-detail.png'
+import insightsDetail from '../assets/Images/de/insights-detail.png'
 
 import { IoIosArrowUp } from "react-icons/io";
 import '../styles/caseStudy.css'
@@ -243,21 +247,88 @@ return (
                             </div>
                         )}
                     </div>
+                    <div className='de-summary-item'>
+                        <div className='de-summary-description'>
+                            <div className='de-summary-contents'>
+                                <div className='heading'>Admin Portal</div>
+                                <body>We created a robust portal for administrators view all necessary donation documentation, gain insight through donor profiles and manage the growing list of NPOs that are supported through Don Efficace. </body>
+                                <button className='learn-more-button'
+                                    onClick={() => toggleItem('three')} // Wrap it in an arrow function
+                                    >
+                                    <body>{buttonThreeDescription}</body>
+                                </button>
+                            </div> 
+                            <ModalImage
+                                className='summary-img'
+                                small={adminPair}
+                                large={adminPair}
+                                alt="Donation Form"
+                                hideDownload={true}
+                            />
+                        </div>
+                        {showItemThree && (
+                            <div className='item-description-container'>
+                                <div className='description-item-row'>
+                                    <div className='ht-pair'>
+                                        <body><b>1. Consolidating donation information</b></body>
+                                        <body>We divided donation record-keeping into two core tenants: a comprehensive list of recent donations across all donors and a complete list of donors with their own unique profile. The former allows administrators to quickly troubleshoot recent donations and verify transactions. The latter enables Don Efficace to get to know their donors a little better, export their annual tax receipt and helps them quickly troubleshoot donor-specifc problems. </body>
+                                        <body>The donor profile was my favourite feature to design as I expect it to be the most enabling for administrators who are in a crunch for time.</body>
+                                    </div>
+                                    <img
+                                        className='in-line-detail'
+                                        src={donorProfile}
+                                    />
+                                </div>
+                                <div className='description-item-row'>
+                                    <div className='ht-pair'>
+                                        <body><b>2. Managing associated NPOs and their impact metrics </b></body>
+                                        <body>The product-defining impact estimation feature in the donation form and dashboard is all made possible by the ‘Causes’ tab in our admin portal. This is our secret stuff. We group NPOs into respective causes and store their impact-cost ratios, which allow us to dynamically estimate donation impacts. I worked closely with our product manager to refine the logic and algorithm behind impact estimation and worked with another designer to iron out the task flow of an admin inputting this data.</body>
+                                    </div>
+                                    <img
+                                        className='in-line-detail'
+                                        src={causesDetail}
+                                    />
+                                </div>
+                                <div className='description-item'>
+                                    <div className='ht-pair'>
+                                        <body><b>3. Equipping administrators with key donation insights </b></body>
+                                        <body>Due to the robust functionality of the admin portal, it was important for us to consolidate key information into a single dashboard view. Through client discussions, we identified recent donations, top donors and incoming donation revenue as the most important information for administrators and prioritized them through an admin dashboard.</body>
+                                        <body>We provided actionable insights to admins by identifying inactive vs active donors and recently cancelled reoccurring donations. These leads can be used to reduce donor turnover.</body>
+                                    </div>
+                                    <img
+                                        className='full-width-detail'
+                                        src={insightsDetail}
+                                    />
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
+            {/* <ThanksSection
+                title1={'Don Efficace'}
+                tag1={'Product'}
+                miniThumb1={miniDE}
+                link1={'/donEfficace'}
+                title2={'Diet Me'}
+                tag2={'Exploration'}
+                link2={'/dietMe'}
+                miniThumb2={miniDM}
+                showWork={true}
+            /> */}
         </div>
     </div>
 )
 }
 
-{/* <ThanksSection
-title1={'Don Efficace'}
-tag1={'Product'}
-miniThumb1={miniDE}
-link1={'/donEfficace'}
-title2={'Diet Me'}
-tag2={'Exploration'}
-link2={'/dietMe'}
-miniThumb2={miniDM}
-showWork={true}
-/> */}
+// <ThanksSection
+//     title1={'Don Efficace'}
+//     tag1={'Product'}
+//     miniThumb1={miniDE}
+//     link1={'/donEfficace'}
+//     title2={'Diet Me'}
+//     tag2={'Exploration'}
+//     link2={'/dietMe'}
+//     miniThumb2={miniDM}
+//     showWork={true}
+// />
