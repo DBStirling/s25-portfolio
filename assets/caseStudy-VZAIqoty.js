@@ -1,1 +1,0 @@
-import{j as t}from"./index-BL3xzht1.js";import"./Divider-BeK3SG5I.js";function a(c){const{text:i,clickFunctio:n}=c;return t.jsx("div",{className:"cta-container",onClick:n,children:t.jsx("div",{className:"cta-text",children:`${i}`})})}export{a as C};
