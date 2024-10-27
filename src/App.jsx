@@ -50,14 +50,13 @@ function App() {
                                 </div>
                                 <div>
                                     <Routes>
-                                        {/* Redirect from root to the main GitHub Pages base path */}
-                                        <Route path="/" element={<Navigate to="/s25-portfolio/" replace />} />
                                         <Route path="/s25-portfolio/" element={<Home scrollableRef={scrollableRef} />} />
-                                        <Route path="/s25-portfolio/about" element={<About />} />
-                                        <Route path="/s25-portfolio/extras" element={<Extras />} />
-                                        <Route path="/s25-portfolio/myFitnessPal" element={<MyFitnessPal />} />
-                                        <Route path="/s25-portfolio/dietMe" element={<DietMe />} />
-                                        <Route path="/s25-portfolio/donEfficace" element={<DonEfficace />} />
+                                        <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
+                                        <Route path="/about" element={<About />} />
+                                        <Route path="/extras" element={<Extras />} />
+                                        <Route path="/myFitnessPal" element={<MyFitnessPal />} />
+                                        <Route path="/dietMe" element={<DietMe />} />
+                                        <Route path="/donEfficace" element={<DonEfficace />} />
                                     </Routes>
                                 </div>
                                 <Footer />
