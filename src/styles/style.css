@@ -377,6 +377,7 @@ h3 {
 }
 
 .graphic {
+  z-index: 1000;
   width: 375px;
   height: auto;
   transition: transform 0.3s ease;
