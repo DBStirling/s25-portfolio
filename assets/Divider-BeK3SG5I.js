@@ -1,0 +1,1 @@
+import{j as i}from"./index-BL3xzht1.js";function r(e){const{title:s}=e;return i.jsxs("div",{className:"divider-container",children:[i.jsx("div",{className:"divider-line"}),i.jsx("div",{className:"divider-text",children:s}),i.jsx("div",{className:"divider-line"})]})}export{r as D};
