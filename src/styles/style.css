@@ -222,7 +222,7 @@ align-self: stretch;
   align-items: baseline;
   justify-content: flex-end;
   color: #121212;
-  font-family: Satoshi;
+  font-family: 'Satoshi', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
