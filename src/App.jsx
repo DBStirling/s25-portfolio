@@ -2,7 +2,6 @@ import React, { useRef, Suspense, lazy, useEffect } from "react";
 import { useState } from 'react'
 import { Routes, Route, useLocation  } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import NavBar from './components/NavBar/NavBar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 // import Home from './pages/home.jsx'
