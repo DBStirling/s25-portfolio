@@ -2,47 +2,55 @@ html {
   overflow: hidden;
 }
 
+/* @font-face {
+  font-family: 'PP Editorial New';
+  src: url('./fonts/PPEditorialNew-Regular.otf') format('opentype');
+  font-weight: 400; 
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'PP Editorial New';
-  src: url('./fonts/PPEditorialNew-Regular.otf') format('opentype'); /* OTF file */
-  font-weight: 400; /* Thin weight typically corresponds to 100 */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PP Editorial New';
-  src: url('./fonts/PPEditorialNew-Italic.otf') format('opentype'); /* OTF file */
-  font-weight: 400; /* Thin weight typically corresponds to 100 */
+  src: url('./fonts/PPEditorialNew-Italic.otf') format('opentype');
   font-style: italic;
-}
+} */
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('./fonts/Satoshi-Regular.otf') format('opentype'); /* OTF file */
-  font-weight: 400; /* Thin weight typically corresponds to 100 */
+  src: url('./fonts/Satoshi-Regular.woff2') format('woff2'), /* WOFF2 file */
+       url('./fonts/Satoshi-Regular.woff') format('woff'), /* WOFF file */
+       url('./fonts/Satoshi-Regular.otf') format('opentype'); /* OTF file */
+  font-weight: 400; /* Regular weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('./fonts/Satoshi-Bold.otf') format('opentype'); /* OTF file */
-  font-weight: 700; /* Thin weight typically corresponds to 100 */
+  src: url('./fonts/Satoshi-Bold.woff2') format('woff2'), /* WOFF2 file */
+       url('./fonts/Satoshi-Bold.woff') format('woff'), /* WOFF file */
+       url('./fonts/Satoshi-Bold.otf') format('opentype'); /* OTF file */
+  font-weight: 700; /* Bold weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('./fonts/Satoshi-Italic.otf') format('opentype'); /* OTF file */
-  font-weight: 400; /* Thin weight typically corresponds to 100 */
+  src: url('./fonts/Satoshi-Italic.woff2') format('woff2'), /* WOFF2 file */
+       url('./fonts/Satoshi-Italic.woff') format('woff'), /* WOFF file */
+       url('./fonts/Satoshi-Italic.otf') format('opentype'); /* OTF file */
+  font-weight: 400; /* Italic weight */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('./fonts/Satoshi-BoldItalic.otf') format('opentype'); /* OTF file */
-  font-weight: 700; /* Thin weight typically corresponds to 100 */
+  src: url('./fonts/Satoshi-BoldItalic.woff2') format('woff2'), /* WOFF2 file */
+       url('./fonts/Satoshi-BoldItalic.woff') format('woff'), /* WOFF file */
+       url('./fonts/Satoshi-BoldItalic.otf') format('opentype'); /* OTF file */
+  font-weight: 700; /* Bold Italic weight */
   font-style: italic;
 }
+
 
 .collage-container:hover {
   transform: scale(1.2) rotate(-2deg);
