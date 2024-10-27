@@ -58,7 +58,7 @@ const NavBar = () => {
                     </li>
                     <li className="nav-element">
                     <a 
-                        href="/path-to-your-resume.pdf" 
+                        href="https://drive.google.com/file/d/1f7ZJdze7mezFj3OElqoBo4zdnG666cQN/view?usp=sharing" 
                         className='nav-link'
                         target="_blank" 
                         rel="noopener noreferrer"

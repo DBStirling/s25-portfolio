@@ -182,7 +182,7 @@ export default function Home({scrollableRef} ) {
                 title="Flow Financial"
                 description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
                 tag="Case Study"
-                destination ='/flowFinancial'
+                destination ='/unfinished'
                 imgSrc={FFthumbnail}
               />
           <div className="end-work-prompt">

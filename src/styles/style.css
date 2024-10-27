@@ -274,7 +274,9 @@ align-self: stretch;
   animation: riseIn 1.5s ease-out forwards; 
 }
 
-
+.unfinished {
+  height: 100vh;
+}
 
 .ht-section {
   display: flex;
