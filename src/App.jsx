@@ -50,6 +50,7 @@ function App() {
                                 </div>
                                 <div>
                                     <Routes>
+                                        <Route path="/s25-portfolio/" element={<Home scrollableRef={scrollableRef} />} />
                                         <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
                                         <Route path="/about" element={<About />} />
                                         <Route path="/extras" element={<Extras />} />
