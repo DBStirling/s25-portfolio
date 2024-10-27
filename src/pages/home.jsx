@@ -189,7 +189,7 @@ export default function Home({scrollableRef} ) {
             See some non-work stuff in&nbsp;
             <Link 
               className="end-work-link"
-              to={'/s25-portfolio/about'}
+              to={'/about'}
             >{' '}about{' '}
             </Link>
             &nbsp;or&nbsp;

@@ -52,7 +52,7 @@ function App() {
                                     <Routes>
                                         <Route path="/s25-portfolio/" element={<Home scrollableRef={scrollableRef} />} />
                                         <Route path="/" element={<Home scrollableRef={scrollableRef} />} />
-                                        <Route path="/s25-portfolio/about" element={<About />} />
+                                        <Route path="/about" element={<About />} />
                                         <Route path="/extras" element={<Extras />} />
                                         <Route path="/myFitnessPal" element={<MyFitnessPal />} />
                                         <Route path="/dietMe" element={<DietMe />} />
