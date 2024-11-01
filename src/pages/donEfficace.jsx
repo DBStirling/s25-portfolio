@@ -193,7 +193,7 @@ return (
                                     <div className='ht-pair'>
                                         <p><b>2. Bridging the Empathy Gap</b></p>
                                         <p>
-                                        <span 
+                                        <span className="link"
                                             onClick={() => window.open('https://www.vox.com/future-perfect/359526/charitable-giving-generosity-crisis-report-americans-young', '_blank')} 
                                             style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
                                             >
@@ -252,7 +252,7 @@ return (
                                         <div className='ht-pair'>
                                             <p><b>2. Reminding them Why They Donate</b></p>
                                             <p>As donors continue to contribute, it was essential to remind them of their real-world impact as 
-                                            <span 
+                                            <span className="link"
                                                 onClick={() => window.open('https://blog.philanthropy.indianapolis.iu.edu/2021/02/26/donor-fatigue-is-it-real/', '_blank')} 
                                                 style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
                                                 >
@@ -310,7 +310,7 @@ return (
                                     <div className='ht-pair'>
                                         <p><b>2. Managing associated NPOs and their impact metrics </b></p>
                                         <p>The product-defining impact estimation feature in the donation form and dashboard is all made possible by the ‘Causes’ tab in our admin portal. 
-                                        <span 
+                                        <span  className="link"
                                             onClick={() => window.open('https://blog.philanthropy.indianapolis.iu.edu/2021/02/26/donor-fatigue-is-it-real/', '_blank')} 
                                             style={{ cursor: 'pointer', fontWeight: 'normal', textDecoration: 'underline' }}
                                             >
@@ -347,7 +347,7 @@ return (
                 <div className="heading">This case study isn’t quite there yet.</div>
                 <p>
                     I’m still putting the fine details together and ensure that it will be out shortly. In the meantime, please feel free to             
-                    <span 
+                    <span  className="link"
                         onClick={() => window.open('mailto:dstirlin@uwaterloo.ca')} 
                         style={{ cursor: 'pointer', fontWeight: 'normal', fontFamily: 'PP Editorial New' }}
                     >

@@ -119,7 +119,7 @@ export default function about() {
           <div className="ht-body">
             <p>
             I’m an engineering student @
-            <span 
+            <span  className="link"
               onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >
@@ -127,7 +127,7 @@ export default function about() {
             </span> 
             {' '}who<b> loves turning big ideas into things people can actually 
             use.</b> I’m currently designing tenant experiences @
-            <span 
+            <span className="link" 
               onClick={() => window.open('https://livwith.com/', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >
@@ -135,7 +135,7 @@ export default function about() {
             </span> 
             {' '}and pitching 
             in on all fronts @
-            <span 
+            <span className="link" 
               onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >

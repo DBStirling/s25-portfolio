@@ -1,8 +1,7 @@
 import React, { useEffect } from "react"; // Add useEffect
 import { useNavigate, Link, useLocation } from "react-router-dom";
 
-// import heroGradient from "../assets/Images/hero-gradient.png";
-import CtaButton from "../components/CtaButton/CtaButton.jsx";
+import TypeIt from "typeit-react";
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx'
 import Divider from '../components/Divider/Divider.jsx'
 import "../styles/style.css";
@@ -118,26 +117,29 @@ export default function Home({scrollableRef} ) {
           <div className="intro-content">
             <div className="hero-content">
               <h1 className="hero-header">
-                {/* Hey, <em>I'm David</em> */}
-                Hey, I'm David
+                <TypeIt
+                  options={{
+                    strings: ["Hey, I'm David"],
+                    speed: 45,
+                    waitUntilVisible: true,
+                    cursor: false, // Disable the blinking cursor
+                  }}
+                />
               </h1>
               <div className="hero-body">
-                <p>
-                  <strong>I like to design, build, ship & repeat.</strong>
-                </p>
-                <p>As a System Design Engineering student @
-                  <span 
-                    onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
-                    style={{ cursor: 'pointer', textDecoration: 'underline' }}
-                    >
-                    UWaterloo
-                  </span>
-                , I blend pragmatic engineering problem-solving with creative, empathetic design.
-                </p>
-                {/* <p>
-                  If you're here for business, scroll to check out my featured work. But if you're looking to get to know me a bit better, take a look around!
-                </p> */}
-                <p>I'm looking for summer 2025 opportunities to get hands on with things that bring a little more joy to life. </p>
+                  <p>
+                    <strong>I like to design, build, ship & repeat.</strong>
+                  </p>
+                  <p>As a System Design Engineering student @
+                    <span className="link"
+                      onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
+                      style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                      >
+                      UWaterloo
+                    </span>
+                  , I blend pragmatic engineering problem-solving with creative, empathetic design.
+                  </p>
+                  <p>I'm looking for summer 2025 opportunities to get hands on with things that bring a little more joy to life. </p>
               </div>
             </div>
           </div>

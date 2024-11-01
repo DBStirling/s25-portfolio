@@ -150,6 +150,10 @@ button {
   transition: border-color 0.25s;
 }
 
-span:hover {
+/* span:hover {
+  color: #743EDB;
+} */
+
+.link:hover {
   color: #743EDB;
 }
