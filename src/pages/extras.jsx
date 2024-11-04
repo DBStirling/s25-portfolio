@@ -16,6 +16,7 @@ import lebronCollage from "../assets/Images/extras/lebron-collage.png"
 import sprung from "../assets/Images/extras/sprung-kcwavy.png"
 import paak from "../assets/Images/extras/paak.png"
 import russRockets from "../assets/Images/extras/russ-rockets.png"
+import sga from "../assets/Images/extras/SGAokc2.png"
 
 export default function extras() {
   return (
@@ -35,6 +36,13 @@ export default function extras() {
               small={rodmanCollage}
               large={rodmanCollage}
               alt="A Dennis Rodman collage that I made and ended up turning into a t-shirt + poster"
+              hideDownload={true}
+            />
+            <ModalImage
+              className='graphic'
+              small={sga}
+              large={sga}
+              alt="my favourite player in the league at the moment, SGA"
               hideDownload={true}
             />
             <ModalImage
