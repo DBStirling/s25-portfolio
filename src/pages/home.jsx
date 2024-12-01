@@ -178,15 +178,14 @@ export default function Home({scrollableRef} ) {
                 tag="Exploration"
                 destination ='/dietMe'
                 imgSrc={DMthumbnail}
-                // last='true'
               />
-              <ProjectCard
+              {/* <ProjectCard
                 title="Flow Financial"
                 description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
                 tag="Case Study"
                 destination ='/unfinished'
                 imgSrc={FFthumbnail}
-              />
+              /> */}
           <div className="end-work-prompt">
             See some non-work stuff in&nbsp;
             <Link 
