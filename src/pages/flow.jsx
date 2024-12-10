@@ -367,12 +367,13 @@ export default function flow() {
                     style={{
                         // margin: '0 auto', 
                         maxHeight: '800px', 
-                        // width: '100%'
+                        width: '100%'
                     }}
                     >
                     <img src={figureSeven} 
                     style={{ 
-                        height: '100%'
+                        height: '100%',
+                        maxWidth: '100%'
                     }}/>
                 </div>
                 <p style={{marginTop: '64px'}}> In the case that any of their subscriptions are suboptimal (they can be optimized 
@@ -424,9 +425,9 @@ export default function flow() {
                     display: "flex", 
                     flexDirection: "row", 
                     justifyContent: "space-between", 
+                    flexWrap: 'wrap',
                     gap: "64px", 
-                    maxWidth: "60%", 
-                    margin: "0 auto" // Center the container
+                    margin: "0 auto", // Center the container
                   }}
                 >
                   <div 
@@ -434,6 +435,7 @@ export default function flow() {
                     style={{
                       flex: 1, 
                       maxWidth: "800px", 
+                      minWidth: '275px',
                       height: "auto"
                     }}
                   >
@@ -452,6 +454,8 @@ export default function flow() {
                     style={{
                       flex: 1, 
                       maxWidth: "400px", 
+                      width: '100%',
+                      minWidth: '275px',
                       height: "auto"
                     }}
                   >
@@ -518,7 +522,7 @@ export default function flow() {
               <iframe
                 className="actual-prototype"
                 style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                width="1000px"
+                width="800px"
                 height="800px"
                 src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/HackWestern-Design-File?page-id=2287%3A11771&node-id=2287-11772&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2287%3A11796&embed-host=share"
                 allowFullScreen=""
