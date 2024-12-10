@@ -19,6 +19,7 @@ const Extras = lazy(() => import('./pages/extras.jsx'));
 const MyFitnessPal = lazy(() => import('./pages/myFitnessPal'));
 const DietMe = lazy(() => import('./pages/dietMe.jsx'));
 const DonEfficace = lazy(() => import('./pages/donEfficace.jsx'));
+const Flow = lazy(() => import('./pages/flow.jsx'));
 const Unfinished = lazy(() => import('./pages/unfinished.jsx'));
 
 
@@ -57,6 +58,7 @@ function App() {
                                         <Route path="/myFitnessPal" element={<MyFitnessPal />} />
                                         <Route path="/dietMe" element={<DietMe />} />
                                         <Route path="/donEfficace" element={<DonEfficace />} />
+                                        <Route path='/flow' element={<Flow />} />
                                         <Route path='/unfinished' element={<Unfinished />} />
                                     </Routes>
                                 </div>

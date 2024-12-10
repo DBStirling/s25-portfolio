@@ -7,9 +7,8 @@ import Divider from '../components/Divider/Divider.jsx'
 import "../styles/style.css";
 import DEthumbnail from '../assets/Images/de-thumb.png';
 import DMthumbnail from '../assets/Images/dm-thumb.png';
-import MFPthumbnail from '../assets/Images/mfp-thumb.png'
-import FFthumbnail from '../assets/Images/flow-thumb-cs.png'
-import STthumbnail from '../assets/Images/stamped-thumb-cs.png'
+import MFPthumbnail from '../assets/Images/mfp-thumb.png';
+import FFthumbnail from '../assets/Images/ff-thumb.png';
 
 export default function Home({scrollableRef} ) {
 
@@ -158,13 +157,13 @@ export default function Home({scrollableRef} ) {
                 destination="/donEfficace"
                 imgSrc={DEthumbnail}
               />
-              {/* <ProjectCard
-                title="Stamped"
-                description="Ideated a social experiences app to help small business owners cultivate a  following and create genuine connections with customers."
-                tag="Exploration"
-                destination ='/stamped'
-                imgSrc={STthumbnail}
-              /> */}
+              <ProjectCard
+                title="Flow"
+                description="Reimagining budgeting for students with a necessity-first mobile app."
+                tag="Case Study"
+                destination ='/flow'
+                imgSrc={FFthumbnail}
+              />
               <ProjectCard
                 title="MyFitnessPal"
                 description="Redesigned the industry-leading calorie counting app to better align with user needs."
@@ -179,13 +178,6 @@ export default function Home({scrollableRef} ) {
                 destination ='/dietMe'
                 imgSrc={DMthumbnail}
               />
-              {/* <ProjectCard
-                title="Flow Financial"
-                description="Ideated a mobile app geared towards helping young adults find their footing in early personal finances and budgeting. "
-                tag="Case Study"
-                destination ='/unfinished'
-                imgSrc={FFthumbnail}
-              /> */}
           <div className="end-work-prompt">
             See some non-work stuff in&nbsp;
             <Link 
