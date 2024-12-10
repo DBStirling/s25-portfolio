@@ -5,6 +5,7 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
 import ideationFirst from '../assets/Images/dm/ideation-first.png'
 import ideationSecond from '../assets/Images/dm/ideation-second.png'
 
@@ -231,16 +232,17 @@ export default function dietMe() {
         <div className='sub-section reflection'>
           <div className='reflection-body'>
           <ThanksSection
-          title1={'Don Efficace'}
-          tag1={'Product'}
-          miniThumb1={miniDE}
-          link1={'/donEfficace'}
-          title2={'MyFitnessPal'}
-          tag2={'Case Study'}
-          link2={'/myFitnessPal'}
-          miniThumb2={miniMFP}
-          showWork={true}
-        />          </div>
+            title1={'Don Efficace'}
+            tag1={'Product'}
+            miniThumb1={miniDE}
+            link1={'/donEfficace'}
+            title2={'Diet Me'}
+            tag2={'Case Study'}
+            link2={'/flow'}
+            miniThumb2={miniFlow}
+            showWork={true}
+            />      
+        </div>
         </div>
       </div>
     </div>

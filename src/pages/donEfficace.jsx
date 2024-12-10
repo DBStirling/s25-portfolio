@@ -6,6 +6,8 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
+import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+
 import formPair from '../assets/Images/de/form-pair.png'
 import taxDetail from '../assets/Images/de/tax-potential-detail.png'
 import impactCard from '../assets/Images/de/impact-card.png'
@@ -357,14 +359,14 @@ return (
                 </p>
             </div>
             <ThanksSection
-                title1={'MyFitnessPal'}
+                title1={'Flow'}
                 tag1={'Case Study'}
-                miniThumb1={miniMFP}
-                link1={'/myFitnessPal'}
-                title2={'Diet Me'}
-                tag2={'Exploration'}
-                link2={'/dietMe'}
-                miniThumb2={miniDM}
+                miniThumb1={miniFlow}
+                link1={'/flow'}
+                title2={'MyFitnessPal'}
+                tag2={'Case Study'}
+                link2={'/myFitnessPal'}
+                miniThumb2={miniMFP}
                 showWork={true}
             />
             </div>
