@@ -1,10 +1,16 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
+import ImageToggle from '../components/ImageToggle/imageToggle.jsx'
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import figureOne from '../assets/Images/flow/flow-one.png'
+import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
+import figureTwoTwo from '../assets/Images/flow/flow-two-two.png'
+
+
 
 import "../styles/caseStudy.css"
 
@@ -32,7 +38,7 @@ export default function flow() {
             <div className="ht-pair">
               <div className="heading">Setting the scene</div>
               <div>
-              <p>Budgeting has always felt unnecessarily intimidating to me. As a co-op student, I struggled 
+              <p>Budgeting has always felt unnecessarily intimidating. As a co-op student, I struggled 
                 to manage my finances during the months I wasn’t working. The endless spreadsheets and complex 
                 formulas my friends relied on only made things worse. I knew there had to be an easier way to 
                 save for tuition, pay rent on time, and still have some money left over for fun. That’s where 
@@ -50,82 +56,76 @@ export default function flow() {
           title={'the problem'}/>
           <div className="the-problem-body ht-pair">
             <div className="heading">
-              After acquiring MyFitnessPal in 2020, Francisco Partners introduced
-              major changes that prioritized profitability and left the needs of users
-              on the backburner.{" "}
+            Traditional budgeting models don’t accommodate the variable and sparse incomes of students.{" "}
             </div>
-            <p>
-            The private equity firm hid key features, such as barcode scanning, behind
-            premium subscriptions, increased the number of external advertisements and
-            implemented additive features that did not address primary use cases for
-            users. The addition of these changes over the years created an
-            increasingly more disjointed user experience as the interface was not
-            reworked to address the differences.
+            <p>Income is hard for students to come by. They’re either jobless or working part-time throughout the 
+                year, which makes the 70/20/10 or 50/30/20 models hard to adopt. Given the cookie-cutter approach 
+                of these models, it’s hard to believe that they’re a suitable approach for students of all 
+                backgrounds, program types and financial goals.
             </p>
-          </div>
-        </div>
-        <div className="sub-section user-research">
-          <Divider
-          title={'user research'}/>
-          <div className="user-research-body">
-            <div className="user-research-text ht-pair">
-              <div className="heading">
-                Many users are intimidated, confused, annoyed or all of the above when
-                using the app.
-              </div>
-              <p>
-              I interviewed three MyFitnessPal users to get a better insight into what
-              works well and what doesn’t. In addition, I consulted online forums,
-              such as App Store Reviews and Reddit, to validate interviewee concerns
-              and to hedge potential blind spots that were not discussed. Take a
-              scroll below to see some of the insights!
-              </p>
+            <p>My personal experience wasn't too far off from this, either, and the stories that I've heard from friends 
+                seem to be right on the money. It appeared that we were all stuck in the same money management limbo, illustrated below. 
+            </p>
+            <div 
+                className='image-container-new' 
+                style={{
+                    margin: '0 auto', 
+                    maxWidth: '800px', 
+                    width: '100%'
+                }}
+                >
+                <img src={figureOne} 
+                style={{ 
+                    width: '100%'
+                }}/>
             </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={'key pain points'}/>
+          title={'user research'}/>
           <div className="key-pain-points-body">
-            <div className="pain-point ht-pair">
-              <div className="heading">
-                1. There is a poor balance between user and business needs
-              </div>
-              <p>
-              Long-term users, in particular, feel that too much of the app has been
-              hidden by premium access. This has greatly limited the value and
-              usability of the app.
-              </p>
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    Students are optimistically confused about their finances.
+                </div>
+                <p style={{fontSize: '20px'}}> I collected over 30 responses from an anonymous survey and unmoderated interviews with students. 
+                    I identified 3 main themes in the responses. </p>
+            </div>
+            <div className='row-container'
+                style={{display: 'flex', flexDirection: 'row', width: "100%", gap: "64px"}}
+                >
+                <div className="pain-point ht-pair">
+                <div className="heading">
+                    1. Short-term thinking
+                </div>
+                <p>
+                Students <b>struggle to grasp the long-term impacts of their purchases</b> and struggle to tame their spending as a result.
+                </p>
+                </div>
+                <div className="pain-point ht-pair">
+                <div className="heading">
+                    2. Lack of Guidance
+                </div>
+                <p>
+                <b>They don’t know how much they should be saving, spending or investing in any given week</b> since they're frequently hit with new expenses (increasing tuition, moving apartments, more required textbooks, etc.).
+                </p>
+                </div>
             </div>
             <div className="pain-point ht-pair">
-              <div className="heading">
-                2. There is a lack of motivational factors
-              </div>
-              <p>
-              Consistently eating the right foods is hard, but the act of logging it
-              into MyFitnessPal isn’t it. Users need a stronger source of motivation
-              than just the days logged streak. It is not enough to motivate users to
-              stick to their health plans and continue using MyFitnessPal.
-              </p>
-            </div>
-            <div className="pain-point ht-pair">
-              <div className="heading">
-                3. Becoming health-conscious is confusing
-              </div>
-              <p>
-              New users want to improve their habits through MyFitnessPal but it's
-              difficult to know where to start and even harder to find trustworthy
-              knowledge sources along the way.&nbsp;
-              </p>
-            </div>
-            <div className="pain-point ht-pair">
-              <div className="heading">
-                4. It’s difficult to navigate the app
-              </div>
-              <p>
-              Navigating through the app proves challenging due to its complex layout
-              and lack of intuitive design cues.
-              </p>
+                <div className="heading">
+                    3. Blind confidence
+                </div>
+                <p>
+                Despite not knowing <em>how</em>, <b>the majority of respondents were confident in their ability
+                to save money for future expenses.</b> Funny enough, this confidence decreased with age as the majority 
+                of non-positive responses came from older respondants. Click on the image to see the proportion.
+                </p>
+                <ImageToggle 
+                    image1={figureTwoOne} 
+                    image2={figureTwoTwo}
+                    altText='Wealth confidence considering age'
+                />
             </div>
           </div>
         </div>

@@ -826,6 +826,15 @@ img:hover {
   font-family: Raleway, sans-serif;
 }
 
+
+/* FLOW */
+
+.graph-row-item {
+  width: 45%;
+  height: fit-content;
+  object-fit: cover;
+}
+
 .de-summary-item {
   display: flex;
   flex-direction: column;

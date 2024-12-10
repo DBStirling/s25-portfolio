@@ -1,0 +1,9 @@
+.image-toggle-container {
+    width: 100%;
+}
+
+.toggle-image {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
