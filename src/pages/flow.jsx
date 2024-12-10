@@ -12,12 +12,26 @@ import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
 import figureTwoTwo from '../assets/Images/flow/flow-two-two.png'
 import figureThree from '../assets/Images/flow/flow-three.png'
 import figureFive from '../assets/Images/flow/flow-five.png'
+import figureSix from '../assets/Images/flow/flow-six.png'
+import figureSeven from '../assets/Images/flow/flow-seven.gif'
+import figureEight from '../assets/Images/flow/flow-eight.png'
+import figureNine from '../assets/Images/flow/flow-nine.gif'
+
+
+
 
 
 
 import "../styles/caseStudy.css"
 
 export default function flow() {
+
+    const [showVoiceFlow, setShowVoiceFlow] = useState(false);
+
+    const handleImageClick = () => {
+        setShowVoiceFlow((prev) => !prev);
+        console.log("clickReceived")
+    };
 
     // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
@@ -305,16 +319,16 @@ export default function flow() {
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                    First off, how can it be automated? Isn’t banking data pretty private?
+                    How can we identify subscriptions? 
                 </div>
-                <p style={{fontSize: '20px'}}>
-                    To implement automated expense tracking, we would rely on API integrations from providers like Plaid, Yodlee or FinBox. These services 
-                    allow users to securely connect their bank accounts and share data, such as transactions or balances, with their explicit consent. This 
-                    makes it fairly simple to link users’ financial data to Flow.
+                <p>
+                    By analyzing the value and merchant associated with each transaction, we can identify recurring subscriptions through repeated 
+                    transactions. Once identified, we can use the merchant name and transaction value to determine the exact plan a user is on. Going 
+                    forward, subscriptions will be tracked using the merchant name and billing date to account for any pricing changes
                 </p>
-                <p style={{marginBottom: '32px'}}> That said, a drawback of relying on these integrations is scalability. If the 
-                    providers were to impose stricter API limits or increase the cost of API calls as their user base grows, it could lead to challenges 
-                    in maintaining performance or controlling costs.  
+                <p style={{marginBottom: '32px'}}> To enhance scalability, identified subscriptions can be stored in a central database. This allows 
+                    for cross-referencing other users’ transactions, enabling quicker subscription identification while reducing the number of queries 
+                    required.
                 </p>
                 <div 
                     className='image-container-new' 
@@ -324,7 +338,7 @@ export default function flow() {
                         width: '100%'
                     }}
                     >
-                    <img src={figureFive} 
+                    <img src={figureSix} 
                     style={{ 
                         width: '100%'
                     }}/>
@@ -332,31 +346,132 @@ export default function flow() {
             </div>
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                    How can we reliably categorize expenses?
+                    Now, how do we simplify subscription management?
                 </div>
-                <p> Purchases at places like Chipotle or a university bookstore are easy to classify as essential or non-essential by using the merchant name 
-                    for identification, a method already employed by most banks. However, transactions at stores like Walmart present a challenge. The data 
-                    retrieved from the API lacks the granular detail needed to distinguish between essential and non-essential items, making accurate categorization 
-                    impossible based solely on the transaction's face value. Similarly, purchases from small businesses or mom-and-pop shops face a similar challenge. 
-                    The merchant ID is often unrecognizable or generic, making it difficult to categorize these transactions accurately without additional context.
+                <p style={{fontSize: '20px'}}>
+                    <b>Simply by removing the guesswork.</b>  Flow has a dedicated page where all of a user’s subscriptions are stored along with their plan name, transaction details and upcoming 
+                    billing dates. At the top of the page, they can find the sum of their recurring spending on a monthly and annual basis with a real-world 
+                    comparison to put their purchase in perspective.
                 </p>
-                <p style={{fontSize: '20px', marginBottom: '32px'}}>
-                    <b>Lock-screen categorization and crowdsourcing can help streamline expense tracking, making for a much more seamless experience.</b> By enabling users to quickly categorize ambiguous 
-                    purchases directly from their lock screen, expense tracking becomes more accurate for individuals and improves for everyone as the app gains 
-                    more users. Here's how this feature could work. 
+                <p style={{marginBottom: '32px'}}>Given that <b>88% of the survey respondents don’t have a dedicated way of managing their ongoing subscriptions,</b> 
+                    this page will ensure that they’re more informed about their subscriptions
                 </p>
-                <div className="protopype-container" id="prototypeSection">
-                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
-                    <iframe
-                        className="actual-prototype"
-                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
-                        width="800px"
-                        height="800px"
-                        src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/Flow-Design-File?page-id=2287%3A11771&node-id=2469-17462&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2469%3A17462&embed-host=share"
-                        allowFullScreen=""
-                    />
-                    </div>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        // margin: '0 auto', 
+                        maxHeight: '800px', 
+                        // width: '100%'
+                    }}
+                    >
+                    <img src={figureSeven} 
+                    style={{ 
+                        height: '100%'
+                    }}/>
                 </div>
+                <p style={{marginTop: '64px'}}> In the case that any of their subscriptions are suboptimal (they can be optimized 
+                    by switching to an alternative plan or are made redundant by owning similar services), the user is prompted with 
+                    an optimization suggestion. The optimization suggestion can be acted on through the Kabob menu on the right of the 
+                    card and by confirming that you would like to either switch your subscription or cancel it altogether. After confirming 
+                    the decision, we initialize a VoiceFlow agent and use it to email the customer-help email to begin the process of updating 
+                    the user’s plan. If you’re curious about the implementation, <span style={{textDecoration: 'underline'}} onClick={handleImageClick}>check this out. </span> 
+                    Myself and a few friends built a subscription management agent using VoiceFlow to complete this very task.
+                </p>
+                {showVoiceFlow && (
+                    <div 
+                        className='image-container-new' 
+                        style={{
+                            margin: '0 auto', 
+                            maxWidth: '800px', 
+                            width: '100%'
+                        }}
+                        >
+                        <img src={figureNine} 
+                        style={{ 
+                            width: '100%'
+                        }}/>
+                    </div>)}
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Addressing Budgeting woes"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                Building personalized budgets
+                </div>
+                <p>
+                    By analyzing the value and merchant associated with each transaction, we can identify recurring subscriptions through repeated 
+                    transactions. Once identified, we can use the merchant name and transaction value to determine the exact plan a user is on. Going 
+                    forward, subscriptions will be tracked using the merchant name and billing date to account for any pricing changes
+                </p>
+                <p style={{marginBottom: '32px'}}> To enhance scalability, identified subscriptions can be stored in a central database. This allows 
+                    for cross-referencing other users’ transactions, enabling quicker subscription identification while reducing the number of queries 
+                    required.
+                </p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        margin: '0 auto', 
+                        maxWidth: '800px', 
+                        width: '100%'
+                    }}
+                    >
+                    <img src={figureSix} 
+                    style={{ 
+                        width: '100%'
+                    }}/>
+                </div>
+            </div>
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    Now, how do we simplify subscription management?
+                </div>
+                <p style={{fontSize: '20px'}}>
+                    <b>Simply by removing the guesswork.</b>  Flow has a dedicated page where all of a user’s subscriptions are stored along with their plan name, transaction details and upcoming 
+                    billing dates. At the top of the page, they can find the sum of their recurring spending on a monthly and annual basis with a real-world 
+                    comparison to put their purchase in perspective.
+                </p>
+                <p style={{marginBottom: '32px'}}>Given that <b>88% of the survey respondents don’t have a dedicated way of managing their ongoing subscriptions,</b> 
+                    this page will ensure that they’re more informed about their subscriptions
+                </p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        // margin: '0 auto', 
+                        maxHeight: '800px', 
+                        // width: '100%'
+                    }}
+                    >
+                    <img src={figureSeven} 
+                    style={{ 
+                        height: '100%'
+                    }}/>
+                </div>
+                <p style={{marginTop: '64px'}}> In the case that any of their subscriptions are suboptimal (they can be optimized 
+                    by switching to an alternative plan or are made redundant by owning similar services), the user is prompted with 
+                    an optimization suggestion. The optimization suggestion can be acted on through the Kabob menu on the right of the 
+                    card and by confirming that you would like to either switch your subscription or cancel it altogether. After confirming 
+                    the decision, we initialize a VoiceFlow agent and use it to email the customer-help email to begin the process of updating 
+                    the user’s plan. If you’re curious about the implementation, <span style={{textDecoration: 'underline'}} onClick={handleImageClick}>check this out. </span> 
+                    Myself and a few friends built a subscription management agent using VoiceFlow to complete this very task.
+                </p>
+                {showVoiceFlow && (
+                    <div 
+                        className='image-container-new' 
+                        style={{
+                            margin: '0 auto', 
+                            maxWidth: '800px', 
+                            width: '100%'
+                        }}
+                        >
+                        <img src={figureNine} 
+                        style={{ 
+                            width: '100%'
+                        }}/>
+                    </div>)}
             </div>
           </div>
         </div>
