@@ -19,6 +19,7 @@ import figureNine from '../assets/Images/flow/flow-nine.gif'
 import figureTen from '../assets/Images/flow/flow-ten.jpg'
 import figureEleven from '../assets/Images/flow/flow-eleven.png'
 import figureTwelve from '../assets/Images/flow/flow-twelve.gif'
+import figureThirteen from '../assets/Images/flow/flow-thirteen.png'
 
 
 
@@ -303,7 +304,7 @@ export default function flow() {
                     purchases directly from their lock screen, expense tracking becomes more accurate for individuals and improves for everyone as the app gains 
                     more users. Here's how this feature could work. 
                 </p>
-                <div className="protopype-container" id="prototypeSection">
+                <div className="protopype-container">
                     <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
                     <iframe
                         className="actual-prototype"
@@ -474,67 +475,39 @@ export default function flow() {
             </div>
           </div>
         </div>
-        <div className="sub-section jobs-tbd">
+        <div className="sub-section key-pain-points">
           <Divider
-          title={'jobs to be done'}/>
-          <div className="jobs-tbd-body">
-            <div className="jobs-tbd-text ht-pair">
-              <div className="heading">
-                How might we help MyFitnessPal balance business and user needs?
-              </div>
-              <p>Despite being disliked by users, paywalling key features works. It
-              helped increase the percentage of users on premium plan subscriptions
-              and contributed to a 25% year-on-year increase in revenue.&nbsp;
-              </p>
-              <p>
-              Instead of reversing these changes, we can make the user experience more
-              satisfying by implementing design changes that are inspired by newly
-              identified pain points.
-              </p>
-              <p>
-              Ultimately, revenue can always be driven by providing value to the user.
-              Designing around the user’s pain points will improve utility and drive
-              both daily users and premium plan subscriptions as the app is in the
-              hands of more happy users.
-              </p>
+          title={"Design System"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                Designing for consistency and adaptability
+                </div>
+                <p style={{marginBottom: '32px'}}>
+                I wanted the app to feel relaxed and comforting, so I opted for warm primary colors like soft oranges and muted yellows, paired 
+                with rounded elements to create a welcoming experience. However, the most important factor for achieving this was making sure that 
+                the information architecture, design architecture and interactions fit users’ mental models. I also ensured that components and 
+                styles were flexible enough to adapt to future features, making the system easy to expand as the product evolved. 
+                </p>
+                <div 
+                    className="image-container-new" 
+                    style={{
+                      flex: 1, 
+                      maxWidth: "800px", 
+                      height: "auto"
+                    }}
+                  >
+                    <img 
+                      src={figureThirteen} 
+                      style={{
+                        width: "100%", 
+                        height: "100%", 
+                        objectFit: "cover"
+                      }} 
+                      alt="Figure Eleven"
+                    />
+                  </div>
             </div>
-            {/* <div className="hmw-section">
-              <div className="hmw-indiv-section">
-                <div className="heading centered-text">
-                  How might we make the fitness world less intimidating for users?
-                </div>
-                <div className="hmw-container ">
-                  <img className="hmw nh" src={hmw11} />
-                  <img className="hmw nh" src={hmw12} />
-                  <img className="hmw nh" src={hmw13} />
-                  <img className="hmw nh" src={hmw14} />
-                </div>
-              </div>
-              <div className="hmw-indiv-section">
-                <div className="heading centered-text">
-                  How might we implement accountability partners to increase user
-                  motivation and success rates?
-                </div>
-                <div className="hmw-container">
-                  <img className="hmw nh funky-sizing" src={hmw21} />
-                  <img className="hmw nh funky-sizing" src={hmw22} />
-                  <img className="hmw nh funky-sizing" src={hmw23} />
-                </div>
-              </div>
-              <div className="hmw-indiv-section">
-                <div className="heading  centered-text">
-                  How might we make it easier for users to navigate MyFitnessPal?
-                </div>
-                <div className="hmw-container">
-                  <img className="hmw nh" src={hmw31} />
-                  <img className="hmw nh" src={hmw32} />
-                  <img className="hmw nh" src={hmw33} />
-                  <img className="hmw nh" src={hmw34} />
-                  <img className="hmw nh" src={hmw35} />
-                  <img className="hmw nh" src={hmw36} />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="sub-section prototype">
@@ -560,45 +533,60 @@ export default function flow() {
           <div className="reflection-body">
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
-                {/* <img
-                  className="reflection-icon nh"
-                  src={wrenchIcon}
-                  alt="wrench icon"
-                /> */}
-                <div className="heading">Modular design systems are a lifesaver.</div>
+              <div className="heading">
+                If I had more time, I would <b>conduct usability testing</b>
+              </div>
               </div>
               <p>
-              Learning how to use auto-layout, components and styles is the best thing
-              I’ve ever done in Figma.
+              While I spent a lot of time on conceptual work and prototyping, I didn’t have the 
+              chance to get the prototype into the hands of real students. Gathering their feedback 
+              would have been extremely helpful in identifying any design flaws or areas where my 
+              assumptions didn’t match up with how students would actually use the app.
               </p>
             </div>
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
-                {/* <img
-                  className="reflection-icon nh"
-                  src={targetIcon}
-                  alt="target icon"
-                /> */}
-                <div className="heading">Sometimes, less can be more.</div>
-              </div>
-              <p>
-                Keep it simple and make sure to not overwhelm the user.
-              </p>
-            </div>
-            <div className="reflection-item ht-pair">
-              <div className="reflection-header">
-                {/* <img
-                  className="reflection-icon nh"
-                  src={groupIcon}
-                  alt="group icon"
-                /> */}
                 <div className="heading">
-                  Always and I mean, ALWAYS seek feedback!
+                  If I had more <span style={{textDecoration: 'line-through'}}>time</span> data security 
+                  expertise, <b>I would consider pursuing this, seriously.</b>
                 </div>
               </div>
               <p>
-              Usability tests, user interviews and A/B tests are great ways to know if
-              you’re going in the right direction.
+              I took on the project because of how useful it would be to the everyday student and I’m driven 
+              by building things that add value to everyday lives. I’m proud of the foundation that I’ve built 
+              with basic logistics and thorough design. I’m tempted to transform this foundation into something 
+              real and have friends in development who would be just as interested to join, but we’re all equally 
+              weary about storing people’s real-life financial data. I’ll never say never though, I just need to 
+              be bored enough on a Saturday afternoon.
+              </p>
+            </div>
+            {/* <div className="reflection-item ht-pair">
+              <div className="reflection-header">
+                <div>
+
+                </div>
+                <div className="heading">
+                Tackling Complex Problems:
+                </div>
+              </div>
+              <p>
+              Designing Flow meant thinking through the technical side of things, like how to securely integrate 
+              banking data and ensure accurate transaction categorization. Consulting with developer friends helped 
+              me gain a better understanding of what’s feasible. This process gave me extra practice in aligning 
+              design concepts with technical limitations and making smarter decisions when working on complex features.
+              </p>
+            </div> */}
+            <div className="reflection-item ht-pair">
+              <div className="reflection-header">
+                <div className="heading">
+                Research can be surprising
+                </div>
+              </div>
+              <p>
+              When conducting user research, I quickly realized that students weren’t as pessimistic about their 
+              finances as I expected. In fact, most were overly confident, even if they didn’t know how to budget 
+              properly. This reminded me that user behavior can be unpredictable and reinforced the importance of 
+              ground-level learning to get a clear understanding of real user needs—not just assumptions.
               </p>
             </div>
             <ThanksSection
@@ -607,8 +595,8 @@ export default function flow() {
             miniThumb1={miniDE}
             link1={'/donEfficace'}
             title2={'Diet Me'}
-            tag2={'Exploration'}
-            link2={'/dietMe'}
+            tag2={'Case Study'}
+            link2={'/myFitnessPal'}
             miniThumb2={miniMFP}
             showWork={true}
             />
