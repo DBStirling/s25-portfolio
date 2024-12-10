@@ -16,6 +16,11 @@ import figureSix from '../assets/Images/flow/flow-six.png'
 import figureSeven from '../assets/Images/flow/flow-seven.gif'
 import figureEight from '../assets/Images/flow/flow-eight.png'
 import figureNine from '../assets/Images/flow/flow-nine.gif'
+import figureTen from '../assets/Images/flow/flow-ten.jpg'
+import figureEleven from '../assets/Images/flow/flow-eleven.png'
+import figureTwelve from '../assets/Images/flow/flow-twelve.gif'
+
+
 
 
 
@@ -403,75 +408,69 @@ export default function flow() {
                 Building personalized budgets
                 </div>
                 <p>
-                    By analyzing the value and merchant associated with each transaction, we can identify recurring subscriptions through repeated 
-                    transactions. Once identified, we can use the merchant name and transaction value to determine the exact plan a user is on. Going 
-                    forward, subscriptions will be tracked using the merchant name and billing date to account for any pricing changes
+                Understanding that granular financial data would be retrieved by the banking integration, I approached budget creation with the belief 
+                that ‘less is more’. I designed a short budgeting quiz that retrieved basic user information along with their long-term goals, fixed 
+                expenses and miscellaneous financial gains. 
                 </p>
-                <p style={{marginBottom: '32px'}}> To enhance scalability, identified subscriptions can be stored in a central database. This allows 
-                    for cross-referencing other users’ transactions, enabling quicker subscription identification while reducing the number of queries 
-                    required.
-                </p>
-                <div 
-                    className='image-container-new' 
-                    style={{
-                        margin: '0 auto', 
-                        maxWidth: '800px', 
-                        width: '100%'
-                    }}
-                    >
-                    <img src={figureSix} 
-                    style={{ 
-                        width: '100%'
-                    }}/>
-                </div>
-            </div>
-            <div className='pain-point ht-pair'>
-                <div className='heading'>
-                    Now, how do we simplify subscription management?
-                </div>
-                <p style={{fontSize: '20px'}}>
-                    <b>Simply by removing the guesswork.</b>  Flow has a dedicated page where all of a user’s subscriptions are stored along with their plan name, transaction details and upcoming 
-                    billing dates. At the top of the page, they can find the sum of their recurring spending on a monthly and annual basis with a real-world 
-                    comparison to put their purchase in perspective.
-                </p>
-                <p style={{marginBottom: '32px'}}>Given that <b>88% of the survey respondents don’t have a dedicated way of managing their ongoing subscriptions,</b> 
-                    this page will ensure that they’re more informed about their subscriptions
+                <p style={{marginBottom: '32px'}}>
+                Although I initially  included this quiz within the onboarding, I opted to make it an in-app feature and used the onboarding real-estate 
+                to create an introductory flow. This reduced the user onboarding time and would ensure that more users were introduced to the application 
+                before completing a long quiz which could deter their interest. The quiz being necessity-only was extra important for this reason as well. 
                 </p>
                 <div 
-                    className='image-container-new' 
+                  className="row-container" 
+                  style={{
+                    display: "flex", 
+                    flexDirection: "row", 
+                    justifyContent: "space-between", 
+                    gap: "64px", 
+                    maxWidth: "60%", 
+                    margin: "0 auto" // Center the container
+                  }}
+                >
+                  <div 
+                    className="image-container-new" 
                     style={{
-                        // margin: '0 auto', 
-                        maxHeight: '800px', 
-                        // width: '100%'
+                      flex: 1, 
+                      maxWidth: "800px", 
+                      height: "auto"
                     }}
-                    >
-                    <img src={figureSeven} 
-                    style={{ 
-                        height: '100%'
-                    }}/>
+                  >
+                    <img 
+                      src={figureEleven} 
+                      style={{
+                        width: "100%", 
+                        height: "100%", 
+                        objectFit: "cover"
+                      }} 
+                      alt="Figure Eleven"
+                    />
+                  </div>
+                  <div 
+                    className="image-container-new" 
+                    style={{
+                      flex: 1, 
+                      maxWidth: "400px", 
+                      height: "auto"
+                    }}
+                  >
+                    <img 
+                      src={figureTwelve} 
+                      style={{
+                        width: "100%", 
+                        height: "100%", 
+                        objectFit: "cover"
+                      }} 
+                      alt="Figure Twelve"
+                    />
+                  </div>
                 </div>
-                <p style={{marginTop: '64px'}}> In the case that any of their subscriptions are suboptimal (they can be optimized 
-                    by switching to an alternative plan or are made redundant by owning similar services), the user is prompted with 
-                    an optimization suggestion. The optimization suggestion can be acted on through the Kabob menu on the right of the 
-                    card and by confirming that you would like to either switch your subscription or cancel it altogether. After confirming 
-                    the decision, we initialize a VoiceFlow agent and use it to email the customer-help email to begin the process of updating 
-                    the user’s plan. If you’re curious about the implementation, <span style={{textDecoration: 'underline'}} onClick={handleImageClick}>check this out. </span> 
-                    Myself and a few friends built a subscription management agent using VoiceFlow to complete this very task.
+                <p style={{marginTop: '32px'}}>
+                The second feature is the monthly huddle, which provides a detailed recap of the user’s spending. This includes insights into where they spent 
+                the most, how their spending was categorized, and overall trends that help them understand their financial habits better. The goal here was to 
+                go beyond the typical banking report—I wanted to create a moment of reflection and planning, giving users the tools to identify areas for 
+                improvement and actionable ways to  tame their spending.
                 </p>
-                {showVoiceFlow && (
-                    <div 
-                        className='image-container-new' 
-                        style={{
-                            margin: '0 auto', 
-                            maxWidth: '800px', 
-                            width: '100%'
-                        }}
-                        >
-                        <img src={figureNine} 
-                        style={{ 
-                            width: '100%'
-                        }}/>
-                    </div>)}
             </div>
           </div>
         </div>
