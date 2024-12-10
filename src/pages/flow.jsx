@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from "react";
 import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
+import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import ImageToggle from '../components/ImageToggle/imageToggle.jsx'
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
@@ -9,12 +10,31 @@ import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import figureOne from '../assets/Images/flow/flow-one.png'
 import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
 import figureTwoTwo from '../assets/Images/flow/flow-two-two.png'
+import figureThree from '../assets/Images/flow/flow-three.png'
+import figureFive from '../assets/Images/flow/flow-five.png'
 
 
 
 import "../styles/caseStudy.css"
 
 export default function flow() {
+
+    // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+    // const [msg, setMsg] = useState('')
+    // const [showMsg, setShowMsg] = useState(false)
+
+    // const handleMouseEnter = () => {
+    //     setShowMsg(true);
+    //     console.log('enter')
+    // };
+
+    // const handleMouseLeave = () => {
+    //     setShowMsg(false);
+    //     console.log()
+    // };
+
+    // setMsg('hello')
 
   function scrollToPrototype() {
     const section = document.getElementById('prototypeSection');
@@ -116,16 +136,227 @@ export default function flow() {
                 <div className="heading">
                     3. Blind confidence
                 </div>
-                <p>
+                <p style={{marginBottom: '48px'}}>
                 Despite not knowing <em>how</em>, <b>the majority of respondents were confident in their ability
                 to save money for future expenses.</b> Funny enough, this confidence decreased with age as the majority 
                 of non-positive responses came from older respondants. Click on the image to see the proportion.
                 </p>
-                <ImageToggle 
+                <ImageToggle
                     image1={figureTwoOne} 
                     image2={figureTwoTwo}
                     altText='Wealth confidence considering age'
                 />
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={'North Star Question'}/>
+          <div className="key-pain-points-body">
+            <div 
+            style={{background: 'rgba(247, 246, 246, 0.5)', 
+                backdropFilter: 'blur(10px)', 
+                padding: '16px 40px', 
+                borderLeft: "12px solid rgba(173, 166, 232, 0.50)", 
+                borderRadius: '0px 12px 12px 0px'}}
+            >
+                <div className='heading'
+                style={{fontSize: '32px'}}
+                >
+                    How might we use this confidence to simplify personalized budget creation and walk them through long-term saving?
+                </div>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Ideation + How Might We's?"}/>
+          <div className="key-pain-points-body">
+          {/* {showMsg && (
+            <HoverPopUp
+                x={cursorPosition.x}
+                y={cursorPosition.y}
+                msg={msg}
+            />)} */}
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    Identifying jobs that efficiently sum up these needs
+                </div>
+                <p style={{fontSize: '20px', marginBottom: '32px'}}> After translating the responses into a FigJam (my whiteboard of choice), I used affinity 
+                    mapping to identify similarities and prioritize opportunities. Among the above mentioned themes, a handful of pain 
+                    points became more evident, like manually documenting spending and managing subscriptions.
+                </p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        margin: '0 auto', 
+                        maxWidth: '800px', 
+                        width: '100%'
+                    }}
+                    >
+                    <img src={figureThree} 
+                    style={{ 
+                        width: '100%'
+                    }}/>
+                </div>
+            </div>
+            <div className="pain-point ht-pair"
+                // onMouseEnter={handleMouseEnter}
+                // onMouseLeave={handleMouseLeave}
+            >
+                <div className="heading">
+                    1. How might we simplify expense tracking?
+                </div>
+                <p>
+                    Beyond summing up the number of purchases in a given week, month or beyond, these transactions need to be categorized and logged in the correct categories of expenditure.
+                </p>
+                <p>
+                    It became increasingly apparent that transaction logging needed to be automated. Many of our respondents listed this repetitive task as a central deterrent to budgeting.
+                </p>
+            </div>
+            <div className="pain-point ht-pair">
+                <div className="heading">
+                    2. How might we help manage subscriptions?
+                </div>
+                <p>
+                    Subscription models thrive on short-term thinking. They count on the average person’s inability to translate $9.99 a month into $119.88 yearly or even $ 1198.80 a decade from now. The average respondent had 3 subscriptions and this number is only expected to grow as students age and subscription models become even more prevalent.
+                </p>
+                <p>
+                    Companies typically offer more than one subscription plan and oftentimes rely on the cancel button being notoriously hard to find.
+                </p>
+            </div>
+            <div className="pain-point ht-pair">
+                <div className="heading">
+                    3. How might we streamline budget creation for students?
+                </div>
+                <p> 
+                    Despite being optimistic about their ability to save, most students don’t know the first thing about saving, investing and budgeting.
+                </p>
+                <p>
+                    Going hand-in-hand with short-term thinking, it was clear that they didn’t know how much they were supposed to tuck away and save on any given day.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Addressing Expense Tracking"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    First off, how can it be automated? Isn’t banking data pretty private?
+                </div>
+                <p style={{fontSize: '20px'}}>
+                    To implement automated expense tracking, we would rely on API integrations from providers like Plaid, Yodlee or FinBox. These services 
+                    allow users to securely connect their bank accounts and share data, such as transactions or balances, with their explicit consent. This 
+                    makes it fairly simple to link users’ financial data to Flow.
+                </p>
+                <p style={{marginBottom: '32px'}}> That said, a drawback of relying on these integrations is scalability. If the 
+                    providers were to impose stricter API limits or increase the cost of API calls as their user base grows, it could lead to challenges 
+                    in maintaining performance or controlling costs.  
+                </p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        margin: '0 auto', 
+                        maxWidth: '800px', 
+                        width: '100%'
+                    }}
+                    >
+                    <img src={figureFive} 
+                    style={{ 
+                        width: '100%'
+                    }}/>
+                </div>
+            </div>
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    How can we reliably categorize expenses?
+                </div>
+                <p> Purchases at places like Chipotle or a university bookstore are easy to classify as essential or non-essential by using the merchant name 
+                    for identification, a method already employed by most banks. However, transactions at stores like Walmart present a challenge. The data 
+                    retrieved from the API lacks the granular detail needed to distinguish between essential and non-essential items, making accurate categorization 
+                    impossible based solely on the transaction's face value. Similarly, purchases from small businesses or mom-and-pop shops face a similar challenge. 
+                    The merchant ID is often unrecognizable or generic, making it difficult to categorize these transactions accurately without additional context.
+                </p>
+                <p style={{fontSize: '20px', marginBottom: '32px'}}>
+                    <b>Lock-screen categorization and crowdsourcing can help streamline expense tracking, making for a much more seamless experience.</b> By enabling users to quickly categorize ambiguous 
+                    purchases directly from their lock screen, expense tracking becomes more accurate for individuals and improves for everyone as the app gains 
+                    more users. Here's how this feature could work. 
+                </p>
+                <div className="protopype-container" id="prototypeSection">
+                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
+                    <iframe
+                        className="actual-prototype"
+                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
+                        width="800px"
+                        height="800px"
+                        src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/Flow-Design-File?page-id=2287%3A11771&node-id=2469-17462&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2469%3A17462&embed-host=share"
+                        allowFullScreen=""
+                    />
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Addressing Subscription Management"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    First off, how can it be automated? Isn’t banking data pretty private?
+                </div>
+                <p style={{fontSize: '20px'}}>
+                    To implement automated expense tracking, we would rely on API integrations from providers like Plaid, Yodlee or FinBox. These services 
+                    allow users to securely connect their bank accounts and share data, such as transactions or balances, with their explicit consent. This 
+                    makes it fairly simple to link users’ financial data to Flow.
+                </p>
+                <p style={{marginBottom: '32px'}}> That said, a drawback of relying on these integrations is scalability. If the 
+                    providers were to impose stricter API limits or increase the cost of API calls as their user base grows, it could lead to challenges 
+                    in maintaining performance or controlling costs.  
+                </p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        margin: '0 auto', 
+                        maxWidth: '800px', 
+                        width: '100%'
+                    }}
+                    >
+                    <img src={figureFive} 
+                    style={{ 
+                        width: '100%'
+                    }}/>
+                </div>
+            </div>
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                    How can we reliably categorize expenses?
+                </div>
+                <p> Purchases at places like Chipotle or a university bookstore are easy to classify as essential or non-essential by using the merchant name 
+                    for identification, a method already employed by most banks. However, transactions at stores like Walmart present a challenge. The data 
+                    retrieved from the API lacks the granular detail needed to distinguish between essential and non-essential items, making accurate categorization 
+                    impossible based solely on the transaction's face value. Similarly, purchases from small businesses or mom-and-pop shops face a similar challenge. 
+                    The merchant ID is often unrecognizable or generic, making it difficult to categorize these transactions accurately without additional context.
+                </p>
+                <p style={{fontSize: '20px', marginBottom: '32px'}}>
+                    <b>Lock-screen categorization and crowdsourcing can help streamline expense tracking, making for a much more seamless experience.</b> By enabling users to quickly categorize ambiguous 
+                    purchases directly from their lock screen, expense tracking becomes more accurate for individuals and improves for everyone as the app gains 
+                    more users. Here's how this feature could work. 
+                </p>
+                <div className="protopype-container" id="prototypeSection">
+                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
+                    <iframe
+                        className="actual-prototype"
+                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
+                        width="800px"
+                        height="800px"
+                        src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/Flow-Design-File?page-id=2287%3A11771&node-id=2469-17462&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2469%3A17462&embed-host=share"
+                        allowFullScreen=""
+                    />
+                    </div>
+                </div>
             </div>
           </div>
         </div>
