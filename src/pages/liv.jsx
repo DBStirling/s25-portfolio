@@ -182,8 +182,7 @@ export default function flow() {
                     style={{ cursor: "pointer" }}
                 >
                     <ImageToggle
-                        image1={figureTwoOne} 
-                        image2={figureTwoTwo}
+                        images={[figureTwoOne, figureTwoTwo]} 
                         altText="Wealth confidence considering age"
                     />
                 </div>
@@ -191,8 +190,7 @@ export default function flow() {
                     style={{ cursor: "pointer" }}
                 >
                     <ImageToggle
-                        image1={figureTwoOne} 
-                        image2={figureTwoTwo}
+                        images={[figureTwoOne, figureTwoTwo]} 
                         altText="Wealth confidence considering age"
                     />
                 </div>
@@ -200,8 +198,7 @@ export default function flow() {
                     style={{ cursor: "pointer" }}
                 >
                     <ImageToggle
-                        image1={figureTwoOne} 
-                        image2={figureTwoTwo}
+                        images={[figureTwoOne, figureTwoTwo]} 
                         altText="Wealth confidence considering age"
                     />
                 </div>

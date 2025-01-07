@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./imageToggle.css";
 
-const ImageToggle = ({ image1, image2, altText }) => {
-  const [isFirstImage, setIsFirstImage, text] = useState(true);
+const ImageToggle = ({ images, altText }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = () => {
-    setIsFirstImage((prev) => !prev);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (images.length));
   };
 
   return (
     <div className="image-toggle-container" onClick={handleImageClick}>
       <img
-        src={isFirstImage ? image1 : image2}
-        alt={text}
+        src={images[currentIndex]}
+        alt={altText}
         className="toggle-image"
       />
     </div>
