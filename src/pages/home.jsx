@@ -9,6 +9,7 @@ import DEthumbnail from '../assets/Images/de-thumb.png';
 import DMthumbnail from '../assets/Images/dm-thumb.png';
 import MFPthumbnail from '../assets/Images/mfp-thumb.png';
 import FFthumbnail from '../assets/Images/ff-thumb.png';
+import LIVthumbnail from '../assets/Images/liv-thumb.png';
 
 export default function Home({scrollableRef} ) {
 
@@ -150,6 +151,13 @@ export default function Home({scrollableRef} ) {
               title={'Projects & Case Studies'}/>
             </div>
             <div className="project-card-container">
+            <ProjectCard
+                title="LIV Free Trial"
+                description="Designed a guided free trial experience for a leading Canadian prop-tech solution."
+                tag="Product"
+                destination="/liv"
+                imgSrc={LIVthumbnail}
+              />
               <ProjectCard
                 title="Don Efficace"
                 description="Designed a donation ecosystem for an effective altruism NPO, helping donors visualize their impact and donate with more diligence."
