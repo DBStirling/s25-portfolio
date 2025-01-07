@@ -6,7 +6,7 @@ import ImageToggle from '../components/ImageToggle/imageToggle.jsx'
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
-import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
 import figureOneOne from '../assets/Images/liv/liv-one-one.png'
 import figureOneTwo from '../assets/Images/liv/liv-one-two.png'
 import figureTwoOne from '../assets/Images/liv/liv-two-one.png'
@@ -21,11 +21,7 @@ import figureEightOne from '../assets/Images/liv/liv-eight-one.png'
 import figureEightTwo from '../assets/Images/liv/liv-eight-two.png'
 import figureEightThree from '../assets/Images/liv/liv-eight-three.png'
 
-import figureNine from '../assets/Images/flow/flow-nine.gif'
-import figureTen from '../assets/Images/flow/flow-ten.jpg'
-import figureEleven from '../assets/Images/flow/flow-eleven.png'
-import figureTwelve from '../assets/Images/flow/flow-twelve.gif'
-import figureThirteen from '../assets/Images/flow/flow-thirteen.png'
+
 
 
 
@@ -63,7 +59,7 @@ export default function flow() {
     // setMsg('hello')
 
   function scrollToPrototype() {
-    const section = document.getElementById('prototypeSection');
+    const section = document.getElementById('theSolution');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -212,7 +208,7 @@ export default function flow() {
             </div>
           </div>
         </div>
-        <div className="sub-section key-pain-points">
+        <div className="sub-section key-pain-points" id="theSolution">
           <Divider
           title={"The Solution"}/>
           <div className="key-pain-points-body">
@@ -296,7 +292,7 @@ export default function flow() {
                 <div className='heading'>
                   Designing a universal guided pop-up
                 </div>
-                <p>I went through two main pop-up design iterations. Click below to see the changes and some of the rationale behind them. Along with the pop-ups, I also iterated through various feedback animation designs. I started with an oscillating purple highlight and ended with a much simpler blue bordered highlight as it fit more within the design scheme and would be an easier development implementation without trade-off. I worked through these visual design changes with the mentorship and feedback of the senior designer and our development team to ensure the quality and feasibility of design choices. 
+                <p>I went through two main pop-up design iterations. <b>Click through below to see the changes and some of the rationale behind them.</b> Along with the pop-ups, I also iterated through various feedback animation designs. I started with an oscillating purple highlight and ended with a much simpler blue bordered highlight as it fit more within the design scheme and would be an easier development implementation without trade-off. I worked through these visual design changes with the mentorship and feedback of the senior designer and our development team to ensure the quality and feasibility of design choices. 
                 </p>
                 <div
                     style={{ cursor: "pointer", margin: '32px 0', maxWidth: '800px' }}
@@ -313,7 +309,7 @@ export default function flow() {
           <Divider
           title={"Building User Confidence"}/>
           <div className="key-pain-points-body">
-            <div className='pain-point ht-pair'>
+            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
                 <div className='heading'>
                   Writing for users on autopilot
                 </div>
@@ -326,30 +322,29 @@ export default function flow() {
                 <p style={{marginBottom: '32px'}}>
                   Working in a startup means that you get to wear many hats and it put me in the position to learn a great deal about content design. Through exploring forums and reading various articles, <b>I put together a short list of content design rules that I used for the tutorial.</b>
                 </p>
-                <p>
-                  <div className="heading">
-                    1. Write in active voice, starting with actions or objectives.
-                  </div>
-                  <div className="heading">
-                    2. Use ‘you’ or ‘your’ to make it personally applicable for the user.
-                  </div>                  
-                  <div className="heading">
-                    3. Make it concise.
-                  </div>                  
-                  <div className="heading">
-                    4. Reveal information only when relevant.
-                  </div>                  
-                  <div className="heading">
-                    5. Write for all reading levels.
-                  </div>
-                </p>
+                <ol style={{ paddingLeft: '0', listStylePosition: 'inside', fontSize: '20px' }}>
+                  <li style={{ marginBottom: '12px' }}>Write in active voice, starting with actions or objectives.</li>
+                  <li style={{ marginBottom: '12px' }}>Use ‘you’ or ‘your’ to make it personally applicable for the user.</li>
+                  <li style={{ marginBottom: '12px' }}>Make it concise.</li>
+                  <li style={{ marginBottom: '12px' }}>Reveal information only when relevant.</li>
+                  <li>Write for all reading levels.</li>
+                </ol>
             </div>
             <div className='pain-point ht-pair'>
               <div className="heading">Supporting user autonomy with a free trial menu</div>
                 <p style={{margin: '32px 0'}}>
                   Users are bound to have different interests or needs, so the trial was modularly designed to promote roaming and exploration. This keeps users engaged by avoiding an impersonal linear tutorial experience. To reflect this modularity, I designed a free trial menu, enabling the user to navigate between any section within the guided tutorial or enter the open sandbox. The free trial menu is universally available as an overlay in the bottom right of the user’s screen and displays user progress along with secondary actions like booking a demo or providing feedback. View the below prototypes to see the first and last iterations of the free trial menu.
                 </p>
-                <div className="protopype-container">
+            </div>
+            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
+                  <div className="heading">Free trial menu changes</div>
+                  <ol style={{paddingLeft: '0', listStylePosition: 'inside', fontSize: '20px' }}>
+                    <li style={{ marginBottom: '12px' }}>Adjusted primary color to match trial UI</li>
+                    <li style={{ marginBottom: '12px' }}>Added more context; both on the free trial menu & their progress in the trial</li>
+                    <li style={{ marginBottom: '12px' }}>Re-prioritized the sections and the secondary actions</li>
+                    <li>Made secondary actions more visually distinct</li>
+                  </ol>
+                  <div className="protopype-container">
                     <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
                     <iframe
                         className="actual-prototype"
@@ -361,67 +356,29 @@ export default function flow() {
                     />
                     </div>
                 </div>
-            </div>
-            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
-              <div className="heading">Some of the changes</div>
-              <ol style={{paddingLeft: '0', listStylePosition: 'inside' }}>
-                <li>Adjusted primary color to match trial UI</li>
-                <li>Added more context; both on the free trial menu & their progress in the trial</li>
-                <li>Re-prioritized the sections above the secondary actions</li>
-                <li>Made secondary actions more visually distinct</li>
-              </ol>
-            </div>
+              </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={"Design System"}/>
+          title={"Converting Free Trials into Sales Leads"}/>
           <div className="key-pain-points-body">
-            <div className='pain-point ht-pair'>
+            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
                 <div className='heading'>
-                  Prioritizing consistency and adaptability (building a good design system)
+                  Looking past the design. What now?
                 </div>
-                <div 
-                    className="image-container-new" 
-                    style={{
-                      flex: 1, 
-                      maxWidth: "800px", 
-                      height: "auto"
-                    }}
-                  >
-                    <img 
-                      src={figureThirteen} 
-                      style={{
-                        width: "100%", 
-                        height: "100%", 
-                        objectFit: "cover"
-                      }} 
-                      alt="Figure Eleven"
-                    />
-                  </div>
                 <p>
-                  I used warm colors like soft oranges and muted yellows with rounded elements to create a welcoming feel. Furthermore, 
-                  I made sure that the information architecture and interactions fit users’ mental models to make it truly welcoming. 
-                  I also ensured that components and styles were flexible enough to adapt to future features, making the system easy 
-                  to expand as the product evolved. 
+                Although the product hasn’t launched yet, we are confident that providing a high-quality experience during the free trial will directly improve conversion rates. By showcasing the LIV platform’s value upfront, we aim to convert users into paying customers and enable our sales team to engage with more interested leads.
                 </p>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section prototype">
-          <Divider
-          title={'interactive prototype'}/>
-          <div className="protopype-container" id="prototypeSection">
-            <div className="prototype">
-              <iframe
-                className="actual-prototype"
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                width="800px"
-                height="800px"
-                src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/HackWestern-Design-File?page-id=2287%3A11771&node-id=2287-11772&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2287%3A11796&embed-host=share"
-                allowFullScreen=""
-              />
-{/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/HackWestern-Design-File?page-id=2287%3A11771&node-id=2287-11772&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2287%3A11796&embed-host=share" allowfullscreen></iframe> */}
+                <p>
+                To enhance and simulate ongoing user engagement, we integrated email notifications into the sandbox experience. For instance, users who schedule maintenance requests during the trial will receive email updates when a technician cancels at the last minute or completes the job. This showcases the value of the platform’s behind-the-scenes automation and highlights the time saved for the user, helping to drive conversions by mimicking real-world usage.
+                </p>
+                <p>
+                To maintain the quality of the trial experience, I collaborated with the development team to ensure that A/B testing can be implemented once analytics become available. I wrote development tickets illustrating the functionality of splitting users into test groups and tracking variable performance, which will be used to habitually assess and improve its interaction/visual design where needed. I also advocated for usability testing, which will provide richer context beyond the short round of feedback provided in the trial.
+                </p>
+                <p style={{fontSize: '20px'}}>
+                It's almost out! When the free trial is released, I'll be the first to link it here, so you can take a look for yourself. 
+                </p>
             </div>
           </div>
         </div>
@@ -432,52 +389,42 @@ export default function flow() {
           <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <div className="heading">
-                Takeaway - Research can be surprising
+                Takeaway - It’s okay to challenge design systems
                 </div>
               </div>
               <p>
-              When conducting interviews and reviewing responses, I quickly realized that students weren’t as pessimistic 
-              about their finances as I expected. In fact, most were overly confident, even if they didn’t know how to budget 
-              properly. This reminded me that user behavior can be very hard to predict and reinforced the importance of 
-              ground-level learning to get a clear understanding of real user needs—not just assumptions.
+              Working within a design system is great for maintaining consistency and even reducing development effort, but these are not always the priority of a product team. My first iteration of the guided pop-up was based off of an existing admin pop-up component and as a result was hard to differentiate from the existing LIV UI. Not to mention, creating a new component doesn’t always require truck loads of development effort. If a new component can provide more value to the user than the original, then who’s to say it isn’t worth developing? Big ideas and designs only get reigned in and reduced on their way to implementation, so why not start big?
               </p>
             </div>
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
               <div className="heading">
-                If I had more time, I would <b>conduct usability testing</b>
+              Takeaway - Take the time to document for developers
               </div>
               </div>
               <p>
-              While I spent a lot of time on conceptual work and prototyping, I didn’t have the 
-              chance to get the prototype into the hands of others. Gathering their feedback 
-              would have been extremely helpful in identifying any design flaws or areas where my 
-              assumptions didn’t match up with how they would actually use the app.
+              No matter how intuitive design implementation may be to yourself and your fellow designers, there is no guarantee that the developers are in the same boat. In fact, it’s almost guaranteed that they’re in a completely different ship. After all, they have a fresh pair of eyes and they haven't contemplated this design for 72 hours like you have. Avoid the heartache and take the time to explain your process. Thoroughly comment, prototype and document interactions along with exact padding sizes to save your team time and effort in the long-run.
               </p>
             </div>
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <div className="heading">
-                  If I had more <span style={{textDecoration: 'line-through'}}>time</span> data security 
-                  expertise and time, <b>I would consider pursuing this idea seriously.</b>
+                If I had more time, I would expand the key feature list.
                 </div>
               </div>
               <p>
-                I'm driven by building things that add value to people's everyday lives amd this would do exactly that.
-                I also built a strong foundation, designing thoroughly tackling logistics and consulting developers.
-                Despite this, I'm hesitant to store people’s real-life financial data, which acts as a huge deterrent 
-                in pursuing development. I'll never say never, though.
+              The two guided tutorials within this trial can serve as the foundation for an interactive onboarding tutorial. As they have already bought into LIV services, onboarding customers would likely have more interest and incentive in learning about each feature. Adding tutorials, with the same components, for amenity booking, visitor assignment and everything else could help reduce the troubleshooting burden on the sales team — which will be increasingly important as Unify continues to scale. Beyond just our team, this feature would significantly help customers as they’re able to receive real-time feedback and guidance on how to use our features.
               </p>
             </div>
             <ThanksSection
-            title1={'Don Efficace'}
-            tag1={'Product'}
-            miniThumb1={miniDE}
-            link1={'/donEfficace'}
-            title2={'MyFitnessPal'}
-            tag2={'Case Study'}
-            link2={'/myFitnessPal'}
-            miniThumb2={miniMFP}
+            title1={'Flow'}
+            tag1={'Case Study'}
+            miniThumb1={miniFlow}
+            link1={'/flow'}
+            title2={'Don Efficace'}
+            tag2={'Product'}
+            miniThumb2={miniDE}
+            link2={'/donEfficace'}            
             showWork={true}
             />
         </div>
