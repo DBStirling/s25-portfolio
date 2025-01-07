@@ -85,6 +85,21 @@ export default function flow() {
               </p>
               </div>
             </div>
+            <div className="ht-pair">
+              <div className="heading">Setting the Scene</div>
+              <div>
+              <p>
+                As their first ever intern and second UX Designer, <b>I had the unique opportunity to shape their internship 
+                program and work as the lead designer on a high-impact feature</b> to be shipped in early 2025.
+              </p>
+              <p>
+                I was tasked with designing a free-trial experience for new users. I led the interaction and 
+                customer experience design, completing competitive analysis, wireframes and design mockups. I 
+                collaborated with a senior designer who provided feedback through weekly meetings and provided 
+                final approval on the visual design. 
+              </p>
+              </div>
+            </div>
           </div>
           <CtaButton
             text='Cut To The Chase'
@@ -93,73 +108,76 @@ export default function flow() {
         </div>
         <div className="sub-section the-problem">
           <Divider
-          title={'the problem'}/>
+          title={'Why a free trial?'}/>
           <div className="the-problem-body ht-pair">
             <div className="heading">
-            Traditional budgeting models don’t accommodate the variable and sparse incomes of students.{" "}
+            Potential customers want to see and feel the product before committing{" "}
             </div>
-            <p>Income is hard for students to come by. They’re either jobless or working part-time throughout the 
-                year, which makes the 70/20/10 or 50/30/20 models hard to adopt. Given the cookie-cutter approach 
-                of these models, they’re not a suitable approach for students of varying 
-                backgrounds, program types and financial goals.
+            <p>
+              Speaking to customer-facing co-workers, <b>this was a primary blocker voiced by users</b> during demos and sales calls. 
+              I was tasked with creating a free trial experience that would nullify concerns and build user confidence, but 
+              how else could I provide value to new users and the sales team through this project?
             </p>
-            <p>After discussing with friends, it appeared that we were all stuck in the same money management limbo, illustrated below. 
+            <p> 
+              Operating in a highly competitive market for property management solutions, <b>LIV differentiates itself with strong UX 
+              and an abundance of useful features</b> for tenant and operator user types. Beyond user feedback, this design-centric 
+              value proposition highlighted the importance of getting our product into users' hands, allowing them to experience 
+              the difference for themselves. Similarly, implementing a free trial will help new users build confidence in the platform 
+              before committing financially. This is expected to help convert trial users into paying customers.
             </p>
-            <div 
-                className='image-container-new' 
-                style={{
-                    margin: '0 auto', 
-                    maxWidth: '800px', 
-                    width: '100%'
-                }}
-                >
-                <img src={figureOne} 
-                style={{ 
-                    width: '100%'
-                }}/>
-            </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={'user research'}/>
+          title={'Defining Success'}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
-                <div className='heading'>
-                    Students are optimistically confused about their finances.
-                </div>
-                <p style={{fontSize: '20px'}}> I collected over 30 responses from an anonymous survey and a handful of unmoderated interviews with other students. 
-                    I identified the three following themes in their responses. </p>
+                <p style={{fontSize: '20px'}}> I identified 3 key objectives after discussing the my intentions for the project with the product manager, senior designer and marketing team.  </p>
             </div>
             <div className='row-container'
                 style={{display: 'flex', flexDirection: 'row', width: "100%", gap: "64px"}}
                 >
                 <div className="pain-point ht-pair">
                 <div className="heading">
-                    1. Short-term thinking
+                    1. Introduce Key Features
                 </div>
                 <p>
-                Students <b>struggle to grasp the long-term impacts of their purchases</b> and find it hard to manage their spending accordingly.
+                  <b>Guide users through the platform's essential features</b> without overwhelming them. Focused walkthroughs highlight the core functionality that delivers the most value, ensuring users understand what sets the platform apart.
                 </p>
                 </div>
                 <div className="pain-point ht-pair">
                 <div className="heading">
-                    2. Lack of Guidance
+                    2. Build the Confidence of on-the-fence Users
                 </div>
                 <p>
-                <b>Students don’t know how much they should be saving, spending or investing in any given week</b> since they're frequently faced with new expenses (increasing tuition, moving apartments, required textbooks, etc.).
+                  <b>Help users feel comfortable navigating the platform</b> through intuitive onboarding, tooltips, and real-time feedback. By empowering users to perform key actions effortlessly, they gain trust in the platform's reliability and value.
                 </p>
                 </div>
             </div>
             <div className="pain-point ht-pair">
                 <div className="heading">
-                    3. Ignorance is Bliss
+                    3. Convert Free Trials Into Leads
                 </div>
-                <p style={{marginBottom: '48px'}}>
-                Despite not knowing <em>how</em>, <b>the majority of respondents were confident in their ability
-                to save money for future expenses.</b> Funny enough, this confidence decreased with age as the majority 
-                of non-positive responses came from older respondents. Toggle the image to see the breakdown.
+                <p>
+                  <b>Turn trial users into paying customers</b> by strategically demonstrating ROI throughout the experience and immersing the user in the trial experience. 
                 </p>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Competitive Analysis"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+              <div className="header">
+                Turning competitor weaknesses into our competitive edge
+              </div>
+                <p>
+                  I began by looking at competitor free trials in the prop-tech space. This research helped me understand what worked 
+                  well and what didn’t. More importantly, it allowed me to pinpoint key pain points, which I leveraged to create differentiating 
+                  features for our platform. Click into the following images to learn what I took away from each trial. 
+                </p>
+                
                 <div
                     style={{ cursor: "pointer" }}
                 >
@@ -169,55 +187,24 @@ export default function flow() {
                         altText="Wealth confidence considering age"
                     />
                 </div>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section key-pain-points">
-          <Divider
-          title={'Bringing it together'}/>
-          <div className="key-pain-points-body">
-            <div 
-            // style={{background: 'rgba(247, 246, 246, 0.5)', 
-            //     backdropFilter: 'blur(10px)', 
-            //     padding: '16px 40px', 
-            //     borderLeft: "12px solid rgba(173, 166, 232, 0.50)", 
-            //     borderRadius: '0px 12px 12px 0px'}}
-            >
-                <div className='heading'
-                style={{fontSize: '32px'}}
+                <div
+                    style={{ cursor: "pointer" }}
                 >
-                  How might we use this confidence to simplify personalized budget creation and walk them through long-term saving?
+                    <ImageToggle
+                        image1={figureTwoOne} 
+                        image2={figureTwoTwo}
+                        altText="Wealth confidence considering age"
+                    />
                 </div>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section key-pain-points">
-          <Divider
-          title={"Ideation + How Might We's?"}/>
-          <div className="key-pain-points-body">
-          {/* {showMsg && (
-            <HoverPopUp
-                x={cursorPosition.x}
-                y={cursorPosition.y}
-                msg={msg}
-            />)} */}
-            <div className='pain-point ht-pair'>
-                <div 
-                    className='image-container-new' 
-                    style={{
-                        margin: '0 auto', 
-                        maxWidth: '800px', 
-                        width: '100%'
-                    }}
-                    >
-                    <img src={figureThree} 
-                    style={{ 
-                        width: '100%'
-                    }}/>
+                <div
+                    style={{ cursor: "pointer" }}
+                >
+                    <ImageToggle
+                        image1={figureTwoOne} 
+                        image2={figureTwoTwo}
+                        altText="Wealth confidence considering age"
+                    />
                 </div>
-                {/* <div className='heading'>
-                    Identifying jobs that efficiently sum up these needs
-                </div> */}
                 <p style={{fontSize: '20px', marginBottom: '32px'}}> After translating the responses into a FigJam (my whiteboard of choice), <b>I used affinity 
                     mapping to identify similarities and prioritize opportunities.</b> The following pain points, like manually documenting spending and managing 
                     subscriptions, became evident through the mapping.
