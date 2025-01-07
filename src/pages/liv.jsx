@@ -7,14 +7,20 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
-import figureOne from '../assets/Images/flow/flow-one.png'
-import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
-import figureTwoTwo from '../assets/Images/flow/flow-two-two.png'
-import figureThree from '../assets/Images/flow/flow-three.png'
-import figureFive from '../assets/Images/flow/flow-five.png'
-import figureSix from '../assets/Images/flow/flow-six.png'
-import figureSeven from '../assets/Images/flow/flow-seven.gif'
-import figureEight from '../assets/Images/flow/flow-eight.png'
+import figureOneOne from '../assets/Images/liv/liv-one-one.png'
+import figureOneTwo from '../assets/Images/liv/liv-one-two.png'
+import figureTwoOne from '../assets/Images/liv/liv-two-one.png'
+import figureTwoTwo from '../assets/Images/liv/liv-two-two.png'
+import figureThreeOne from '../assets/Images/liv/liv-three-one.png'
+import figureThreeTwo from '../assets/Images/liv/liv-three-two.png'
+import figureFour from '../assets/Images/liv/liv-five.png'
+import figureFive from '../assets/Images/liv/liv-five.png'
+import figureSix from '../assets/Images/liv/liv-six.png'
+import figureSeven from '../assets/Images/liv/liv-seven.png'
+import figureEightOne from '../assets/Images/liv/liv-eight-one.png'
+import figureEightTwo from '../assets/Images/liv/liv-eight-two.png'
+import figureEightThree from '../assets/Images/liv/liv-eight-three.png'
+
 import figureNine from '../assets/Images/flow/flow-nine.gif'
 import figureTen from '../assets/Images/flow/flow-ten.jpg'
 import figureEleven from '../assets/Images/flow/flow-eleven.png'
@@ -169,7 +175,7 @@ export default function flow() {
           title={"Competitive Analysis"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
-              <div className="header">
+              <div className="heading">
                 Turning competitor weaknesses into our competitive edge
               </div>
                 <p>
@@ -177,13 +183,12 @@ export default function flow() {
                   well and what didn’t. More importantly, it allowed me to pinpoint key pain points, which I leveraged to create differentiating 
                   features for our platform. Click into the following images to learn what I took away from each trial. 
                 </p>
-                
                 <div
                     style={{ cursor: "pointer" }}
                 >
                     <ImageToggle
-                        images={[figureTwoOne, figureTwoTwo]} 
-                        altText="Wealth confidence considering age"
+                        images={[figureOneOne, figureOneTwo]} 
+                        altText="Takeaways from Buildium"
                     />
                 </div>
                 <div
@@ -191,82 +196,41 @@ export default function flow() {
                 >
                     <ImageToggle
                         images={[figureTwoOne, figureTwoTwo]} 
-                        altText="Wealth confidence considering age"
+                        altText="Takeaways from Prism"
                     />
                 </div>
                 <div
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", marginBottom: '32px' }}
                 >
                     <ImageToggle
-                        images={[figureTwoOne, figureTwoTwo]} 
-                        altText="Wealth confidence considering age"
+                        images={[figureThreeOne, figureThreeTwo]} 
+                        altText="Takeaways from Spaceflow"
                     />
                 </div>
-                <p style={{fontSize: '20px', marginBottom: '32px'}}> After translating the responses into a FigJam (my whiteboard of choice), <b>I used affinity 
-                    mapping to identify similarities and prioritize opportunities.</b> The following pain points, like manually documenting spending and managing 
-                    subscriptions, became evident through the mapping.
-                </p>
-            </div>
-            <div className="pain-point ht-pair"
-                // onMouseEnter={handleMouseEnter}
-                // onMouseLeave={handleMouseLeave}
-            >
-                <div className="heading">
-                    1. How might we simplify expense tracking?
-                </div>
-                <p>
-                    <b>Automate transaction logging.</b> the repetitive nature of logging expenses is as a primary deterrent for respondents.                     
-                </p>
-                <p>
-                  <b> Categorize transactions.</b> automate the grouping of essential, non-essential and/or subscription purchases.
-                </p>
-            </div>
-            <div className="pain-point ht-pair">
-                <div className="heading">
-                    2. How might we help them manage subscriptions?
-                </div>
-                <p>
-                  <b>Extrapolate short-term purchases. </b>
-                    subscription models thrive on short-term thinking. They count on the average person’s inability to translate $9.99 a month into $119.88 yearly or even $1198.80 a decade from now. The average respondent had 3 subscriptions and this number is only expected to grow as students age and subscription models become even more prevalent.
-                </p>
-                <p>
-                  <b>Make decisions accessible in-app.</b>
-                    Companies typically offer more than one subscription plan and oftentimes take advantage of making the cancel button hard to find. Furthermore, we should help students find which subscription plan is the right one for them.
-                </p>
-            </div>
-            <div className="pain-point ht-pair">
-                <div className="heading">
-                    3. How might we streamline budget creation?
-                </div>
-                <p>
-                  <b>Do it for them.</b> Most students wanted the same things (saving for tution, rent and books while having some pocket change) and didn't want to take the time to set up budget plans. 
-                  Why not create them an expense-first plan, then let them adjust and learn from there? Their optimism makes this a great launch point to learn about budgeting basics and build strong habits.
+                <p style={{fontSize: '20px'}}> Then, I looked at Asana & Zendesk, focussing on visual and interaction design conventions that would be useful regardless of the industry. See the high-level view of my competitive analysis below.
                 </p>
             </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={"Addressing Expense Tracking"}/>
+          title={"The Solution"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                    How can we automate expenses? Isn’t banking data pretty... you know, private?
+                    Striking a balance between guided tutorial and sandbox experiences
                 </div>
-                <p style={{fontSize: '20px'}}>
-                    To implement automated expense tracking, Flow would rely on <b>API integrations from providers like Plaid, Yodlee or FinBox.</b> These services 
-                    allow users to securely connect their bank accounts and share data, such as transactions or balances, with their explicit consent. This 
-                    makes it fairly simple to link users’ financial data to Flow.
-                </p>
-                <p style={{marginBottom: '32px'}}>
-                    That said, <b>a major drawback of relying on these integrations is scalability.</b> If these services become 
-                    the backbone of an application, changes in pricing and/or policy could skyrocket expenses and hurt performance. 
+                <p>
+                  Based on insights from the competitive analysis, I determined that it would be best to combine guided elements of a tutorial with the autonomy provided by an open sandbox 
+                  environment. <b>This allows new users to build confidence by successfully completing routine tasks through feature walkthroughs and then snowball the small wins with unguided 
+                  exploration within the sandbox environment</b> to mimic a more realistic environment. This creates a much better experience for users who are 
+                  commonly confused or bored in complete tutorial or sandbox environment. See the differences, pros and cons between the two trial methods below.
                 </p>
                 <div 
                     className='image-container-new' 
                     style={{
                         margin: '0 auto', 
-                        maxWidth: '800px', 
+                        maxWidth: '600px', 
                         width: '100%'
                     }}
                     >
@@ -278,46 +242,18 @@ export default function flow() {
             </div>
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                    How can we reliably categorize expenses?
+                    How would this work?
                 </div>
-                <p> Purchases at places like Chipotle or a university bookstore are easy to classify as essential or non-essential by using <b>merchant name 
-                    identification</b>, a method already employed by most banks. However, transactions at stores like Walmart present a challenge. The data 
-                    retrieved from the API lacks the granular detail or context needed to distinguish between essential and non-essential items, making accurate categorization 
-                    impossible based solely on the transaction's face value. Similarly, purchases from small businesses or mom-and-pop shops face a similar challenge. 
+                <p> 
+                  Users will be onboarded into a sandbox populated with dummy data, first completing a short questionnaire to help personalize their sandbox with their name, portfolio type 
+                  and resident count. Following the short questionnaire, they’re shown the ropes of the trial -- learning how to progress, go back and where to find the free trial menu for 
+                  further navigation. Once introduced, the user completes two guided feature walkthroughs before getting unrestricted access to the sandbox. <b>See the flow below.</b>
                 </p>
-                <p style={{fontSize: '20px', marginBottom: '32px'}}>
-                    <b>Lock-screen categorization and crowdsourcing can help streamline expense tracking.</b> By enabling users to quickly categorize ambiguous 
-                    purchases directly from their lock screen, expense tracking becomes more accurate with minimal required effort. Furthermore, 
-                    this data can be used at scale to provide context for new merchant IDs. Here's how this feature could work. 
-                </p>
-                <div className="protopype-container">
-                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
-                    <iframe
-                        className="actual-prototype"
-                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
-                        width="800px"
-                        height="800px"
-                        src="https://embed.figma.com/proto/eSpJa9p4Vbp5ycE7yQ8xWa/Flow-Design-File?page-id=2287%3A11771&node-id=2469-17462&node-type=frame&viewport=1198%2C564%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2469%3A17462&embed-host=share"
-                        allowFullScreen=""
-                    />
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section key-pain-points">
-          <Divider
-          title={"Addressing Subscription Management"}/>
-          <div className="key-pain-points-body">
-            <div className='pain-point ht-pair'>
-                <div className='heading'>
-                    How can we identify subscriptions? 
-                </div>
                 <div 
                     className='image-container-new' 
                     style={{
                         margin: '0 auto', 
-                        maxWidth: '800px', 
+                        maxWidth: '600px', 
                         width: '100%'
                     }}
                     >
@@ -326,132 +262,114 @@ export default function flow() {
                         width: '100%'
                     }}/>
                 </div>
-                <p>
-                We can identify recurring subscriptions by analyzing the merchant name and transaction value of repeated payments. Once identified, the merchant name and billing date can track subscriptions and account for pricing changes.
-                </p>
-                {/* <p style={{marginBottom: '32px'}}> To enhance scalability, identified subscriptions can be stored in a central database. This allows 
-                    for cross-referencing other users’ transactions, enabling quicker subscription identification while reducing the number of queries 
-                    required.
-                </p> */}
-            </div>
-            <div className='pain-point ht-pair'>
-                <div className='heading'>
-                  Removing the guesswork
-                </div>
-                <p style={{fontSize: '20px', marginBottom: '32px'}}>
-                  Given that <b>88% of respondents lack a dedicated method of managing subscriptions</b>, Flow provides a page that lists all subscriptions, including plan names, 
-                  transaction details, and billing dates. It also shows total monthly and annual spending with real-world comparisons, helping them put their long-term spending into perspective.
-                </p>
-                <div 
-                    className='image-container-new' 
-                    style={{
-                        // margin: '0 auto', 
-                        maxHeight: '800px', 
-                        width: '100%'
-                    }}
-                    >
-                    <img src={figureSeven} 
-                    style={{ 
-                        height: '100%',
-                        maxWidth: '100%'
-                    }}/>
-                </div>
-                <p style={{marginTop: '64px', fontSize: '20px'}}> If a subscription is suboptimal (e.g., it can be improved by switching plans or is redundant due to similar services), the user receives 
-                  an optimization suggestion. They can act on it via the Kabob menu on the subscription card by confirming to switch or cancel the plan. Once confirmed, a VoiceFlow agent 
-                  sends an email to the merchant’s customer support to update the plan. <span style={{textDecoration: 'underline', cursor: "pointer"}} onClick={handleImageClick}>For more details, check out 
-                    a subscription management agent I built with friends using VoiceFlow to handle this task.</span>
-                </p>
-                {showVoiceFlow && (
-                    <div 
-                        className='image-container-new' 
-                        style={{
-                            margin: '0 auto', 
-                            maxWidth: '800px', 
-                            width: '100%'
-                        }}
-                        >
-                        <img src={figureNine} 
-                        style={{ 
-                            width: '100%'
-                        }}/>
-                    </div>)}
             </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={"Addressing Budgeting woes"}/>
+          title={"Introducing Key Features"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                Keeping it simple
+                    Maximizing trial value for various user needs
+                </div>
+                <p>
+                    Knowing the importance of brevity in guided tutorials, I decided to focus on LIV’s two most popular features according to customer usage data. Furthermore, LIV’s maintenance request and building update features are useful to operators regardless of the size or type of their property — all buildings face plumbing issues and can benefit from building-wide communication.
+                </p>
+                <p>
+                  Before designing the walkthroughs, <b>I met with customer-facing team members who walked me through the common ways that existing customers used each feature.</b> I mapped out these processes and matched them up with wireframes that naturally took the user through key actions, such as assigning a technician to a maintenance request or resolving an open ticket. I did this for both key features and made notes on the functionality required at each step of the guided tutorial to define pop-up design constraints.</p>
+                <div 
+                    className='image-container-new' 
+                    style={{
+                        margin: '0 auto', 
+                        maxWidth: '800px', 
+                        width: '100%'
+                    }}
+                    >
+                    <img src={figureSeven} 
+                    style={{ 
+                        width: '100%'
+                    }}/>
+                </div>
+            </div>
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                  Designing a universal guided pop-up
+                </div>
+                <p>I went through two main pop-up design iterations. Click below to see the changes and some of the rationale behind them. Along with the pop-ups, I also iterated through various feedback animation designs. I started with an oscillating purple highlight and ended with a much simpler blue bordered highlight as it fit more within the design scheme and would be an easier development implementation without trade-off. I worked through these visual design changes with the mentorship and feedback of the senior designer and our development team to ensure the quality and feasibility of design choices. 
+                </p>
+                <div
+                    style={{ cursor: "pointer", margin: '32px 0', maxWidth: '800px' }}
+                >
+                    <ImageToggle
+                        images={[figureEightOne, figureEightTwo, figureEightThree]} 
+                        altText="Guided pop-up iterations"
+                    />
+                </div>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Building User Confidence"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+                <div className='heading'>
+                  Writing for users on autopilot
                 </div>
                 <p style={{fontSize: '20px'}}>
-                A <b>short in-app budgeting quiz</b> retrieves basic user information along with their long-term goals, fixed 
-                expenses and miscellaneous financial gains. 
+                  A major component of building user confidence is content design. Each pop-up needed to be easily scannable while still providing enough context to assist confused users, if necessary.
+                </p>
+                <p>
+                  The key to writing content for the guided tutorial was understanding that <b>every feature, action, or concept would be entirely new to the user</b>. Although obvious, this reality cannot be stated enough. I made sure to use simple language and short sentences, prioritizing concise, context-driven copy to explain actions in a more familiar way. 
                 </p>
                 <p style={{marginBottom: '32px'}}>
-                Instead of including this quiz within the onboarding, I made it an in-app feature and used the onboarding real-estate 
-                to create an introductory flow. This reduced onboarding time, ensuring more users explored the app before encountering 
-                a lengthy quiz that might deter their interest. Making the quiz necessity-only was also crucial for this reason.
+                  Working in a startup means that you get to wear many hats and it put me in the position to learn a great deal about content design. Through exploring forums and reading various articles, <b>I put together a short list of content design rules that I used for the tutorial.</b>
                 </p>
-                <div 
-                  className="row-container" 
-                  style={{
-                    display: "flex", 
-                    flexDirection: "row", 
-                    justifyContent: "space-between", 
-                    flexWrap: 'wrap',
-                    gap: "64px", 
-                    margin: "0 auto", // Center the container
-                  }}
-                >
-                  <div 
-                    className="image-container-new" 
-                    style={{
-                      flex: 1, 
-                      maxWidth: "800px", 
-                      minWidth: '275px',
-                      height: "auto"
-                    }}
-                  >
-                    <img 
-                      src={figureEleven} 
-                      style={{
-                        width: "100%", 
-                        height: "100%", 
-                        objectFit: "cover"
-                      }} 
-                      alt="Figure Eleven"
-                    />
+                <p>
+                  <div className="heading">
+                    1. Write in active voice, starting with actions or objectives.
                   </div>
-                  <div 
-                    className="image-container-new" 
-                    style={{
-                      flex: 1, 
-                      maxWidth: "400px", 
-                      width: '100%',
-                      minWidth: '275px',
-                      height: "auto"
-                    }}
-                  >
-                    <img 
-                      src={figureTwelve} 
-                      style={{
-                        width: "100%", 
-                        height: "100%", 
-                        objectFit: "cover"
-                      }} 
-                      alt="Figure Twelve"
-                    />
+                  <div className="heading">
+                    2. Use ‘you’ or ‘your’ to make it personally applicable for the user.
+                  </div>                  
+                  <div className="heading">
+                    3. Make it concise.
+                  </div>                  
+                  <div className="heading">
+                    4. Reveal information only when relevant.
+                  </div>                  
+                  <div className="heading">
+                    5. Write for all reading levels.
                   </div>
+                </p>
+            </div>
+            <div className='pain-point ht-pair'>
+              <div className="heading">Supporting user autonomy with a free trial menu</div>
+                <p style={{margin: '32px 0'}}>
+                  Users are bound to have different interests or needs, so the trial was modularly designed to promote roaming and exploration. This keeps users engaged by avoiding an impersonal linear tutorial experience. To reflect this modularity, I designed a free trial menu, enabling the user to navigate between any section within the guided tutorial or enter the open sandbox. The free trial menu is universally available as an overlay in the bottom right of the user’s screen and displays user progress along with secondary actions like booking a demo or providing feedback. View the below prototypes to see the first and last iterations of the free trial menu.
+                </p>
+                <div className="protopype-container">
+                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
+                    <iframe
+                        className="actual-prototype"
+                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
+                        width="800px"
+                        height="800px"
+                        src="https://embed.figma.com/proto/wM3rV16a3ZEupVvfADI99S/Sandbox-File?page-id=0%3A1&node-id=23-5746&viewport=-25554%2C11610%2C0.46&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=23%3A5746&embed-host=share"
+                        allowFullScreen=""
+                    />
+                    </div>
                 </div>
-                <p style={{marginTop: '32px'}}>
-                The second feature, the <b>monthly spending huddle</b>, offers a detailed recap of the user’s spending. This includes insights into 
-                where they spent the most, how their spending was categorized, and overall trends that help them understand their financial 
-                habits better. The goal here was to go beyond the typical banking report—I wanted to create a moment of reflection and planning, 
-                giving users the tools to identify areas for improvement and actionable ways to tame their spending.
-                </p>
+            </div>
+            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
+              <div className="heading">Some of the changes</div>
+              <ol style={{paddingLeft: '0', listStylePosition: 'inside' }}>
+                <li>Adjusted primary color to match trial UI</li>
+                <li>Added more context; both on the free trial menu & their progress in the trial</li>
+                <li>Re-prioritized the sections above the secondary actions</li>
+                <li>Made secondary actions more visually distinct</li>
+              </ol>
             </div>
           </div>
         </div>
