@@ -58,7 +58,7 @@ const NavBar = () => {
                     </li>
                     <li className="nav-element">
                     <a 
-                        href="https://drive.google.com/file/d/1f7ZJdze7mezFj3OElqoBo4zdnG666cQN/view?usp=sharing" 
+                        href="https://drive.google.com/file/d/1Fwv8YShofv3IYwowk-F2em1038ujz2Ll/view?usp=sharing" 
                         className='nav-link'
                         target="_blank" 
                         rel="noopener noreferrer"

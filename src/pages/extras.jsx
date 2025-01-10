@@ -1,8 +1,8 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
-import miniDE from '../assets/Images/mini-de-thumb-simple.png'
-import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import rodmanCollage from "../assets/Images/extras/rodman-collage.png"
 import lebronFourthChip from "../assets/Images/extras/lebron-fourth-chip.png"
 import wilguensGp from "../assets/Images/extras/wilguens-gp.png"
@@ -27,7 +27,7 @@ export default function extras() {
           <p>I used to run a graphic design business 
             and worked in a handful of spaces, creating 
             basketball graphics, music covers and ultimately, 
-            a looooot of basketball stuff! </p>
+            a looooot more basketball stuff! </p>
         </div>
         <div className='graphics-section'>
           <div className='graphics-column'>
@@ -133,17 +133,17 @@ export default function extras() {
             />
           </div>
         </div>
-        <ThanksSection
-          title1={'Don Efficace'}
-          tag1={'Product'}
-          miniThumb1={miniDE}
-          link1={'/donEfficace'}
-          title2={'MyFitnessPal'}
-          tag2={'Case Study'}
-          link2={'/myFitnessPal'}
-          miniThumb2={miniMFP}
-          showWork={true}
-        />
+            <ThanksSection
+                title1={'LIV'}
+                tag1={'Product'}
+                link1={'/liv'}
+                miniThumb1={miniLIV}
+                title2={'Flow'}
+                tag2={'Case Study'}
+                miniThumb2={miniFlow}
+                link2={'/flow'}
+                showWork={true}
+            />
       </div>
     </div>
   )

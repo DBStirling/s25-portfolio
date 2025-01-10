@@ -139,7 +139,7 @@ export default function Home({scrollableRef} ) {
                     </span>
                   , I blend pragmatic engineering problem-solving with creative, empathetic design.
                   </p>
-                  <p>I'm looking for summer 2025 opportunities to get hands on with things that bring a little more joy to life. </p>
+                  <p>I'm looking for summer 2025 opportunities in ux, research or design engineering </p>
               </div>
             </div>
           </div>

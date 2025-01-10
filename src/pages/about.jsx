@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx';
-import miniDE from '../assets/Images/mini-de-thumb-simple.png'
-import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import collage from '../assets/Images/collage.png'
 import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import "../styles/style.css";
@@ -90,7 +90,7 @@ export default function about() {
               with making collages during the pandemic, 
               I think it’s a fitting way to introduce myself. 
               <b> Hover over the cut-outs to get a little more 
-              insight into the picture and myself.</b>
+              insight into the snippets of my life.</b>
             </p>
           </div>
           <div className="collage-container"
@@ -126,23 +126,21 @@ export default function about() {
               UWaterloo
             </span> 
             {' '}who<b> loves turning big ideas into things people can actually 
-            use.</b> I’m currently designing tenant experiences @
+            use.</b> I'm currently serving as VP Design @ <span className="link" 
+              onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              UW Blueprint
+            </span>
+            , leading and mentoring 15 designers across 6 project teams.
+            I just wrapped up a co-op designing tenant experiences @
             <span className="link" 
               onClick={() => window.open('https://livwith.com/', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >
               Unify
             </span> 
-            {' '}and pitching 
-            in on all fronts @
-            <span className="link" 
-              onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
-              style={{ cursor: 'pointer', textDecoration: 'underline' }}
-              >
-              UW Blueprint
-            </span>
-            , working as a product manager 
-            and software developer. 
+            {' '}and have worked as a product designer, product manager and frontend developer in the past.
             </p>
             <p>
             I’ve been solving problems through design for as long as I can 
@@ -151,27 +149,30 @@ export default function about() {
             getting hands-on in engineering & shipping along the way.
             </p>
             <p>
-            With my hollistic experience in product design, management and development, 
+            With my hollistic product experience in design, management and development, 
             <b> I aim to give users and developers the best bang for their 
-            buck. </b> I make this possible through developing strong client 
+            buck. </b> I do my due dilligence, like to learn and love to ship fast, pivotting even quicker when necessary.
+            On any given day, you can find me watching the Deep 3 Pod, browsing used book stores or scouring event sites for live music.
+            {/* </p>
+            I make this possible through developing strong client 
             relationships, conducting extensive research, iterating through 
             countless wireframes (no, seriously) and collaborating 
             cross-functionally in the hopes of <b>building products that give 
-            more than they take. </b>
+            more than they take. </b> */}
             </p>
           </div>
         </div>
-        <ThanksSection
-          title1={'Don Efficace'}
-          tag1={'Product'}
-          miniThumb1={miniDE}
-          link1={'/donEfficace'}
-          title2={'MyFitnessPal'}
-          tag2={'Case Study'}
-          link2={'/myFitnessPal'}
-          miniThumb2={miniMFP}
-          showWork={true}
-        />
+            <ThanksSection
+                title1={'LIV'}
+                tag1={'Product'}
+                link1={'/liv'}
+                miniThumb1={miniLIV}
+                title2={'Flow'}
+                tag2={'Case Study'}
+                miniThumb2={miniFlow}
+                link2={'/flow'}
+                showWork={true}
+            />
       </div>
     </div>
   );
