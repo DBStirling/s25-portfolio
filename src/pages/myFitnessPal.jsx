@@ -5,6 +5,7 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import oldNewSolution from '../assets/Images/mfp/old-new-solution.png'
 import chatSolution from '../assets/Images/mfp/chat-solution.png'
 import noomLogo from '../assets/Images/mfp/noom-icon.png'
@@ -779,15 +780,15 @@ export default function myFitnessPal() {
               </p>
             </div>
             <ThanksSection
-            title1={'Don Efficace'}
-            tag1={'Product'}
-            miniThumb1={miniDE}
-            link1={'/donEfficace'}
-            title2={'Diet Me'}
-            tag2={'Case Study'}
-            link2={'/flow'}
-            miniThumb2={miniFlow}
-            showWork={true}
+                title1={'LIV'}
+                tag1={'Product'}
+                link1={'/liv'}
+                miniThumb1={miniLIV}
+                title2={'Flow'}
+                tag2={'Case Study'}
+                miniThumb2={miniFlow}
+                link2={'/flow'}
+                showWork={true}
             />
         </div>
         </div>

@@ -4,9 +4,11 @@ import ModalImage from "react-modal-image";
 import CtaButton from '../components/CtaButton/CtaButton';
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
-import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
-import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
+// import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+// import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
+
 
 import formPair from '../assets/Images/de/form-pair.png'
 import taxDetail from '../assets/Images/de/tax-potential-detail.png'
@@ -345,7 +347,7 @@ return (
           <Divider
           title={'to be continued!'}/>
           <div className="reflection-body">
-            <div className="reflection-item ht-pair">
+            {/* <div className="reflection-item ht-pair">
                 <div className="heading">This case study isn’t quite there yet.</div>
                 <p>
                     I’m still putting the fine details together and ensure that it will be out shortly. In the meantime, please feel free to             
@@ -357,16 +359,16 @@ return (
                     </span> 
                     to learn more about my work experience or Don Efficace!
                 </p>
-            </div>
+            </div> */}
             <ThanksSection
-                title1={'Flow'}
-                tag1={'Case Study'}
-                miniThumb1={miniFlow}
-                link1={'/flow'}
-                title2={'MyFitnessPal'}
+                title1={'LIV'}
+                tag1={'Product'}
+                link1={'/liv'}
+                miniThumb1={miniLIV}
+                title2={'Flow'}
                 tag2={'Case Study'}
-                link2={'/myFitnessPal'}
-                miniThumb2={miniMFP}
+                miniThumb2={miniFlow}
+                link2={'/flow'}
                 showWork={true}
             />
             </div>

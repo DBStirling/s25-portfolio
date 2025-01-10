@@ -179,13 +179,13 @@ export default function Home({scrollableRef} ) {
                 destination ='/myFitnessPal'
                 imgSrc={MFPthumbnail}
               />
-              <ProjectCard
+              {/* <ProjectCard
                 title="DietMe"
                 description="Ideated a mobile app to help people with dietary restrictions and visual impairments confidently shop for groceries."
                 tag="Exploration"
                 destination ='/dietMe'
                 imgSrc={DMthumbnail}
-              />
+              /> */}
           <div className="end-work-prompt">
             See some non-work stuff in&nbsp;
             <Link 

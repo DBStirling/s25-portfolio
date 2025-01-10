@@ -5,8 +5,9 @@ import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import ImageToggle from '../components/ImageToggle/imageToggle.jsx'
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
-import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
+// import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import figureOne from '../assets/Images/flow/flow-one.png'
 import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
 import figureTwoTwo from '../assets/Images/flow/flow-two-two.png'
@@ -566,14 +567,14 @@ export default function flow() {
               </p>
             </div>
             <ThanksSection
-            title1={'Don Efficace'}
+            title1={'LIV'}
             tag1={'Product'}
-            miniThumb1={miniDE}
-            link1={'/donEfficace'}
-            title2={'MyFitnessPal'}
-            tag2={'Case Study'}
-            link2={'/myFitnessPal'}
-            miniThumb2={miniMFP}
+            link1={'/liv'}
+            miniThumb1={miniLIV}
+            title2={'Don Efficace'}
+            tag2={'Product'}
+            miniThumb2={miniDE}
+            link2={'/donEfficace'}
             showWork={true}
             />
         </div>
