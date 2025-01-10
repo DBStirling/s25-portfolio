@@ -140,7 +140,7 @@ export default function about() {
               >
               Unify
             </span> 
-            {' '}and have worked as a product designer, product manager and frontend developer in the past.
+            {' '}and have worked as a product designer, product manager and frontend developer.
             </p>
             <p>
             I’ve been solving problems through design for as long as I can 
@@ -149,7 +149,7 @@ export default function about() {
             getting hands-on in engineering & shipping along the way.
             </p>
             <p>
-            With my hollistic product experience in design, management and development, 
+            With my hollistic product experience, 
             <b> I aim to give users and developers the best bang for their 
             buck. </b> I do my due dilligence, like to learn and love to ship fast, pivotting even quicker when necessary.
             On any given day, you can find me watching the Deep 3 Pod, browsing used book stores or scouring event sites for live music.
