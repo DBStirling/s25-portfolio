@@ -152,18 +152,11 @@ export default function Home({scrollableRef} ) {
             </div>
             <div className="project-card-container">
             <ProjectCard
-                title="LIV Free Trial"
+                title="LIV"
                 description="Designed a guided free trial experience for a leading Canadian prop-tech solution."
                 tag="Product"
                 destination="/liv"
                 imgSrc={LIVthumbnail}
-              />
-              <ProjectCard
-                title="Don Efficace"
-                description="Designed a donation ecosystem for an effective altruism NPO, helping donors visualize their impact and donate with more diligence."
-                tag="Product"
-                destination="/donEfficace"
-                imgSrc={DEthumbnail}
               />
               <ProjectCard
                 title="Flow"
@@ -171,6 +164,13 @@ export default function Home({scrollableRef} ) {
                 tag="Case Study"
                 destination ='/flow'
                 imgSrc={FFthumbnail}
+              />
+              <ProjectCard
+                title="Don Efficace"
+                description="Designed a donation ecosystem for an effective altruism NPO, helping donors visualize their impact and donate with more diligence."
+                tag="Product"
+                destination="/donEfficace"
+                imgSrc={DEthumbnail}
               />
               <ProjectCard
                 title="MyFitnessPal"
