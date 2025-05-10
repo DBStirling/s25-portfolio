@@ -126,27 +126,48 @@ export default function about() {
               UWaterloo
             </span> 
             {' '}who<b> loves turning big ideas into things people can actually 
-            use.</b> I'm currently serving as VP Design @ <span className="link" 
+            use.</b> I'm current humanizing identity @ 
+              <span className="link"
+                onClick={() => window.open('https://withpersona.com', '_blank')} 
+                style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                Persona
+              </span>
+              {' '}and exploring the bay area on 2 wheels!
+            </p>
+            <p>
+            I've worked in design, product management, and touched code @ <span className="link" 
               onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >
               UW Blueprint
             </span>
-            , leading and mentoring 15 designers across 6 project teams.
-            I just wrapped up a co-op designing tenant experiences @
+            ,{' '}
             <span className="link" 
               onClick={() => window.open('https://livwith.com/', '_blank')} 
               style={{ cursor: 'pointer', textDecoration: 'underline' }}
               >
               Unify
             </span> 
-            {' '}and have worked as a product designer, product manager and frontend developer.
-            </p>
-            <p>
-            I’ve been solving problems through design for as long as I can 
+            , and{' '}
+            <span className="link" 
+              onClick={() => window.open('https://www.timeplay.com/', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              TimePlay
+            </span>
+            {' '}along with a handful of side projects, like{' '}
+            <span className="link" 
+              onClick={() => window.open('https://semesters.ca/', '_blank')} 
+              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              >
+              Semesters
+            </span>
+            .{' '}
+            {/* I’ve been solving problems through design for as long as I can 
             remember—founding a graphic design business during the 
             pandemic, working as a product designer for a non-profit, and 
-            getting hands-on in engineering & shipping along the way.
+            getting hands-on in engineering & shipping along the way. */}
             </p>
             <p>
             With my hollistic product experience, 

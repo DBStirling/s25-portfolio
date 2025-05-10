@@ -130,7 +130,7 @@ export default function Home({scrollableRef} ) {
                   <p>
                     <strong>I like to design, build, ship & repeat.</strong>
                   </p>
-                  <p>As a System Design Engineering student @
+                  <p>As a Systems Design Engineering student @
                     <span className="link"
                       onClick={() => window.open('https://uwaterloo.ca/engineering/', '_blank')} 
                       style={{ cursor: 'pointer', textDecoration: 'underline' }}
@@ -139,7 +139,15 @@ export default function Home({scrollableRef} ) {
                     </span>
                   , I blend pragmatic engineering problem-solving with creative, empathetic design.
                   </p>
-                  <p>I'm looking for summer 2025 opportunities in ux, research or design engineering </p>
+                  <p>I'm currently working as a Product Design Intern @ 
+                    <span className="link"
+                      onClick={() => window.open('https://withpersona.com', '_blank')} 
+                      style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                      >
+                      Persona
+                    </span>
+                    .
+                    </p>
               </div>
             </div>
           </div>
@@ -172,13 +180,13 @@ export default function Home({scrollableRef} ) {
                 destination="/donEfficace"
                 imgSrc={DEthumbnail}
               />
-              <ProjectCard
+              {/* <ProjectCard
                 title="MyFitnessPal"
                 description="Redesigned the industry-leading calorie counting app to better align with user needs."
                 tag="Case Study"
                 destination ='/myFitnessPal'
                 imgSrc={MFPthumbnail}
-              />
+              /> */}
               {/* <ProjectCard
                 title="DietMe"
                 description="Ideated a mobile app to help people with dietary restrictions and visual impairments confidently shop for groceries."
