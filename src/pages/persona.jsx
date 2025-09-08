@@ -89,20 +89,43 @@ export default function flow() {
         </div>
         <div className="sub-section the-problem">
           <Divider
-          title={'Why a free trial?'}/>
+          title={'Setting the Scene'}/>
           <div className="the-problem-body ht-pair">
             <div className="heading">
-            Customers want to see and feel our product before committing{" "}
+            Growth design @ Persona is democratized across product teams.{" "}
             </div>
             <p>
-                After digging into the <em>why</em> behind the project, it became clear that, <b>my true challenge wasn’t just designing 
-                a free trial—it was instilling confidence in new and hesitant users.</b>
+                This leaves the implementation of growth strategies up to individual contributors on siloed teams, {" "}
+                <b>resulting in an increasing pile-up of inconsistent and unoptimized growth touchpoints.</b> 
             </p>
             <p> 
-              Operating in a highly competitive market of property management solutions, <b>LIV differentiates itself with its strong 
-              user-centered design</b>. the majority of their competitors fall short on this front, which highlights the importance of 
-              getting our product into users' hands, so they get to experience the difference for themselves. By implementing a free-trial, 
-              we can get more users on board with minimal friction as early as possible.
+                Furthermore, growth design content isn’t typically tied to core product functionality. It discusses 
+                plan pricing, feature access and education opportunities, which stand out from the rest of the core product 
+                functionality and as a result, it would benefit from having a consistent visual language of its own.
+            </p>
+          </div>
+        </div>
+        <div className="sub-section the-problem">
+          <Divider
+          title={'The Role of PLG in Acquisition'}/>
+          <div className="the-problem-body ht-pair">
+            <div className="heading">
+                Growth design is only half of the equation.{" "}
+            </div>
+            <p>
+                Persona’s small and medium-sized business (SMB) funnel consists of hands-on sales processes, led by sales 
+                teams, and more hands-off Product-Led Growth (PLG) strategies motioned by Growth.
+            </p>
+            <p> 
+                <b>Hands-on processes are highly effective, bringing in the majority of revenue quarter to quarter, 
+                but they’re also resource-intensive</b>. They require SDRs, account executives, sales engineers and countless 
+                other hands to close deals, which makes lead prioritization and resource rationing a necessary evil.
+            </p>
+            <p> 
+                <b>PLG is the winning strategy for smaller clients that aren’t scooped up by our sales team, oftentimes, 
+                venture-backed startups with growing use cases</b>. This is where we win small deals and increase client 
+                spend marginally over a large volume aggregate. The problem is that we don’t have a dedicated PLG strategy 
+                or the design resources to capitalize on it.
             </p>
           </div>
         </div>
@@ -116,21 +139,21 @@ export default function flow() {
             <div className='row-container'
                 style={{display: 'flex', flexDirection: 'row', width: "100%", gap: "64px"}}
                 >
-                                  <div className="pain-point ht-pair">
-                <div className="heading">
-                    1. Build confidence in on-the-fence users
-                </div>
-                <p>
-                By empowering users to perform key actions effortlessly, they gain trust in the platform's reliability and value. This can be done by <b>helping users adjust to the platform</b> with the use of intuitive onboarding, tooltips, and real-time feedback. 
-                </p>
-                </div>
                 <div className="pain-point ht-pair">
-                <div className="heading">
-                    2. Introduce key features
-                </div>
-                <p>
-                  <b>Guide users through the platform's essential features without overwhelming them.</b> Not only will focused walkthroughs highlight the core functionality of the platform, but it will reduce the cognitive friction behind committment since they've already learned how to use it.
-                </p>
+                    <div className="heading">
+                        1. Build confidence in on-the-fence users
+                    </div>
+                    <p>
+                    By empowering users to perform key actions effortlessly, they gain trust in the platform's reliability and value. This can be done by <b>helping users adjust to the platform</b> with the use of intuitive onboarding, tooltips, and real-time feedback. 
+                    </p>
+                    </div>
+                <div className="pain-point ht-pair">
+                    <div className="heading">
+                        2. Introduce key features
+                    </div>
+                    <p>
+                        <b>Guide users through the platform's essential features without overwhelming them.</b> Not only will focused walkthroughs highlight the core functionality of the platform, but it will reduce the cognitive friction behind committment since they've already learned how to use it.
+                    </p>
                 </div>
             </div>
             <div className="pain-point ht-pair">
