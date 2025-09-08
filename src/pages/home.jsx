@@ -159,7 +159,14 @@ export default function Home({scrollableRef} ) {
               title={'Projects & Case Studies'}/>
             </div>
             <div className="project-card-container">
-            <ProjectCard
+              <ProjectCard
+                title="Persona"
+                description="Building Persona's PLG strategy with a Growth Design Toolkit."
+                tag="Product"
+                destination="/persona"
+                imgSrc={LIVthumbnail}
+              />
+              <ProjectCard
                 title="LIV"
                 description="Designed a guided free trial experience for a leading Canadian prop-tech solution."
                 tag="Product"
