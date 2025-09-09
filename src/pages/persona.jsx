@@ -7,7 +7,7 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
-import figureOneOne from '../assets/Images/liv/liv-one-one.png'
+import figureOne from '../assets/Images/persona/plg-funnel.png'
 import figureOneTwo from '../assets/Images/liv/liv-one-two.png'
 import figureTwoOne from '../assets/Images/liv/liv-two-one.png'
 import figureTwoTwo from '../assets/Images/liv/liv-two-two.png'
@@ -126,97 +126,77 @@ export default function flow() {
                 venture-backed startups with growing use cases</b>. This is where we win small deals and increase client 
                 spend marginally over a large volume aggregate. The problem is that we don’t have a dedicated PLG strategy 
                 or the design resources to capitalize on it.
+
+                I NEED TO ADD AN IMAAAAAAAAAAGGGGGGGEEEEEEEEEEE
             </p>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={'Defining Success'}/>
+          title={'Key Pain Points'}/>
           <div className="key-pain-points-body">
             {/* <div className='pain-point ht-pair'>
                 <p style={{fontSize: '20px'}}> I identified 3 key objectives after discussing the my intentions for the project with the product manager, senior designer and marketing team.  </p>
             </div> */}
-            <div className='row-container'
-                style={{display: 'flex', flexDirection: 'row', width: "100%", gap: "64px"}}
-                >
-                <div className="pain-point ht-pair">
-                    <div className="heading">
-                        1. Build confidence in on-the-fence users
-                    </div>
-                    <p>
-                    By empowering users to perform key actions effortlessly, they gain trust in the platform's reliability and value. This can be done by <b>helping users adjust to the platform</b> with the use of intuitive onboarding, tooltips, and real-time feedback. 
-                    </p>
-                    </div>
-                <div className="pain-point ht-pair">
-                    <div className="heading">
-                        2. Introduce key features
-                    </div>
-                    <p>
-                        <b>Guide users through the platform's essential features without overwhelming them.</b> Not only will focused walkthroughs highlight the core functionality of the platform, but it will reduce the cognitive friction behind committment since they've already learned how to use it.
-                    </p>
+            <div className="pain-point ht-pair">
+                <div className="heading">
+                    "Customers aren’t going to increase their monthly spend by $1000, just because something looks good.”
                 </div>
+                <p>
+                    Although the designer in me winces at this statement, its true for most products, and is especially 
+                    prevalent in the space of compliance, trust & safety, and fraud prevention. The demand for Persona's 
+                    products are largely driven by external requirements and regulations, which makes it <b>essential for clients 
+                    to have a strong conviction in the value of a feature to increase their spend. </b>
+                </p>
             </div>
             <div className="pain-point ht-pair">
                 <div className="heading">
-                    3. Convert Free Trials Into Sales Leads *bonus*
+                    "Customers use different words, not <i>I want AAMVA verification.</i>"
                 </div>
                 <p>
-                  In addition to the above-stated goals, <b>strategically demonstrating ROI throughout the immersive experience can help users make the leap.</b> However, it is not needed to be said, though, that creating a seamless and joyful trial experience is by-far the most important thing that I can do to help the team land sales.
+                    Persona also has an understanding problem: most users don’t speak the same language as our team and product. 
+                    No one asks for “AAMVA verification”, they say, “I want to verify driver’s licenses.”, which <b>creates a critical 
+                    gap in understanding between key users and the services they may need.</b>
+                </p>
+            </div>
+
+            <div className="pain-point ht-pair">
+                <div className="heading">
+                    "When I used Persona at [my last company], we didn’t know what options we had"
+                </div>
+                <p>
+                    Persona also has a discoverability issue, where users often don’t know what’s available to them. This is similar 
+                    to the previous pain point, but is not an issue with presentation, but where content is available, highlighting 
+                    our <b>need to improve feature discoverability and socialization.</b>
                 </p>
             </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={"Competitive Analysis"}/>
+          title={"Buyer's Mental Model"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
               <div className="heading">
-                Turning competitor weaknesses into our competitive edge
+                Several boxes need to be checked before making a purchase
               </div>
                 <p>
-                  I first looked at competitor free trials in the prop-tech space. This research helped me understand what worked 
-                  well and what didn’t in a hyper-specific context. It allowed me to pinpoint key pain points, which I leveraged to differentiate 
-                  our trial experience. <b>Click into the following images to learn what I took away from each trial.</b>
-                </p>
-                <div
-                    style={{ cursor: "pointer" }}
-                >
-                    <ImageToggle
-                        images={[figureOneOne, figureOneTwo]} 
-                        altText="Takeaways from Buildium"
-                    />
-                </div>
-                <div
-                    style={{ cursor: "pointer" }}
-                >
-                    <ImageToggle
-                        images={[figureTwoOne, figureTwoTwo]} 
-                        altText="Takeaways from Prism"
-                    />
-                </div>
-                <div
-                    style={{ cursor: "pointer", marginBottom: '32px' }}
-                >
-                    <ImageToggle
-                        images={[figureThreeOne, figureThreeTwo]} 
-                        altText="Takeaways from Spaceflow"
-                    />
-                </div>
-                <p> Then, I looked at Asana & Zendesk's trials to gather visual and interaction design conventions that would be useful regardless of the industry. <b>These products 
-                  opened my eyes to balancing user autonomy with hand-selected exposure to create strategically personalized experiences for each user.</b> I also enjoyed these 
-                  experiences much more than the former group as their was a better use of interactions and a better sense of voice in the content design. Exploring something more 
-                  outside of the box helped me bring a more unique and original take to the prop-tech trial space. See the high-level view of my competitive analysis below.
+                  The funnel begins with the user's awareness of their options — both what they currently have and what they 
+                  could purchase — and then moves into education. Through education, we aim to build genuine conviction in the 
+                  value of our features for their specific use case. From there, users enter the decision stage, where our 
+                  goal is to make their path towards attaining the feature as simple as possible, thus maximising the number 
+                  who move through to purchase.
                 </p>
                 <div 
                     className='image-container-new' 
                     style={{
                         margin: '0 auto', 
-                        maxWidth: '600px', 
-                        width: '100%'
+                        maxWidth: '480px', 
+                        width: '100%',
+                        marginTop: '32px'
                     }}
                     >
-                    <img src={figureFour} 
+                    <img src={figureOne} 
                     style={{ 
                         width: '100%'
                     }}/>
