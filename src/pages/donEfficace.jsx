@@ -158,7 +158,7 @@ return (
             <div className='sub-section key-pain-points'
                 id='solution'>
                 <Divider
-                    title={'the solution'}
+                title={'the solution'}
                 />
                 <div className='sub-section key-pain-points-body don-efficace'>
                     <div className='de-summary-item'>

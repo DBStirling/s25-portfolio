@@ -8,11 +8,10 @@ import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
 import figureOne from '../assets/Images/persona/plg-funnel.png'
-import figureOneTwo from '../assets/Images/liv/liv-one-two.png'
-import figureTwoOne from '../assets/Images/liv/liv-two-one.png'
-import figureTwoTwo from '../assets/Images/liv/liv-two-two.png'
-import figureThreeOne from '../assets/Images/liv/liv-three-one.png'
-import figureThreeTwo from '../assets/Images/liv/liv-three-two.png'
+import figureTwoOne from '../assets/Images/persona/persona-two-one.png'
+import figureTwoTwo from '../assets/Images/persona/persona-two-two.png'
+import figureThreeOne from '../assets/Images/persona/persona-three-one.png'
+import figureThreeTwo from '../assets/Images/persona/persona-three-two.png'
 import figureFour from '../assets/Images/liv/liv-four.jpg'
 import figureFive from '../assets/Images/liv/liv-five.png'
 import figureSix from '../assets/Images/liv/liv-six.png'
@@ -107,10 +106,10 @@ export default function flow() {
         </div>
         <div className="sub-section the-problem">
           <Divider
-          title={'The Role of PLG in Acquisition'}/>
+          title={"Growth Design's Role in Acquisition"}/>
           <div className="the-problem-body ht-pair">
             <div className="heading">
-                Growth design is only half of the equation.{" "}
+                PLG is only half of the equation.{" "}
             </div>
             <p>
                 Persona’s small and medium-sized business (SMB) funnel consists of hands-on sales processes, led by sales 
@@ -200,6 +199,44 @@ export default function flow() {
                     style={{ 
                         width: '100%'
                     }}/>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div className="sub-section key-pain-points">
+          <Divider
+          title={"Diagnosis"}/>
+          <div className="key-pain-points-body">
+            <div className='pain-point ht-pair'>
+              <div className="heading">
+                Persona’s existing growth design only addresses the first and last phases of this funnel. 
+              </div>
+                <p>
+                  Our teal ‘limited’ badges communicate their access to a given feature, but it doesn’t help the user understand 
+                  the feature and lacks a clear, actionable next step.
+                </p>
+                <div
+                    style={{ cursor: "pointer" }}
+                >
+                    <ImageToggle
+                        images={[figureTwoOne, figureTwoTwo]} 
+                        altText="Gated Feature Badge Critique"
+                    />
+                </div>
+            </div>
+            <div className='pain-point ht-pair'>
+                <p>
+                  Our self-serve flow guides the user from the desired feature to a persona inquiry, verifying their identity and 
+                  finalizing their purchase. However, the flow has dead ends, leading to unnecessary drop off, and has limited 
+                  portability since it can only be triggered by an active CTA or a clickable parent container.
+                </p>
+                <div
+                    style={{ cursor: "pointer" }}
+                >
+                    <ImageToggle
+                        images={[figureThreeOne, figureThreeTwo]} 
+                        altText="Upsell Flow Primary Modal Critique"
+                    />
                 </div>
             </div>
           </div>
