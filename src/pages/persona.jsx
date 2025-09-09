@@ -241,20 +241,25 @@ export default function flow() {
             </div>
           </div>
         </div>
-        <div className="sub-section key-pain-points" id="theSolution">
+        {/* <div className="sub-section key-pain-points" id="theSolution">
           <Divider
-          title={"The Solution"}/>
+          title={"Defining Success"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
-                <div className='heading'>
-                    Striking a balance between sandbox and guided tutorial experiences
-                </div>
                 <p>
-                  Based on insights from the competitive analysis, I determined that it would be best to combine guided elements of a tutorial with the autonomy provided by an open sandbox 
-                  environment. <b>This allows new users to build confidence by successfully completing routine tasks through feature walkthroughs and then snowball the small wins with unguided 
-                  exploration within the sandbox environment to mimic a more realistic usage.</b> This creates a much better experience for users who are 
-                  commonly confused or bored in complete tutorial or sandbox environment. See the differences, pros and cons between the two trial methods below.
+                  The challenge is that users’ needs vary, and they engage with features at different stages of the funnel. Rather 
+                  than a single flow or branching path, <b>the solution needs to be woven throughout the product</b> — surfacing value over 
+                  time, slowly winning users over and engaging with them when they’re ready. <b>To be successful, we must:</b>
                 </p>
+                <div className='heading'>
+                  1. Improve Awareness: clearly show users what they do and don’t have access to.
+                </div>
+                <div className='heading'>
+                  2. Improve education: build conviction in the value of desired features.
+                </div>
+                <div className='heading'>
+                  3. Expand growth touchpoints: ensure coverage across every phase of the funnel simultaneously.
+                </div>
                 <div 
                     className='image-container-new' 
                     style={{
@@ -292,6 +297,46 @@ export default function flow() {
                     }}/>
                 </div>
             </div>
+          </div>
+        </div> */}
+        <div className="sub-section key-pain-points" id="theSolution">
+          <Divider
+          title={'Defining Success'}/>
+          <div className="key-pain-points-body">
+            <p>
+              The challenge is that users’ needs vary, and they engage with features at different stages of the funnel. Rather 
+              than a single flow or branching path, <b>the solution needs to be woven throughout the product</b> — surfacing value over 
+              time, slowly winning users over and engaging with them when they’re ready. To be successful, we must:
+            </p>
+            <div className='row-container'
+                style={{display: 'flex', flexDirection: 'row', width: "100%", gap: "64px"}}
+                >
+                <div className="pain-point ht-pair">
+                  <div className="heading">
+                    1. Improve Awareness
+                  </div>
+                    <p>
+                      Clearly show users what they do and don’t have access to, while socializing other useful parts of the product.
+                    </p>
+                </div>
+                <div className="pain-point ht-pair">
+                  <div className="heading">
+                    2. Improve Education
+                  </div>
+                    <p>
+                      Teach users how features benefit them and build genuine conviction in the value of the features.
+                    </p>
+                </div>
+                <div className="pain-point ht-pair">
+                  <div className="heading">
+                    3. Expand Growth Touchpoints
+                  </div>
+                    <p>
+                      Ensure growth design elements across the product cover every phase of the expansion funnel, such that users 
+                      always have access to a growth touchpoint.
+                    </p>
+                </div>
+              </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
