@@ -5,20 +5,19 @@ import HoverPopUp from '../components/HoverPopUp/HoverPopUp.jsx'
 import ImageToggle from '../components/ImageToggle/imageToggle.jsx'
 import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
-import miniDE from '../assets/Images/mini-de-thumb-simple.png'
+import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
 import figureOne from '../assets/Images/persona/plg-funnel.png'
 import figureTwoOne from '../assets/Images/persona/persona-two-one.png'
 import figureTwoTwo from '../assets/Images/persona/persona-two-two.png'
 import figureThreeOne from '../assets/Images/persona/persona-three-one.png'
 import figureThreeTwo from '../assets/Images/persona/persona-three-two.png'
-import figureFour from '../assets/Images/liv/liv-four.jpg'
-import figureFive from '../assets/Images/liv/liv-five.png'
-import figureSix from '../assets/Images/liv/liv-six.png'
-import figureSeven from '../assets/Images/liv/liv-seven.png'
-import figureEightOne from '../assets/Images/liv/liv-eight-one.png'
-import figureEightTwo from '../assets/Images/liv/liv-eight-two.png'
-import figureEightThree from '../assets/Images/liv/liv-eight-three.png'
+import figureFour from '../assets/Images/persona/growth-card-one.png'
+import figureFive from '../assets/Images/persona/growth-card-two.png'
+import figureSix from '../assets/Images/persona/growth-card-three.png'
+import figureSeven from '../assets/Images/persona/illustration-bank.png'
+import figureEight from '../assets/Images/persona/plan-illustrations.png'
+import figureNine from '../assets/Images/persona/self-serve-flow.png'
 
 
 
@@ -125,8 +124,6 @@ export default function flow() {
                 venture-backed startups with growing use cases</b>. This is where we win small deals and increase client 
                 spend marginally over a large volume aggregate. The problem is that we don’t have a dedicated PLG strategy 
                 or the design resources to capitalize on it.
-
-                I NEED TO ADD AN IMAAAAAAAAAAGGGGGGGEEEEEEEEEEE
             </p>
           </div>
         </div>
@@ -299,11 +296,11 @@ export default function flow() {
             </div>
           </div>
         </div> */}
-        <div className="sub-section key-pain-points" id="theSolution">
+        <div className="sub-section key-pain-points">
           <Divider
           title={'Defining Success'}/>
           <div className="key-pain-points-body">
-            <p>
+            <p style={{fontSize: '20px'}}>
               The challenge is that users’ needs vary, and they engage with features at different stages of the funnel. Rather 
               than a single flow or branching path, <b>the solution needs to be woven throughout the product</b> — surfacing value over 
               time, slowly winning users over and engaging with them when they’re ready. To be successful, we must:
@@ -339,131 +336,154 @@ export default function flow() {
               </div>
           </div>
         </div>
-        <div className="sub-section key-pain-points">
+        <div className="sub-section key-pain-points" id="theSolution">
           <Divider
-          title={"Introducing Key Features"}/>
+          title={"The Solution"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair'>
                 <div className='heading'>
-                    Maximizing trial value for various user needs
-                </div>
-                <p>
-                    Knowing the importance of brevity in guided tutorials, I decided to focus on LIV’s two most popular features according to customer usage data. Furthermore, LIV’s maintenance request and building update features are useful to operators regardless of the size or type of their property — all buildings face plumbing issues and can benefit from building-wide communication.
-                </p>
-                <p>
-                  Before designing the walkthroughs, <b>I met with customer-facing team members who walked me through the common ways that existing customers used each feature.</b> I mapped out these processes and matched them up with wireframes that naturally took the user through key actions, such as assigning a technician to a maintenance request or resolving an open ticket. I did this for both key features and made notes on the functionality required at each step of the guided tutorial to define pop-up design constraints.</p>
-                <div 
-                    className='image-container-new' 
-                    style={{
-                        margin: '0 auto', 
-                        maxWidth: '800px', 
-                        width: '100%'
-                    }}
-                    >
-                    <img src={figureSeven} 
-                    style={{ 
-                        width: '100%'
-                    }}/>
-                </div>
-            </div>
-            <div className='pain-point ht-pair'>
-                <div className='heading'>
-                  Designing a universal guided pop-up
-                </div>
-                <p>I went through two main pop-up design iterations. <b>Click through below to see the changes and their rationale.</b> Along with the pop-ups, 
-                I also iterated through various animations for responsive interaction feedback. I started with an oscillating purple highlight and ended with a much simpler blue 
-                bordered highlight as it fit more within the design scheme and would be an easier development implementation without any significant trade-offs. I worked through 
-                these visual design changes with the mentorship and feedback of the senior designer and our development team to ensure the quality and feasibility 
-                of design choices. 
-                </p>
-                <div
-                    style={{ cursor: "pointer", margin: '32px 0', maxWidth: '800px' }}
-                >
-                    <ImageToggle
-                        images={[figureEightOne, figureEightTwo, figureEightThree]} 
-                        altText="Guided pop-up iterations"
-                    />
-                </div>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section key-pain-points">
-          <Divider
-          title={"Building User Confidence"}/>
-          <div className="key-pain-points-body">
-            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
-                <div className='heading'>
-                  Writing for users on autopilot
+                  1 solution, 5 tools
                 </div>
                 <p style={{fontSize: '20px'}}>
-                  A major component of building user confidence is content design. Each pop-up needed to be easily scannable while still providing enough context to assist confused users, if necessary.
+                  The growth design toolkit includes <b>product tours, growth cards, an illustration bank, feature gating and an improved self-serve flow</b>,
+                  that the growth team can apply across different product areas. I created components and rule sets for their 
+                  application, allowing the team to stay mobile and work on the fly while still remaining grounded in a consistent 
+                  visual design language.
                 </p>
+                <div className="heading" style={{ marginTop: '32px' }}>
+                  Product Tours
+                </div>
                 <p>
-                  The key to writing content for the guided tutorial was understanding that <b>every feature, action, or concept would be entirely new to the user</b>. Although obvious, this reality cannot be stated enough. I made sure to use simple language and short sentences, prioritizing concise, context-driven copy to explain actions and not concepts. 
+                  Created a product tour design system as the <b>go-to tool for in-product education</b>, as it explains product features 
+                  and updates within the context of the app. <em>P.S. go full screen on the prototype</em>
                 </p>
-                <p style={{marginBottom: '32px'}}>
-                  Working in a startup means that you get to wear many hats and it put me in the position to learn a great deal about content design. Through exploring forums and reading various articles, <b>I put together a short list of content design rules that I used for the tutorial.</b>
-                </p>
-                <ol style={{ paddingLeft: '0', listStylePosition: 'inside', fontSize: '20px' }}>
-                  <li style={{ marginBottom: '12px' }}>Write in active voice, starting with actions or objectives.</li>
-                  <li style={{ marginBottom: '12px' }}>Use ‘you’ or ‘your’ to make it personally applicable for the user.</li>
-                  <li style={{ marginBottom: '12px' }}>Make it concise.</li>
-                  <li style={{ marginBottom: '12px' }}>Reveal information only when relevant.</li>
-                  <li>Write for all reading levels.</li>
-                </ol>
-            </div>
-            <div className='pain-point ht-pair'>
-              <div className="heading">Supporting user autonomy with a free trial menu</div>
-                <p style={{margin: '32px 0'}}>
-                  Users are bound to have different interests or needs, so the trial was modularly designed to promote roaming and exploration. This keeps users engaged by avoiding an 
-                  impersonal and linear tutorial experience. The free trial menu enables users to navigate between any section within the guided tutorial or enter the open sandbox. 
-                  It is universally available as an overlay in the bottom right of the user’s screen and displays user progress along with secondary actions like booking a demo or 
-                  providing feedback. View the below prototypes to see the first and last iteration.
-                </p>
-            </div>
-            <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
-                  <div className="heading">Free trial menu changes</div>
-                  <ol style={{paddingLeft: '0', listStylePosition: 'inside', fontSize: '20px' }}>
-                    <li style={{ marginBottom: '12px' }}>Adjusted primary color to match trial UI</li>
-                    <li style={{ marginBottom: '12px' }}>Added more context; both on the free trial menu & their progress in the trial</li>
-                    <li style={{ marginBottom: '12px' }}>Re-prioritized the sections and the secondary actions</li>
-                    <li>Made secondary actions more visually distinct</li>
-                  </ol>
-                  <div className="protopype-container">
-                    <div className="prototype" style={{width: '100%', maxWidth: '800px'}}>
-                    <iframe
-                        className="actual-prototype"
-                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
-                        width="800px"
-                        height="800px"
-                        src="https://embed.figma.com/proto/wM3rV16a3ZEupVvfADI99S/Sandbox-File?page-id=0%3A1&node-id=23-5746&viewport=-25554%2C11610%2C0.46&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=23%3A5746&embed-host=share"
-                        allowFullScreen=""
-                    />
+                <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
+                      <div className="protopype-container">
+                        <div className="prototype" style={{width: '100%', maxWidth: '800px', marginBottom: '24px'}}>
+                        <iframe
+                            className="actual-prototype"
+                            style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
+                            width="800px"
+                            height="600px"
+                            src="https://embed.figma.com/proto/5d0uL476UvbRxoL3VOOqsD/Product-Tours?page-id=755%3A5805&node-id=927-29291&viewport=-1841%2C75%2C0.19&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=927%3A29291&embed-host=share"
+                            allowFullScreen="true"
+                        />
+                      </div>
+                        {/* <ul style={{paddingLeft: '0', listStylePosition: 'inside', fontSize: '20px' }}>
+                        <li style={{ marginBottom: '12px' }}>The pulsing highlight grabs attention and visually elevates the popover</li>
+                        <li style={{ marginBottom: '12px' }}>The box highlight is more precise than the traditional popover carat</li>
+                        <li style={{ marginBottom: '0px' }}>The popover is designed as a 'fork' of our existing modal styles</li>
+                      </ul> */}
                     </div>
                 </div>
-              </div>
+                <div className="heading" style={{ marginTop: '32px' }}>
+                  Growth Cards
+                </div>
+                <p>
+                  Created an embedded card style to socialize information and resources within the product, linking product tours, help 
+                  centre articles and product release notes.
+                </p>
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureFour}
+                    large={figureFour}
+                    alt="Home Page Card"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureFive}
+                    large={figureFive}
+                    alt="Solution Library Card"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureSix}
+                    large={figureSix}
+                    alt="Gated Feature Card"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+                <div className="heading" style={{ marginTop: '32px' }}>
+                  Illustration Bank
+                </div>
+                <p>
+                  Created an illustration bank for the growth team to use in conjunction with the growth cards, working closely with our 
+                  Brand team to update existing work and revamp our plan illustrations.
+                </p>
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureSeven}
+                    large={figureSeven}
+                    alt="Illustration Bank"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureEight}
+                    large={figureEight}
+                    alt="Solution Library Card"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+                <div className="heading" style={{ marginTop: '32px' }}>
+                  Feature Gating
+                </div>
+                <p>
+                  Redesigned how gated features are presented, making limited access clear while balancing upsell opportunities and overall 
+                  visual hierarchy. <em>P.S. Go full screen in the top right of the prototype</em>
+                </p>
+                <div className="protopype-container">
+                  <div className="prototype" style={{width: '100%', maxWidth: '800px', marginBottom: '24px'}}>
+                  <iframe
+                      className="actual-prototype"
+                      style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
+                      width="800px"
+                      height="600px"
+                      src="https://embed.figma.com/proto/blkaL1r2yg3A98IfiVm7UI/%F0%9F%94%A7-Growth-Toolkit?page-id=431%3A28426&node-id=787-27471&viewport=-665%2C999%2C0.12&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=787%3A27471&show-proto-sidebar=1&embed-host=share"
+                      allowFullScreen="true"
+                  />
+                </div>
+                <div className="heading" style={{ marginTop: '32px' }}>
+                  Self-Serve Flow
+                </div>
+                <p>
+                  Reworked the self-serve flow to improve plan value propositions, content writing and cut out high-friction steps.
+                </p>
+                <ModalImage
+                    style={{ width: '100%'}}
+                    // className='summary-img'
+                    small={figureNine}
+                    large={figureNine}
+                    alt="Illustration Bank"
+                    hideDownload={true}
+                    imageBackgroundColor={"white"}
+                />
+            </div>
           </div>
         </div>
         <div className="sub-section key-pain-points">
           <Divider
-          title={"Converting Free Trials into Sales Leads"}/>
+          title={"Post Design"}/>
           <div className="key-pain-points-body">
             <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
-                <div className='heading'>
-                  Looking past the design. What now?
-                </div>
-                {/* <p>
-                Although the product hasn’t launched yet, we are confident that providing a high-quality experience during the free trial will directly improve conversion rates. By showcasing the LIV platform’s value upfront, we aim to convert users into paying customers and enable our sales team to engage with more interested leads.
-                </p> */}
-                <p>
-                To enhance and simulate ongoing user engagement, we integrated email notifications into the sandbox experience. For instance, users who schedule a maintenance service during the trial will receive automated email updates when a technician accepts and completes the job. This showcases the value of the platform’s behind-the-scenes automation and highlights the time saved for the user, helping to drive conversions by mimicking real-world usage.
-                </p>
-                <p>
-                To maintain the quality of the trial experience, I collaborated with the development team to ensure that A/B testing can be implemented once it is shipped and analytics become available. I wrote development tickets illustrating the functionality of splitting users into test groups and tracking variable performance, which will be used to habitually assess and improve its interaction/visual design where needed. I also advocated for usability testing, which will provide richer context beyond the short round of feedback provided in the trial.
-                </p>
-                <p style={{fontSize: '20px'}}>
-                Check back soon! When the trial is shipped, I'll link it here, so you can take a look for yourself. 
-                </p>
+              <div className='heading'>
+                Using metrics to inform design decisions
+              </div>
+              <p style={{fontSize: '20px'}}>
+                This project was an exciting opportunity to be <b>bringing intentional design into a $6M annualized PLG pipeline that has seen little 
+                design love</b>. Although my work on prod yet, I discussed tests and key metrics with the team before leaving. I also left 
+                design variants that may be useful, when informed by how the click-through, trigger and conversion rates look.
+              </p>
             </div>
           </div>
         </div>
@@ -474,47 +494,44 @@ export default function flow() {
           <div className="reflection-item ht-pair">
               <div className="reflection-header">
                 <div className="heading">
-                Takeaway - It’s okay to challenge design systems
+                  What I would do with more time
                 </div>
               </div>
               <p>
-              Working within a design system is great for maintaining consistency and reducing development effort, but these are not always the priority of a product team. My first iteration of the guided pop-up was based off of an existing admin pop-up component and as a result was hard to differentiate from the existing LIV UI. Not to mention, creating a new component doesn’t always require truck loads of development effort. If a new component can provide more value to the user than the original, then who’s to say it isn’t worth developing? Big ideas and designs only get reigned in and reduced on their way to implementation, so why not start big?
+                With more time, I’d extend this work into a full overhaul of Persona’s solution library. This tool lets users add 
+                out-of-the-box solutions to their implementation, substantially lowering the bar of education. It would pair naturally 
+                with my efforts to improve in-product education. At the end of the day, clever design and intentional content writing 
+                can only go so far, and the solution library is where we can bridge the gap between learning and doing.
               </p>
             </div>
             <div className="reflection-item ht-pair">
               <div className="reflection-header">
               <div className="heading">
-              Takeaway - Take the time to document for developers
+                Key learning
               </div>
               </div>
               <p>
-              No matter how intuitive design implementation may be to yourself and your fellow designers, there is no guarantee that the developers are in the same boat. In fact, it’s almost guaranteed that they’re in a completely different ship. After all, they have a fresh pair of eyes and they haven't contemplated this design for 72 hours like you have. Avoid the heartache and take the time to explain your process. Thoroughly comment, prototype and document interactions along with exact padding sizes to save your team time and effort in the long-run.
-              </p>
-            </div>
-            <div className="reflection-item ht-pair">
-              <div className="reflection-header">
-                <div className="heading">
-                If I had more time, I would expand the key feature list.
-                </div>
-              </div>
-              <p>
-              The two guided tutorials within this trial can serve as the foundation for an interactive onboarding tutorial. As they have already bought into LIV services, onboarding customers would likely have more interest and incentive in learning about each feature. Adding tutorials, with the same components, for amenity booking, visitor assignment and everything else could help reduce the troubleshooting burden on the sales team — which will be increasingly important as Unify continues to scale. Beyond just our team, this feature would significantly help customers as they’re able to receive real-time feedback and guidance on how to use our features.
+                One of my biggest takeaways was how to present designs for feedback and handle the variety of perspectives that come 
+                with it. <b>Feedback is invaluable, but it needs to be contextualized,</b> by understanding who it’s coming from, what lens they’re 
+                looking through, and which parts are most relevant to them. I learned to take input with a grain of salt, filter it through the 
+                problem I was solving, and use it to critically inform the next iteration of my designs.
               </p>
             </div>
             <ThanksSection
-            title1={'Flow'}
-            tag1={'Case Study'}
-            miniThumb1={miniFlow}
-            link1={'/flow'}
-            title2={'Don Efficace'}
-            tag2={'Product'}
-            miniThumb2={miniDE}
-            link2={'/donEfficace'}            
-            showWork={true}
+                title1={'LIV'}
+                tag1={'Product'}
+                link1={'/liv'}
+                miniThumb1={miniLIV}
+                title2={'Flow'}
+                tag2={'Case Study'}
+                miniThumb2={miniFlow}
+                link2={'/flow'}
+                showWork={true}
             />
         </div>
         </div>
       </div>
     </div>
+  </div>
   )
 }
