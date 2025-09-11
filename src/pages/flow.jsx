@@ -7,6 +7,7 @@ import Divider from '../components/Divider/Divider';
 import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 import miniDE from '../assets/Images/mini-de-thumb-simple.png'
+import miniPersona from '../assets/Images/mini-pe-thumb.png'
 // import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 import figureOne from '../assets/Images/flow/flow-one.png'
 import figureTwoOne from '../assets/Images/flow/flow-two-one.png'
@@ -567,14 +568,14 @@ export default function flow() {
               </p>
             </div>
             <ThanksSection
-            title1={'LIV'}
+            title1={'Persona'}
             tag1={'Product'}
-            link1={'/liv'}
-            miniThumb1={miniLIV}
-            title2={'Don Efficace'}
+            miniThumb1={miniPersona}
+            link1={'/persona'}
+            title2={'LIV'}
             tag2={'Product'}
-            miniThumb2={miniDE}
-            link2={'/donEfficace'}
+            link2={'/liv'}
+            miniThumb2={miniLIV}
             showWork={true}
             />
         </div>

@@ -7,6 +7,7 @@ import ThanksSection from '../components/ThanksSection/ThanksSection.jsx'
 // import miniMFP from '../assets/Images/mini-mfp-thumb-simple.png'
 // import miniDM from '../assets/Images/mini-dm-thumb-simple.png'
 import miniFlow from '../assets/Images/mini-flow-thumb-simple.png'
+import miniPersona from '../assets/Images/mini-pe-thumb.png'
 import miniLIV from '../assets/Images/mini-liv-thumb-simple.png'
 
 
@@ -361,16 +362,16 @@ return (
                 </p>
             </div> */}
             <ThanksSection
-                title1={'LIV'}
+                title1={'Persona'}
                 tag1={'Product'}
-                link1={'/liv'}
-                miniThumb1={miniLIV}
+                miniThumb1={miniPersona}
+                link1={'/persona'} 
                 title2={'Flow'}
                 tag2={'Case Study'}
                 miniThumb2={miniFlow}
-                link2={'/flow'}
+                link2={'/flow'}           
                 showWork={true}
-            />
+                />
             </div>
         </div>
         </div>

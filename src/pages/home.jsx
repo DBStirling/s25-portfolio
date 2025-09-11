@@ -10,6 +10,7 @@ import DMthumbnail from '../assets/Images/dm-thumb.png';
 import MFPthumbnail from '../assets/Images/mfp-thumb.png';
 import FFthumbnail from '../assets/Images/ff-thumb.png';
 import LIVthumbnail from '../assets/Images/liv-thumb.png';
+import PERSONAthumbnail from '../assets/Images/pe-thumb.png';
 
 export default function Home({scrollableRef} ) {
 
@@ -164,7 +165,7 @@ export default function Home({scrollableRef} ) {
                 description="Building Persona's PLG strategy with a Growth Design Toolkit."
                 tag="Product"
                 destination="/persona"
-                imgSrc={LIVthumbnail}
+                imgSrc={PERSONAthumbnail}
               />
               <ProjectCard
                 title="LIV"
