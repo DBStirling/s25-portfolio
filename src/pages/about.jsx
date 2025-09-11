@@ -126,60 +126,62 @@ export default function about() {
               UWaterloo
             </span> 
             {' '}who<b> loves turning big ideas into things people can actually 
-            use.</b> I'm current humanizing identity @ 
+            use.</b> I just wrapped up a summer of humanizing identity @ 
               <span className="link"
                 onClick={() => window.open('https://withpersona.com', '_blank')} 
                 style={{ cursor: 'pointer', textDecoration: 'underline' }}
                 >
                 Persona
               </span>
-              {' '}and exploring the bay area on 2 wheels!
+              {' '}and exploring the bay area on 2 wheels.
             </p>
             <p>
-            I've worked in design, product management, and touched code @ <span className="link" 
-              onClick={() => window.open('https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3', '_blank')} 
-              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+              I've worked in design, product management, and touched code @{" "}
+              <span
+                className="link"
+                onClick={() =>
+                  window.open(
+                    "https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3",
+                    "_blank"
+                  )
+                }
+                style={{ cursor: "pointer", textDecoration: "underline" }}
               >
-              UW Blueprint
-            </span>
-            ,{' '}
-            <span className="link" 
-              onClick={() => window.open('https://livwith.com/', '_blank')} 
-              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                UW Blueprint
+              </span>
+              ,{" "}
+              <span
+                className="link"
+                onClick={() => window.open("https://livwith.com/", "_blank")}
+                style={{ cursor: "pointer", textDecoration: "underline" }}
               >
-              Unify
-            </span> 
-            , and{' '}
-            <span className="link" 
-              onClick={() => window.open('https://www.timeplay.com/', '_blank')} 
-              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                Unify
+              </span>
+              , and{" "}
+              <span
+                className="link"
+                onClick={() => window.open("https://www.timeplay.com/", "_blank")}
+                style={{ cursor: "pointer", textDecoration: "underline" }}
               >
-              TimePlay
-            </span>
-            {' '}along with a handful of side projects, like{' '}
-            <span className="link" 
-              onClick={() => window.open('https://semesters.ca/', '_blank')} 
-              style={{ cursor: 'pointer', textDecoration: 'underline' }}
+                TimePlay
+              </span>{" "}
+              along with a handful of side projects, like{" "}
+              <span
+                className="link"
+                onClick={() => window.open("https://sydewebring.site", "_blank")}
+                style={{ cursor: "pointer", textDecoration: "underline" }}
               >
-              Semesters
-            </span>
-            .{' '}
-            {/* I’ve been solving problems through design for as long as I can 
-            remember—founding a graphic design business during the 
-            pandemic, working as a product designer for a non-profit, and 
-            getting hands-on in engineering & shipping along the way. */}
-            </p>
-            <p>
-            With my hollistic product experience, 
-            <b> I aim to give users and developers the best bang for their 
-            buck. </b> I do my due dilligence, like to learn and love to ship fast, pivotting even quicker when necessary.
-            On any given day, you can find me watching the Deep 3 Pod, browsing used book stores or scouring event sites for live music.
-            {/* </p>
-            I make this possible through developing strong client 
-            relationships, conducting extensive research, iterating through 
-            countless wireframes (no, seriously) and collaborating 
-            cross-functionally in the hopes of <b>building products that give 
-            more than they take. </b> */}
+                SYDE Webring
+              </span>{" "}
+              &{" "}
+              <span
+                className="link"
+                onClick={() => window.open("https://semesters.ca/", "_blank")}
+                style={{ cursor: "pointer", textDecoration: "underline" }}
+              >
+                Semesters
+              </span>
+              .
             </p>
           </div>
         </div>

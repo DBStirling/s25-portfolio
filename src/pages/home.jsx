@@ -140,14 +140,14 @@ export default function Home({scrollableRef} ) {
                     </span>
                   , I blend pragmatic engineering problem-solving with creative, empathetic design.
                   </p>
-                  <p>I'm currently working as a Product Design Intern @ 
+                  <p>I just wrapped up a Product Design internship @ 
                     <span className="link"
                       onClick={() => window.open('https://withpersona.com', '_blank')} 
                       style={{ cursor: 'pointer', textDecoration: 'underline' }}
                       >
                       Persona
                     </span>
-                    .
+                    and am currently serving as co-prez @ UW Blueprint 🫡
                     </p>
               </div>
             </div>
