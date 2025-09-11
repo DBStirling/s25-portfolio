@@ -162,7 +162,7 @@ export default function Home({scrollableRef} ) {
             <div className="project-card-container">
               <ProjectCard
                 title="Persona"
-                description="Building Persona's PLG strategy with a Growth Design Toolkit."
+                description="Building Persona's Product-Led Growth (PLG) strategy with a Growth Design Toolkit"
                 tag="Product"
                 destination="/persona"
                 imgSrc={PERSONAthumbnail}

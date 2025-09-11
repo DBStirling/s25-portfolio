@@ -45,12 +45,12 @@ export default function flow() {
       <div className="main-content-case">
         <div className="sub-section introduction">
           <div className="title">
-            Building Persona's PLG strategy with a Growth Design Toolkit
+            Building Persona's Product-Led Growth (PLG) strategy with a Growth Design Toolkit
           </div>
           <div className="context">
             <div className="ht-pair">
               <div className="heading">My Role</div>
-              <p>Product Design Intern</p>
+              <p>Product Design Intern - I led this project with the help of many Personerd critiques :)</p>
             </div>
             <div className="ht-pair">
               <div className="heading">What is Persona?</div>
@@ -58,8 +58,9 @@ export default function flow() {
               <p>
                 <b>Persona is a leading identity platform that helps companies verify and manage customer identities,
                 detect fraud, and stay compliant</b>. It provides a flexible and configurable suite of tools, 
-                from document and database checks to orchestration and case management, that businesses, like 
-                Walmart, DoorDash and OpenAI can tailor to their specific trust and safety needs.
+                from document and database checks to orchestration and case management, that businesses can tailor to 
+                their specific trust and safety needs. Persona is a leader in this space, with major clients such as 
+                Walmart, DoorDash and Lyft.
               </p>
               </div>
             </div>
@@ -67,13 +68,13 @@ export default function flow() {
               <div className="heading">The tl;dr</div>
               <div>
               <p>
-                Growth at Persona had no dedicated design support, leading to inconsistent, unoptimized touchpoints 
-                across a $6M annualized PLG pipeline. Users struggled with awareness, education, and discoverability, 
-                which left revenue opportunities uncaptured.
+                Growth at Persona doesn't have dedicated design support, leading to inconsistent, unoptimized touchpoints 
+                across a $6M annualized Product-Led Growth (PLG) pipeline. Users struggle with product awareness, education, and discoverability, 
+                leaving useful features and revenue opportunities uncaptured.
               </p>
               <p>
                 <b>I created a growth design toolkit with reusable components</b> — including product tours, growth cards, 
-                gated feature patterns, and a revamped self-serve flow — <b>to establish consistency, improve in-product 
+                feature gating patterns, an illustration bank and a revamped self-serve flow — <b>to establish consistency, improve in-product 
                 education, and make upsell opportunities clearer.</b> This work laid the foundation for a scalable, 
                 user-centered PLG strategy at Persona.
               </p>
@@ -92,15 +93,15 @@ export default function flow() {
             <div className="heading">
             Growth design @ Persona is democratized across product teams.{" "}
             </div>
-            <p>
+            <p style={{fontSize: '20px'}}>
                 This leaves the implementation of growth strategies up to individual contributors on siloed teams, {" "}
                 <b>resulting in an increasing pile-up of inconsistent and unoptimized growth touchpoints.</b> 
             </p>
-            <p> 
+            {/* <p> 
                 Furthermore, growth design content isn’t typically tied to core product functionality. It discusses 
                 plan pricing, feature access and education opportunities, which stand out from the rest of the core product 
                 functionality and as a result, it would benefit from having a consistent visual language of its own.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="sub-section the-problem">
@@ -112,7 +113,7 @@ export default function flow() {
             </div>
             <p>
                 Persona’s small and medium-sized business (SMB) funnel consists of hands-on sales processes, led by sales 
-                teams, and more hands-off Product-Led Growth (PLG) strategies motioned by Growth.
+                teams, and more hands-off PLG strategies motioned by Growth.
             </p>
             <p> 
                 <b>Hands-on processes are highly effective, bringing in the majority of revenue quarter to quarter, 
@@ -140,9 +141,10 @@ export default function flow() {
                 </div>
                 <p>
                     Although the designer in me winces at this statement, its true for most products, and is especially 
-                    prevalent in the space of compliance, trust & safety, and fraud prevention. The demand for Persona's 
-                    products are largely driven by external requirements and regulations, which makes it <b>essential for clients 
-                    to have a strong conviction in the value of a feature to increase their spend. </b>
+                    prevalent in the space of compliance, trust & safety, and fraud prevention, where customer demand  
+                    is largely driven by external requirements and regulations. This makes it harder to increase client 
+                    spend, at ultimately <b>requires Persona to truly prove valuable to users and build conviction in 
+                    those who are on the fence.</b>
                 </p>
             </div>
             <div className="pain-point ht-pair">
@@ -178,8 +180,8 @@ export default function flow() {
               </div>
                 <p>
                   The funnel begins with the user's awareness of their options — both what they currently have and what they 
-                  could purchase — and then moves into education. Through education, we aim to build genuine conviction in the 
-                  value of our features for their specific use case. From there, users enter the decision stage, where our 
+                  could purchase — and then moves into education. <b>Through education, we aim to build genuine conviction in the 
+                  value of our features for their specific use case.</b> From there, users enter the decision stage, where our 
                   goal is to make their path towards attaining the feature as simple as possible, thus maximising the number 
                   who move through to purchase.
                 </p>
@@ -210,7 +212,7 @@ export default function flow() {
               </div>
                 <p>
                   Our teal ‘limited’ badges communicate their access to a given feature, but it doesn’t help the user understand 
-                  the feature and lacks a clear, actionable next step.
+                  the feature and lacks a clear, actionable next step. <em>P.S. Click on the images for critique</em>
                 </p>
                 <div
                     style={{ cursor: "pointer" }}
@@ -347,14 +349,14 @@ export default function flow() {
                 <p style={{fontSize: '20px'}}>
                   The growth design toolkit includes <b>product tours, growth cards, an illustration bank, feature gating and an improved self-serve flow</b>,
                   that the growth team can apply across different product areas. I created components and rule sets for their 
-                  application, allowing the team to stay mobile and work on the fly while still remaining grounded in a consistent 
+                  application, allowing the team to stay mobile and work on the fly while remaining grounded in a consistent 
                   visual design language.
                 </p>
                 <div className="heading" style={{ marginTop: '32px' }}>
                   Product Tours
                 </div>
                 <p>
-                  Created a product tour design system as the <b>go-to tool for in-product education</b>, as it explains product features 
+                  Created a product tour design system as the <b>go-to tool for in-product education</b>, as it explains features 
                   and updates within the context of the app. <em>P.S. go full screen on the prototype</em>
                 </p>
                 <div className='pain-point ht-pair' style={{ textAlign: 'left' }}>
@@ -449,7 +451,7 @@ export default function flow() {
                       style={{ border: "1px solid rgba(0, 0, 0, 0.1)",}}
                       width="800px"
                       height="600px"
-                      src="https://embed.figma.com/proto/blkaL1r2yg3A98IfiVm7UI/%F0%9F%94%A7-Growth-Toolkit?page-id=431%3A28426&node-id=787-27471&viewport=-665%2C999%2C0.12&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=787%3A27471&show-proto-sidebar=1&embed-host=share"
+                      src="https://embed.figma.com/proto/blkaL1r2yg3A98IfiVm7UI/%F0%9F%94%A7-Growth-Toolkit?page-id=431%3A28426&node-id=787-27471&viewport=-2535%2C1899%2C0.31&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=787%3A27471&embed-host=share"
                       allowFullScreen="true"
                   />
                 </div>
@@ -479,10 +481,12 @@ export default function flow() {
               <div className='heading'>
                 Using metrics to inform design decisions
               </div>
-              <p style={{fontSize: '20px'}}>
-                This project was an exciting opportunity to be <b>bringing intentional design into a $6M annualized PLG pipeline that has seen little 
-                design love</b>. Although my work on prod yet, I discussed tests and key metrics with the team before leaving. I also left 
-                design variants that may be useful, when informed by how the click-through, trigger and conversion rates look.
+              {/* <p style={{fontSize: '20px'}}> */}
+              <p>
+                This project was an exciting opportunity to bring intentional design into a $6M annualized PLG pipeline that has seen little 
+                design love. Although my work isn't on prod yet, I discussed tests with the team before leaving and <b>outlined key metrics </b>that 
+                could inform future design decisions. <b>I also left design variants that can be used to swap out on production and 
+                continue the iterative testing.</b>
               </p>
             </div>
           </div>
@@ -498,7 +502,7 @@ export default function flow() {
                 </div>
               </div>
               <p>
-                With more time, I’d extend this work into a full overhaul of Persona’s solution library. This tool lets users add 
+                With more time, <b>I’d extend this work into a full overhaul of Persona’s solution library.</b> This tool lets users add 
                 out-of-the-box solutions to their implementation, substantially lowering the bar of education. It would pair naturally 
                 with my efforts to improve in-product education. At the end of the day, clever design and intentional content writing 
                 can only go so far, and the solution library is where we can bridge the gap between learning and doing.
