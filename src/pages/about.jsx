@@ -116,7 +116,7 @@ export default function about() {
         </div>
         <div className="ht-section">
           <h3>My tl;dr</h3>
-          <div className="ht-body">
+          <div className="ht-body" style={{fontSize: '20px'}}>
             <p>
             I’m an engineering student @
             <span  className="link"

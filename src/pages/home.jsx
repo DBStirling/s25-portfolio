@@ -147,7 +147,19 @@ export default function Home({scrollableRef} ) {
                       >
                       Persona
                     </span>
-                    and am currently serving as co-prez @ UW Blueprint 🫡
+                    {' '}and am currently serving as prez @
+                    <span
+                      className="link"
+                      onClick={() =>
+                        window.open(
+                          "https://medium.com/uw-blueprint/blueprint-and-social-good-b117635607c3",
+                          "_blank"
+                        )
+                      }
+                      style={{ cursor: "pointer", textDecoration: "underline" }}
+                    >
+                      UW Blueprint
+                    </span>
                     </p>
               </div>
             </div>
