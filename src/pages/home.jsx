@@ -138,6 +138,18 @@ export default function Home({scrollableRef} ) {
                   If you're here for business, scroll to check out my featured work. But if you're looking to get to know me a bit better, take a look around!
                 </p> */}
                 <p>I'm looking for summer 2025 opportunities to get hands on with things that bring a little more joy to life. </p>
+                <p>
+                  Check out my new portfolio at{' '}
+                  <a
+                    className="hero-inline-link"
+                    href="https://davidbstirling.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    davidbstirling.com
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </div>
