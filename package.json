@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "homepage": "https://dbstirling.github.io/s25-portfolio/",
   "scripts": {
     "predeploy": "npm run build",
