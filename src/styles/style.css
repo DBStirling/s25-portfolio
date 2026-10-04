@@ -147,6 +147,17 @@ body, html {
   gap: 12px;
 }
 
+.hero-inline-link,
+.hero-inline-link:visited {
+  color: #121212;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hero-inline-link:hover {
+  color: #743EDB;
+}
+
 .button-container {
 /* padding: 0 10vw; */
 display: flex;
