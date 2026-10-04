@@ -1,6 +1,6 @@
 import React, { useRef, Suspense, lazy, useEffect } from "react";
 import { useState } from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import LoadingPage from './pages/loadingPage.jsx';
